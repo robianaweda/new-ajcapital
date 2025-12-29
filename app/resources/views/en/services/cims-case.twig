@@ -1,0 +1,187 @@
+{% extends 'template/layout_en_content.twig' %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <img alt="" src="{{ base_url() }}/assets/img/pages/services-cims.jpg" width="100%" />
+            <p>&nbsp;</p>
+            <h4>Corporate</h4>
+            <p>
+                Transforming organizations, whether by taking a private company public
+                                                                                                                or through strategic initiatives, requires well developed project and
+                                                                                                                organization management capabilities combined with the right network
+                                                                                                                connections to accelerate value capture, by quickly identifying
+                                                                                                                opportunities and matching them with the necessary resources or
+                                                                                                                partners.
+            </p>
+            <p>
+                For example, consider the transformation of a private to a public
+                                                                                                                company. The company will be subject to greater scrutiny and regulatory
+                                                                                                                reporting requirements which will require substantial effort to
+                                                                                                                maintain. We can support our clients in this transition by assessing the
+                                                                                                                sufficiency of: (1) accounting and reporting policies, processes and accounting systems; (2) finance and tax staff; (3) financial statements and
+                                                                                                                disclosures; and (4) internal control environment.
+            </p>
+            <p>
+                Another transformation example to consider is the spinning off a
+                                                                                                                strategic business unit to create a new operating subsidiary. In a
+                                                                                                                situation like this there are numerous challenges faced by management,
+                                                                                                                such as conflicting stakeholder interests, employee anxiety, regulatory
+                                                                                                                compliance, and maximizing the impact to shareholders’ value.
+            </p>
+            <p>
+                Our corporate initiative management and support services include:
+            </p>
+            <ul>
+                <li>
+                    Assessing current performance through a detailed commercial and
+                                                                                                                                          financial due diligence and industry benchmarking
+                </li>
+                <li>
+                    Working with management on strategic initiatives to refine needs and,
+                                                                                                                                          as necessary, identify value opportunities that can be captured with
+                                                                                                                                          the right strategic partner
+                </li>
+                <li>
+                    Identifying prospective partners, outreach and relationship
+                                                                                                                                          management, negotiate key terms and conditions, as well as managing
+                                                                                                                                          the execution and closing process
+                </li>
+                <li>
+                    Conducting and preparing financial analysis, modelling and valuation
+                                                                                                                                          impact of the corporate initiative
+                </li>
+                <li>
+                    Assessing current state and provide actionable recommendations to
+                                                                                                                                          ensure a clear path forward for transforming from a private to public
+                                                                                                                                          company
+                </li>
+                <li>Managing external accountants and other professional advisors</li>
+                <li>
+                    Managing large scale long term complex projects involving multiple
+                                                                                                                                          stakeholders including multilateral institutions
+                </li>
+                <li>Developing project management monitoring and tracking tools</li>
+                <li>Creating and supervising a Project Management Office</li>
+            </ul>
+            <p>&nbsp;</p>
+            <div class="row" id="nav-case-study">
+                <div class="col-md-6">
+                    <div class="box-casestudy">
+                        <p>
+                            <span style="font-size:12px;margin-top: 30px;float:left;">Case Study</span>
+                            <span><img alt="" src="{{base_url()}}/assets/img/logo/logo-transparent.png" style="float: right;" width="80px" /></span>
+                        </p>
+                        {% for rowow in page.data %}
+                            {%if rowow.id == page.id %}
+                                <p style="margin-top:100px;">
+                                    <h3 class="text-green" style="letter-spacing:2px;font-weight: bolder;">{{rowow.header}}</h3>
+                                    <span style="font-size: 12px;">{{rowow.DateofClosing}}</span><br/><br/>
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a href="{{ base_url() }}/EN/services/{{page.service}}#nav-case-study" style="float: left" class="btn btn-outline-green">close</a>
+                                        <h1 class="text-green text-right sc-detail-value" style="margin-top:0px;">{{rowow.Value}}</h1>
+                                        <span class="text-green" style="font-weight:bolder: 16px;float:right;margin-top: -10px;">{{rowow.Saying}}</span>
+                                    </div>
+                                </div>
+                                <dl class="row" style="margin-top: 40px;">
+                                    <dt class="col-sm-4" style="font-size: 12px;color: #06832a;">Type of Case
+                                        <span class="float-right">:</span>
+                                    </dt>
+                                    <dd class="col-sm-8" style="font-size: 12px;color: #06832a;">{{rowow.service}}</dd>
+
+                                    <dt class="col-sm-4" style="font-size: 12px;color: #06832a;">Title
+                                        <span class="float-right">:</span>
+                                    </dt>
+                                    <dd class="col-sm-8" style="font-size: 12px;color: #06832a;">{{rowow.Title}}</dd>
+
+                                    <dt class="col-sm-4" style="font-size: 12px;color: #06832a;">Status
+                                        <span class="float-right">:</span>
+                                    </dt>
+                                    <dd class="col-sm-8" style="font-size: 12px;color: #06832a;">{{ rowow.DateofClosingMark }}</dd>
+
+                                    <dt class="col-sm-4 text-truncate" style="font-size: 12px;color: #06832a;">Value
+                                        <span class="float-right">:</span>
+                                    </dt>
+                                    <dd class="col-sm-8" style="font-size: 12px;color: #06832a;">{{rowow.Value}}
+                                        {{rowow.Saying}}</dd>
+                                </dl>
+                                <p>
+                                    <h5 class="text-green" style="letter-spacing: 3px;margin-top:40px;font-weight: bold">PROJECT OVERVIEW</h5>
+                                    <ul class="list-sm">
+                                        {% for key,po in rowow.ProjectOverview %}
+                                            <li>
+                                                {{po.1}}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <h5 class="text-green" style="letter-spacing: 3px;font-weight: bolder">PROJECT ISSUES</h5>
+                                    <ul class="list-sm">
+                                        {% for key,ci in rowow.ProjectIssues %}
+                                            <li>
+                                                {{ci.2}}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <h5 class="text-green" style="letter-spacing: 3px;font-weight: bold;">WHAT WE DID</h5>
+                                    <ul class="list-sm">
+                                        {% for key,wwd in rowow.WhatWeDid %}
+                                            <li>
+                                                {{wwd.3}}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <h5 class="text-green" style="letter-spacing: 3px;font-weight: bold">PROJECT OUTCOME</h5>
+                                    <ul class="list-sm">
+                                        {% for key,pout in rowow.ProjectOutcome %}
+                                            <li>
+                                                {{pout.4}}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <br/>
+                                    <p class="text-center">
+                                        <a href="{{ base_url() }}/EN/services/{{page.service}}#nav-case-study" class="btn btn-outline-green btn-sm mx-auto ">close</a>
+                                    </p>
+                                </p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        {% for data in page.data %}
+                            {% if data.TypeofCase == page.service %}
+                                {% if data.id != page.id %}
+                                    <div class="card" style="width: 25rem;margin: 12px;">
+                                        <div class="card-body">
+                                            <div class="title-case">
+                                                <span style="font-size:10px;float:left;margin-top:15px;">Case Study</span>
+                                                <span><img alt="" src="{{ base_url() }}/assets/img/logo/logo-landing-transparent-sm.png" style="float: right;margin-top: 0px;" width="70px" /></span>
+                                            </div>
+                                            <h5 class="card-title" style="margin-top:80px;margin-bottom: 0px;">
+                                                {{ data.header }}
+                                            </h5>
+                                            <span style="font-size: 10px;">{{ data.DateofClosing }}</span><br/><br/>
+                                            <p style="margin-top:20px;">
+                                                <span style="margin-top: 40px;">
+                                                    <a href="{{ base_url() }}/EN/services/{{ page.service }}/{{ data.id }}#nav-case-study" class="btn btn-outline-light btn-sm">Read More</a>
+                                                </span>
+                                                <span class="sc-box-value">{{
+                                                data.Value
+                                              }}</span>
+                                            </p>
+                                            <span class="sc-box-value-saying">{{
+                                              data.Saying
+                                            }}</span>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

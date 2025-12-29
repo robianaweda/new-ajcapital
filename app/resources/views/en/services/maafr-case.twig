@@ -1,0 +1,234 @@
+{% extends 'template/layout_en_content.twig' %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <img src="{{ base_url() }}/assets/img/pages/services-ma.jpg" width="100%" alt="" />
+            <p>&nbsp;</p>
+            <h4>Transactions</h4>
+            <p>
+                <strong>M&A Advisory</strong>
+            </p>
+            <p>
+                We support our clients with their M&A needs on both the sell side and buy
+                                                                                                                      side. A key component of both is the valuation and assessment process. As
+                                                                                                                      seasoned professionals, we possess the expertise to identify and evaluate
+                                                                                                                      the key financial and operational drivers. Additionally, we leverage
+                                                                                                                      industry knowledge with experience in audit, legal, regulatory and
+                                                                                                                      investor communities. This ensures our clients have the right information
+                                                                                                                      to clearly assess their decisions at various points during the process.
+            </p>
+            <p>Our sell side services include:</p>
+            <ul>
+                <li>
+                    Pre-sale due diligence to assess risks and market potential to
+                                                                                                                                                    best position and prepare the company for the sale process
+                </li>
+                <li>
+                    Assessing the best way in which to structure the sale to maximize
+                                                                                                                                                    proceeds, manage tax exposures and minimize counter party risks
+                </li>
+                <li>
+                    Assessing value considerations and the implications to the capital
+                                                                                                                                                    structure
+                </li>
+                <li>
+                    Active and early input into the identification of key deal issues that
+                                                                                                                                                    feed into the transaction documents, including the sale and purchase
+                                                                                                                                                    agreements, shareholders agreements, transition services agreements and
+                                                                                                                                                    supply agreements
+                </li>
+                <li>
+                    Managing the disclosure of sensitive corporate data and preparation of
+                                                                                                                                                    data rooms
+                </li>
+                <li>
+                    Negotiating key terms and covenants with potential buyers, as well as
+                                                                                                                                                    managing the execution and closing process
+                </li>
+                <li>Organizing and coordinating supporting professionals</li>
+            </ul>
+            <p>Our buy-side services include:</p>
+            <ul>
+                <li>
+                    Buy-side financial and commercial due diligence to assess risks and
+                                                                                                                                                    value potential to best position and prepare the company for the
+                                                                                                                                                    negotiation process and the impact of the acquisition
+                </li>
+                <li>
+                    Assessing the best way in which to structure and fund the acquisition,
+                                                                                                                                                    manage tax exposures and minimize counter party risks
+                </li>
+                <li>
+                    Preparing projections and assessing the value of the transaction
+                                                                                                                                                    relative to the company’s market valuation and the impact on its capital
+                                                                                                                                                    structure
+                </li>
+                <li>
+                    Active and early input into the identification of key deal issues that
+                                                                                                                                                    feed into the transaction documents, including the sale and purchase
+                                                                                                                                                    agreements, shareholders agreements, transition services agreements and
+                                                                                                                                                    supply agreements
+                </li>
+                <li>Collecting, interpreting and assessing sensitive corporate data</li>
+                <li>
+                    Negotiating key terms and covenants with potential buyers, as well as
+                                                                                                                                                    managing the execution and closing process
+                </li>
+                <li>Organizing and coordinating supporting professionals</li>
+                <li>
+                    Supporting and dealing with the regulators and the stock exchange as
+                                                                                                                                                    necessary (for public companies)
+                </li>
+            </ul>
+            <p>
+                <strong>Fund Raising</strong>
+            </p>
+            <p>
+                We assist our clients evaluate their funding needs, identify the right
+                                                                                                                      sources and raise the necessary funds throughout the capital structure,
+                                                                                                                      ranging from working capital funding and senior secured term debt to
+                                                                                                                      subordinated or unsecured debt and equity capital.
+            </p>
+            <p>Our services include:</p>
+            <ul>
+                <li>Providing expert advice on capital structuring</li>
+                <li>
+                    Raising funds from commercial banks, investment banks, private equity
+                                                                                                                                                    funds, alternative capital providers or strategic investors
+                </li>
+                <li>
+                    Creating information circulars and other marketing materials to properly
+                                                                                                                                                    position your company and create the right level of interest
+                </li>
+                <li>
+                    Negotiating key terms and covenants with potential funders, as well as
+                                                                                                                                                    negotiating inter-creditor agreements
+                </li>
+                <li>
+                    Managing the execution and closing process to secure financing and
+                                                                                                                                                    maximize future value
+                </li>
+            </ul>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <div class="row" id="nav-case-study">
+        <div class="col-md-6">
+            <div class="box-casestudy">
+                <p>
+                    <span style="font-size:12px;margin-top: 30px;float:left;">Case Study</span>
+                    <span><img alt="" src="{{base_url()}}/assets/img/logo/logo-transparent.png" style="float: right;" width="80px" /></span>
+                </p>
+                {% for rowow in page.data %}
+                    {%if rowow.id == page.id %}
+                        <p style="margin-top:100px;">
+                            <h3 class="text-green" style="letter-spacing:2px;font-weight: bolder;">{{rowow.header}}</h3>
+                            <span style="font-size: 12px;">{{rowow.DateofClosing}}</span><br/><br/>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="{{ base_url() }}/EN/services/{{page.service}}#nav-case-study" style="float: left" class="btn btn-outline-green">close</a>
+                                <h1 class="text-green text-right sc-detail-value" style="margin-top:0px;">{{rowow.Value}}</h1>
+                                <span class="text-green" style="font-weight:bolder: 16px;float:right;margin-top: -10px;">{{rowow.Saying}}</span>
+                            </div>
+                        </div>
+                        <dl class="row" style="margin-top: 40px;">
+                            <dt class="col-sm-4" style="font-size: 12px;color: #06832a;">Type of Case
+                                <span class="float-right">:</span>
+                            </dt>
+                            <dd class="col-sm-8" style="font-size: 12px;color: #06832a;">{{rowow.service}}</dd>
+
+                            <dt class="col-sm-4" style="font-size: 12px;color: #06832a;">Title
+                                <span class="float-right">:</span>
+                            </dt>
+                            <dd class="col-sm-8" style="font-size: 12px;color: #06832a;">{{rowow.Title}}</dd>
+
+                            <dt class="col-sm-4" style="font-size: 12px;color: #06832a;">Status
+                                <span class="float-right">:</span>
+                            </dt>
+                            <dd class="col-sm-8" style="font-size: 12px;color: #06832a;">{{ rowow.DateofClosingMark }}</dd>
+
+                            <dt class="col-sm-4 text-truncate" style="font-size: 12px;color: #06832a;">Value
+                                <span class="float-right">:</span>
+                            </dt>
+                            <dd class="col-sm-8" style="font-size: 12px;color: #06832a;">{{rowow.Value}}
+                                {{rowow.Saying}}</dd>
+                        </dl>
+                        <p>
+                            <h5 class="text-green" style="letter-spacing: 3px;margin-top:40px;font-weight: bold">PROJECT OVERVIEW</h5>
+                            <ul class="list-sm">
+                                {% for key,po in rowow.ProjectOverview %}
+                                    <li>
+                                        {{po.1}}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                            <h5 class="text-green" style="letter-spacing: 3px;font-weight: bolder">PROJECT ISSUES</h5>
+                            <ul class="list-sm">
+                                {% for key,ci in rowow.ProjectIssues %}
+                                    <li>
+                                        {{ci.2}}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                            <h5 class="text-green" style="letter-spacing: 3px;font-weight: bold;">WHAT WE DID</h5>
+                            <ul class="list-sm">
+                                {% for key,wwd in rowow.WhatWeDid %}
+                                    <li>
+                                        {{wwd.3}}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                            <h5 class="text-green" style="letter-spacing: 3px;font-weight: bold">PROJECT OUTCOME</h5>
+                            <ul class="list-sm">
+                                {% for key,pout in rowow.ProjectOutcome %}
+                                    <li>
+                                        {{pout.4}}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                            <br/>
+                            <p class="text-center">
+                                <a href="{{ base_url() }}/EN/services/{{page.service}}#nav-case-study" class="btn btn-outline-green btn-sm mx-auto ">close</a>
+                            </p>
+                        </p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                {% for data in page.data %}
+                    {% if data.TypeofCase == page.service %}
+                        {% if data.id != page.id %}
+                            <div class="card" style="width: 25rem;margin: 12px;">
+                                <div class="card-body">
+                                    <div class="title-case">
+                                        <span style="font-size:10px;float:left;margin-top:15px;">Case Study</span>
+                                        <span><img alt="" src="{{ base_url() }}/assets/img/logo/logo-landing-transparent-sm.png" style="float: right;margin-top: 0px;" width="70px" /></span>
+                                    </div>
+                                    <h5 class="card-title" style="margin-top:80px;margin-bottom: 0px;">
+                                        {{ data.header }}
+                                    </h5>
+                                    <span style="font-size: 10px;">{{ data.DateofClosing }}</span><br/><br/>
+                                    <p style="margin-top:20px;">
+                                        <span style="margin-top: 40px;">
+                                            <a href="{{ base_url() }}/EN/services/{{ page.service }}/{{ data.id }}#nav-case-study" class="btn btn-outline-light btn-sm">Read More</a>
+                                        </span>
+                                        <span class="sc-box-value">{{
+                                                data.Value
+                                              }}</span>
+                                    </p>
+                                    <span class="sc-box-value-saying">{{
+                                              data.Saying
+                                            }}</span>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <p class="pages-content">&nbsp;</p>
+{% endblock %}

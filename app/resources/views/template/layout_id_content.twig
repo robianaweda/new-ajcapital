@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142618670-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-142618670-1');
+        </script>
+
+        <meta charset="utf-8"/>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta
+        content="width=device-width, initial-scale=1" name="viewport"/>
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="{{ page.description }}"/>
+        <meta content="umasuksma.com" name="author"/>
+        <link href="{{ base_url() }}/assets/img/favicon.ico" rel="icon"/>
+        <title>AJCapital Advisory |
+            {{ page.title }}</title>
+        <!-- Bootstrap core CSS -->
+        <link
+        href="{{ base_url() }}/assets/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Custom styles for this template -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="{{ base_url() }}/assets/css/lang-style.css" rel="stylesheet"/>
+        <link rel="icon" type="image/png" href="{{ base_url() }}/assets/img/bkgr/green_leaf_logo.png"/>
+    </head>
+    <body class="bg">
+        {% include 'id/navatas.twig' %}
+        <section id="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        {% include 'id/navsamping.twig' %}
+                    </div>
+                    <div class="col-md-9"> {% block content %}{% endblock %}
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="{{ base_url() }}/assets/img/bkgr/green_leaf_logo.png" width="40px;" class="img-small-logo-center"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include 'template/footer_id.twig' %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="{{ base_url() }}/assets/js/skrip.js"></script>
+        <script src="{{ base_url() }}/assets/js/bootstrap.min.js"></script>
+        <script src="{{ base_url() }}/assets/js/app.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                let selectedTab = window.location.hash;
+                $('.nav-link[href="' + selectedTab + '"]').trigger("click");
+            });
+        </script>
+    </body>
+</html>

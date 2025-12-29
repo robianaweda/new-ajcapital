@@ -1,0 +1,87 @@
+{% extends 'template/layout_en_content.twig' %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <div class="row">
+                    <div class="col-md-4 contact-us-border">
+                        <h5>INDONESIA OFFICE</h5>
+                        <h6>PT AJCapital Advisory</h6>
+                        <address style="font-size: 12px;">
+                            88@Kasablanka Office Tower A, 22nd Floor
+                            <br/>
+                            Jl Casablanca Raya Kav. 88
+                            <br/>
+                            Jakarta 12870
+                        </address>
+                        <address style="font-size: 12px;">
+                            <i class="fa fa-envelope"></i>
+                            Email : info@ajcapital.co.id<br/>
+                            <i class="fa fa-phone"></i>
+                            Phone : +62 21 295 68699<br/>
+                        </address>
+                        {# SOFT HIDE - Singapore Office hidden but can be restored if needed
+                        <p>&nbsp;</p>
+                        <h5>SINGAPORE OFFICE</h5>
+                        <h6>AJCapital Advisory Pte Limited</h6>
+                        <address style="font-size: 12px;">
+                            Level 42, Six Battery Road
+                            <br/>
+                            Singapore 049909
+                        </address>
+                        <address style="font-size: 12px;">
+                            <i class="fa fa-envelope"></i>
+                            Email : info@ajcapital.asia<br/>
+                            <i class="fa fa-phone"></i>
+                            Phone : +65 6232 2783
+                        </address>
+                        #}
+                    </div>
+                    <div class="col-md-8">
+                        <h4 style="letter-spacing: 2px;color: #06832a">Talk To Us</h4>
+                        <p>
+                            Every need is unique, and we would like to understand yours.
+                        </p>
+                        {% if page.info %}
+                            <div class="alert alert-success" role="alert">
+                                Thank you for your inquiry. We will contact you shortly.
+                            </div>
+                        {% endif %}
+                        <form method="post" action="{{ base_url() }}/send-contact">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="name">Name</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="name" name="name" type="text" value="" autocomplete="off" {% if page.info %} disabled {% endif %}/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="email">Email</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="email" name="email" placeholder="" type="text" autocomplete="off" {% if page.info %} disabled {% endif %}/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="phone">Phone
+                                </label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="phone" name="phone" placeholder="" type="tel" autocomplete="off" {% if page.info %} disabled {% endif %}/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="subject">Message</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" id="subject" name="subject" rows="4" autocomplete="off" {% if page.info %} disabled {% endif %}></textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-success" style="float:right" type="submit">
+                                Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

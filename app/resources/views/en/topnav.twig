@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <div class="lang-bar">
+        <a class="lang-link active" href="{{ base_url }}/EN">EN</a>
+        |
+        <a class="lang-link" href="{{ base_url }}/ID">ID</a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="{{ base_url }}/EN">
+            <img src="{{ base_url() }}/assets/img/logo/logo-transparent.png" width="150px" alt="" />
+        </a>
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item {% if page.uri == 'EN' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/EN">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item {% if page.uri == 'aboutus' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/EN/aboutus">About Us</a>
+                </li>
+                <li class="nav-item {% if page.uri == 'ourleadership' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/EN/aboutus/ourleadership">Our Leadership</a>
+                </li>
+                <li class="nav-item {% if page.uri == 'services' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/EN/services">Services</a>
+                </li>
+                <li class="nav-item {% if page.uri == 'deals' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/EN/deals">Deals</a>
+                </li>
+                <li class="nav-item {% if page.uri == 'eventsandconferences' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/EN/eventsandconferences">Events & Conferences</a>
+                </li>
+                <li class="nav-item {% if page.uri == 'careers' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/EN/careers">Careers</a>
+                </li>
+                <li class="nav-item {% if page.uri == 'contactus' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/EN/contactus">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            <hr class="top-bar" />
+        </div>
+    </div>
+</div>

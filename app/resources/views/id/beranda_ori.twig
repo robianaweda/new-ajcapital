@@ -1,0 +1,179 @@
+{% extends 'template/layout_id_home.twig' %}
+{% block content %}
+<header class="slider-wrapper" style="margin-top:30px;">
+        <video
+          playsinline="playsinline"
+          autoplay="autoplay"
+          muted="muted"
+          loop="loop"
+        >
+          <source
+            src="{{ base_url() }}/assets/video/Ajcapital_bw.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="slider">
+            <div class="items item-1">
+              <h1 class="content-slider">Creating Value in Asia</h1>
+              <h6>Serviced from Our Offices in Strategic Asian Geographies</h6>
+            </div>
+            <div class="items item-2">
+              <h1 class="content-slider">Providing Guidance and Leadership</h1>
+              <h6>in Difficult, Complex and Organization Defining Situations </h6>
+            </div>
+            <div class="items item-3">
+              <h1 class="content-slider">Supporting Our Clients in Development</h1>
+              <h6>Helping them Realize their Visions through the Execution and Implementation of Initiatives and Transactions</h6>
+            </div>
+            <div class="items item-4">
+                <h1 class="content-slider">Bringing Intellectual Integrity and Rigor</h1>
+                <h6>to Enhance Research and Technical Execution, Supported by a Deep Business Network</h6>
+            </div>
+            <div class="items item-5">
+                <h1 class="content-slider">Investing in People</h1>
+                <h6>We Challenge and Empower Our People so they can Better Support Our Clients</h6>
+              </div>
+        </div>
+      </header>
+      <div class="container-fluid">
+        <section id="services">
+          <h2 class="text-center whatwedo">WHAT WE DO</h2>
+          <br />
+          <div class="card-deck">
+            <div class="card">
+                <img src="{{base_url()}}/assets/img/pages/card-debrestruktur.jpg" class="card-img" alt="...">
+                <div class="overlay-div"></div>
+                <div class="card-img-overlay">
+              <div class="card-block">
+                <h4 class="card-title services-head-sm">Debtor</h4>
+                <p class="card-text text-sm">
+                  Restructurings & Turnaround Management
+                </p>
+                <p class="card-text services-end">
+                  <a
+                    class="btn btn-outline-light btn-light btn-sm"
+                    href="{{
+                      base_url()
+                    }}/EN/services/debt-restructurings-and-turnaround-management"
+                    >Read More</a
+                  >
+                </p>
+              </div>
+              </div>
+            </div>
+            <div class="card">
+                <img src="{{base_url()}}/assets/img/pages/csa-card.jpg" class="card-img" alt="...">
+                <div class="overlay-div"></div>
+                <div class="card-img-overlay">
+              <div class="card-block">
+                <h4 class="card-title services-head-sm">Creditor</h4>
+                <p class="card-text text-sm">
+                  Creditor Support & Advisory
+                </p>
+                <p class="card-text services-end">
+                  <a
+                    class="btn btn-outline-light btn-light btn-sm"
+                    href="{{ base_url() }}/EN/services/creditor-support-and-advisory"
+                    >Read More</a
+                  >
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="card">
+                <img src="{{base_url()}}/assets/img/pages/card-fin.jpg" class="card-img" alt="...">
+                <div class="overlay-div"></div>
+                <div class="card-img-overlay">
+              <div class="card-block fils">
+                <h4 class="card-title services-head-sm">Forensic</h4>
+                <p class="card-text text-sm">
+                  Financial Investigations and Litigation Support
+                </p>
+                <p class="card-text services-end">
+                  <a
+                    class="btn btn-outline-light btn-light btn-sm"
+                    href="{{
+                      base_url()
+                    }}/EN/services/financial-investigations-and-litigation-support"
+                    >Read More</a
+                  >
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="card lrca">
+                <img src="{{base_url()}}/assets/img/pages/card-liquidation.jpg" class="card-img" alt="...">
+                <div class="overlay-div"></div>
+                <div class="card-img-overlay">
+              <div class="card-block">
+                <h4 class="card-title services-head-sm">Insolvency</h4>
+                <p class="card-text text-sm">
+                  Liquidation, Receivership and Court Appointments
+                </p>
+                <p class=" card-text services-end">
+                  <a
+                    class="btn btn-outline-light btn-light btn-sm"
+                    href="{{
+                      base_url()
+                    }}/EN/services/liquidation-receivership-and-court-appointments"
+                    >Read More</a
+                  >
+                </p>
+              </div>
+                </div>
+            </div>
+            <div class="card maafr">
+                <img src="{{base_url()}}/assets/img/pages/card-ma.jpg" class="card-img" alt="...">
+                <div class="overlay-div"></div>
+                <div class="card-img-overlay">
+              <div class="card-block">
+                <h4 class="card-title services-head-sm">Transactions</h4>
+                <p class="card-text text-sm">
+                  M&A Advisory and Fund Raising
+                </p>
+                <p class="card-text services-end">
+                  <a
+                    class="btn btn-outline-light btn-light btn-sm"
+                    href="{{ base_url() }}/EN/services/ma-advisory-and-fundraising"
+                    >Read More</a
+                  >
+                </p>
+              </div>
+                </div>
+            </div>
+            <div class="card cims">
+                <img src="{{base_url()}}/assets/img/pages/card-cims.jpg" class="card-img" alt="...">
+                <div class="overlay-div"></div>
+                <div class="card-img-overlay">
+                <div class="card-block">
+                <h4 class="card-title services-head-sm">Corporate</h4>
+                <p class="card-text text-sm">
+                  Corporate Initiative Management and Support
+                </p>
+                <p class="card-text services-end">
+                  <a
+                    class="btn btn-outline-light btn-light btn-sm"
+                    href="{{
+                      base_url()
+                    }}/EN/services/corporate-initiative-management-and-support"
+                    >Read More</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+<section id="tag-line">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h3 class="text-white text-center pages-content" style="letter-spacing:4px;">AJCapital Advisory</h3>
+                <p class="text-white text-center">
+                    Kami adalah sebuah Firma Penasihat Perusahaan butik yang berfokus kepada situasi situasi dan transaksi yang kompleks, baik domestik maupun lintas batas, yang membutuhkan cara unik kami dalam pemecahan masalah. Kami membawa keahlian dan pengalaman, jaringan dan hubungan yang mendalam, keterampilan negosiasi multikultural, yang dikemas dengan pola pemikiran yang strategis dan pengelolaan masalah yang jernih.</p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </section>
+{% endblock %}

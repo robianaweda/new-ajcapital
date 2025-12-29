@@ -1,0 +1,714 @@
+[
+  {
+    "id": "1",
+    "header": "Proyek TPPI",
+    "Title": "PKPU dan Implementasi TPPI",
+    "TypeofCase": "restrukturisasi-dan-turnaround-management",
+    "service": "Restrukturisasi dan <i>Turnaround Management</i>",
+    "DateofClosing": "Agustus 2014",
+    "DateofClosingMark": "Selesai Desember 2012 (PKPU) & Agustus 2014 (Implementasi)",
+    "Value": "USD 1,9",
+    "Saying": "miliar",
+    "ProjectOverview": [
+      {
+        "1": "Serangkaian interupsi dan gangguan dari pihak luar menghambat PT Trans Pacific Petrochemical Indotama (“TPPI”) dalam memenuhi kewajiban pembayaran utang. Setelah gagal melakukan diskusi dengan kreditornya terkait upaya restrukturisasi utang, dua kreditor mengajukan permohonan PKPU ke pengadilan niaga. Mayoritas kreditor adalah BUMN, <i>distressed debt funds</i>, pengelola investasi, pedagang minyak, dan kontraktor. "
+      },
+      {
+        "1": "Saat kami terlibat, TPPI berada dalam pengawasan harian <i>(day-to-day control)</i> Pertamina dan PT Perusahaan Pengelola Aset (Persero) (“PPA”). PPA merupakan pemegang saham mayoritas sedangkan Pertamina adalah pemegang saham minoritas. Pemegang saham minoritas lainnya meliputi investor strategis dan kontraktor asing. "
+      },
+      {
+        "1": "Mandat kami adalah: (1) membantu perusahaan selama proses PKPU mulai dari verifikasi utang kreditor sampai dengan negosiasi persyaratan restrukturisasi dan diakhiri dengan mengelola pemungutan suara dan homologasi Perjanjian Perdamaian yang disetujui pengadilan; (2) Implementasi Perjanjian Perdamaian yang telah disetujui pasca-PKPU."
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Berbagai masalah operasional dan gangguan lainnya yang berkepanjangan menghabiskan kas perusahaan yang pada akhirnya membuat kemampuan operasional perusahaan di masa mendatang diragukan. Selain itu, terlihat jelas bahwa Klien tidak memiliki kemampuan untuk membayar kembali utangnya. "
+      },
+      {
+        "2": "Kreditor sebagai pemangku kepentingan terdiri dari pihak-pihak dengan kepentingan berbeda-beda, sehingga merumitkan proses negosiasi. "
+      },
+      {
+        "2": "Struktur utang sebelumnya yang kompleks, bertahap, dan saling terkait satu sama lain mengharuskan persyaratan restrukturisasi yang diajukan tetap adil untuk masing-masing kreditor relatif terhadap kreditor lainnya."
+      },
+      {
+        "2": "Kegagalan dalam mengimplementasikan persyaratan dalam Perjanjian Perdamaian akan menempatkan Klien pada risiko pailit."
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Menyiapkan sebuah proyeksi keuangan untuk mensimulasikan arus kas bersih, menilai kebutuhan kas yang kritikal dan mendesak, menilai modal kerja dan belanja modal Klien. Kami menggabungkan ketiga hal tersebut ke dalam Rencana Perdamaian yang diajukan dimana Klien dapat (1) menambah kas jangka pendek melalui pinjaman sementara dan/atau <i>tolling operation</i>; (2) menambah pendanaan prioritas untuk modal kerja dan belanja modal dengan hak jaminan prioritas."
+      },
+      {
+        "3": "Meredakan ketegangan para kreditor dengan menginisiasi, mengorganisir dan memfasilitasi diskusi antar berbagai pihak. "
+      },
+      {
+        "3": "Mewakili Klien dalam proses negosiasi dengan para kreditor utama untuk mengamankan hasil pemungutan suara  pada sidang PKPU dan menyetujui skema restrukturisasi yang secara komersial dapat dilakukan."
+      },
+      {
+        "3": "Bekerja bersama-sama dengan konsultan hukum yang ditunjuk oleh Klien untuk membantu klien melewati proses PKPU dengan sukses."
+      },
+      {
+        "3": "Bersama dengan Klien dan konsultan hukumnya, kami merancang dokumen implementasi yang terdiri atas tiga jenis surat utang, dokumen jaminan, perjanjian keagenan, perjanjian penyertaan modal dan perubahan anggaran dasar."
+      },
+      {
+        "3": "Membantu Klien dalam menegosiasikan perjanjian <i>tolling</i> untuk memenuhi kebutuhan kas jangka pendek."
+      }
+    ],
+    "ProjectOutcome": [
+      {
+        "4": "Rencana Perdamaian disetujui oleh para kreditor dan diberikan kepada pengadilan agar status PKPU klien dicabut. "
+      },
+      {
+        "4": "Para kreditor sepakat untuk menghapus utang Klien sebesar USD 330 juta."
+      },
+      {
+        "4": "Restrukturisasi atas utang berjaminan dengan nominal USD 888 juta menjadi Euroclear Bonds dengan tiga jenis surat utang yang jatuh tempo sampai dengan delapan belas tahun."
+      },
+      {
+        "4": "Konversi utang sebesar USD 636 juta menjadi ekuitas baru yang diterbitkan."
+      },
+      {
+        "4": "Perubahan anggaran dasar menjadi seperti yang dicerminkan dalam persyaratan Perjanjian Perdamaian."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "header": "Proyek Restrukturisasi Syariah",
+    "TypeofCase": "restrukturisasi-dan-turnaround-management",
+    "service": "Restrukturisasi dan <i>Turnaround Management</i>",
+    "Title": "Restrukturisasi Sukarela Utang Sindikasi Konvensional dan Syariah",
+    "DateofClosing": "Desember 2017",
+    "DateofClosingMark": "Selesai Desember 2017",
+    "Value": "USD 91,25",
+    "Saying": "juta",
+
+    "ProjectOverview": [
+      {
+        "1": "Perusahaan merupakan perusahaan pemrosesan gas dengan kapasitas sebesar 140 MMSCFD yang juga menyediakan layanan kompresi gas alam untuk Pembangkit Listrik Tenaga Gas 920 MW milik PJB. Pendapatan perusahaan sangat bergantung kepada harga kontrak global Saudi Aramco (CP Aramco)."
+      },
+      {
+        "1": "Penurunan tajam atas harga CP Aramco antara tahun 2014 – 2015 menyebabkan perusahaan beroperasi dibawah nilai ekonomisnya sehingga memaksa perusahaan untuk menghentikan pabrik pemrosesan gasnya."
+      },
+      {
+        "1": "Perusahaan memiliki utang sebesar USD 91,25 juta dari bank sindikasi yang terdiri dari bank asing asal Eropa, dua bank konvensional lokal, dan dua bank syariah lokal."
+      },
+      {
+        "1": "Pada awal tahun 2017, AJCapital diperkenalkan oleh bank sindikasi kepada Perusahaan untuk merestrukturisasi utang konvensional dan syariah yang gagal bayar."
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Bank sindikasi dan Perusahaan menyelesaikan restrukturisasi utang pertamanya pada tahun 2015. Akan tetapi, restrukturisasi tersebut gagal dalam waktu kurang dari dua tahun. Kegagalan ini terutama disebabkan oleh kurangnya pemahaman tentang volatilitas harga CP Aramco dan ekspektasi berlebih Perusahaan atas volume gas yang akan dibeli pelanggan."
+      },
+      {
+        "2": "Kurangnya kepercayaan oleh bank sindikasi kepada Perusahaan menyebabkan proses negosiasi yang sulit bagi para pihak. Selama proses negosiasi, pemberi pinjaman mayoritas memutuskan untuk mengunci rekening operasional perusahaan sehingga menganggu kemampuan perusahaan untuk membayar biaya operasionalnya."
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Fase pertama dalam penugasan kami adalah untuk membuat laporan Tinjauan Bisnis Independen kepada bank sindikasi. Sorotan utama dari laporan kami meliputi: (i) kinerja historis dan posisi keuangan Perusahaan; (ii) jumlah kas tersedia untuk pembayaran utang untuk sepuluh tahun ke depan dengan berbagai sensitivitas harga CP Aramco dan volume produksi; (iii) potensi tingkat pemulihan atas berbagai opsi-opsi yang tersedia untuk bank sindikasi; (iv) rekomendasi bisnis untuk mencapai keberhasilan dalam pemulihan Perusahaan; (v) prinsip/konsep restrukturisasi utang untuk bahan pertimbangan para pihak. "
+      },
+      {
+        "3": "Kami membuat model regresi untuk memproyeksikan harga CP Aramco yang diterima dengan baik oleh bank sindikasi dan Perusahaan sebagai salah satu faktor utama pendapatan dalam proyeksi keuangan."
+      },
+      {
+        "3": "Kami senantiasa meredakan ketegangan di antara para pihak dengan memberikan solusi yang dapat membawa semua pihak kembali ke proses negosiasi, termasuk diantaranya memberikan solusi untuk membuka kembali rekening operasional Perusahaan sehingga mencegah perusahaan untuk menghentikan pabrik pemrosesan gasnya."
+      },
+      {
+        "3": "Kami mengusulkan rencana restrukturisasi berkelanjutan yang mencakup sebuah mekanisme <i>cash waterfall</i> dan dengan pertimbangan volatilitas harga CP Aramco. Hal ini memungkinkan Perusahaan untuk melakukan percepatan pembayaran pokok dan pada saat yang sama mempertahankan kemampuan Perusahaan untuk membayar komitmen minimum atas bunga dan pokok utang."
+      },
+      {
+        "3": "Kami memberikan saran dan memantau proses negosiasi ketentuan-ketentuan komersial antara bank sindikasi dan Perusahaan, termasuk memberikan solusi untuk mengakomodasi kebutuhan dan/atau persyaratan yang diamanatkan dalam hukum syariah. "
+      },
+      {
+        "3": "Kami mengelola dan mengoordinasikan semua pihak (termasuk penasihat hukum dan notaris) dalam melakukan eksekusi dokumen restrukturisasi yang mencakup <i>term sheet</i> konvensional dan syariah serta perjanjian fasilitas, perjanjian pengelolaan rekening, perjanjian antar kreditor dan dokumen-dokumen jaminan. "
+      }
+    ],
+    "ProjectOutcome": [
+      {
+        "4": "Seluruh pihak menandatangani perjanjian restrukturisasi dengan tenor sepuluh tahun serta mekanisme  percepatan pembayaran/<i>cash sweep</i>."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "header": "Proyek PKPU Namasindo Group",
+    "TypeofCase": "restrukturisasi-dan-turnaround-management",
+    "service": "Restrukturisasi Utang",
+    "Title": "Grup Namasindo Restrukturisasi Utang via PKPU ",
+    "DateofClosing": "Juli 2018",
+    "DateofClosingMark": "Selesai Juli 2018",
+    "Value": "IDR 5,2",
+    "Saying": "triliun",
+
+    "ProjectOverview": [
+      {
+        "1": "Grup Namasindo adalah produsen botol plastik terbesar di Indonesia yang bergerak dalam produksi botol galon, botol plastik, gelas plastik, dan penutup botol galon untuk industri air minum dalam kemasan."
+      },
+      {
+        "1": "Proporsi utang yang terlalu besar dalam stuktur modal dan keputusan investasi yang tidak tepat di masa lalu telah membuat likuiditas Grup untuk membayar utangnya menurun secara signifikan. Pemegang utang mayoritas terdiri dari bank BUMN, bank swasta, serta perusahaan pengelola <i>distressed debt funds</i>."
+      },
+      {
+        "1": "Pemasok-pemasok Grup mengajukan tiga kasus PKPU di Pengadilan Niaga Jakarta. AJCapital kemudian ditunjuk oleh pengadilan sebagai penasihat keuangan independen untuk memberikan proposal rencana restrukturisasi utang yang dapat dijalankan dan rencana pemulihan kepada Grup dan para kreditornya."
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Kebutuhan modal kerja yang besar dan volatilitas biaya komponen bahan baku, dikombinasikan dengan piutang tak tertagih yang signifikan telah menghambat likuiditas dan modal kerja Grup."
+      },
+      {
+        "2": "Para kreditor dengan kepentingan yang berbeda, antara bank BUMN dengan <i>distressed debt fund</i>, membuat proses negosiasi semakin sulit dan kompleks."
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Kami melakukan uji tuntas <i>(due diligence)</i> pada pinjaman dan jaminan yang ada serta terhadap laporan keuangan perusahaan untuk menilai posisi keuangan dan kinerja perusahaan. "
+      },
+      {
+        "3": "Merumuskan dan merekomendasikan pilihan opsi-opsi pemulihan yang tersedia bagi para kreditor. Perkerjaan yang telah kami lakukan termasuk: (i) pengujian <i>stress-test</i> atas opsi-opsi pemulihan yang ada; (ii) analisis skenario atas berbagai alternatif pemulihan yang ada; (iii) analisis sensivitas pada nilai pemulihan Grup; dan (iv) pertimbangan strategi penyelesaian, usulan nilai, dan keekonomian secara keseluruhan kepada kreditor berjaminan, kreditor tidak berjaminan dan para pemegang saham."
+      },
+      {
+        "3": "Kami mengkaji model bisnis, keuangan, dan faktor-faktor utama perusahaan untuk membuat proyeksi keuangan yang akan menjadi dasar dalam perumusan proposal restrukturisasi. "
+      },
+      {
+        "3": "Kami memastikan bahwa ketentuan pengendalian dan tatakelola tertentu diusulkan, dinegosiasikan dan juga dimasukkan ke dokumentasi pasca implementasi yang relevan."
+      },
+      {
+        "3": "Melakukan koordinasi/manajemen negosiasi selama proses PKPU antara para kreditor dan perusahaan."
+      },
+      {
+        "3": "Bersama dengan penasihat hukum Grup, kami membuat Perjanjian Perdamaian yang telah disepakati oleh para kreditor dalam pengadilan."
+      }
+    ],
+    "ProjectOutcome": [
+      {
+        "4": "Perjanjian Perdamaian untuk merestrukturisasi utang sebesar IDR 5,2 triliun telah diterima dan disepakati oleh para kreditor Grup dan disahkan oleh Pengadilan Niaga Jakarta."
+      },
+      {
+        "4": "Para kreditor menyetujui untuk menerima opsi untuk melakukan konversi sampai dengan IDR 1,8 triliun menjadi bagian ekuitas Grup."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "header": "Proyek LPG <i>Monitoring Accountant</i>",
+    "TypeofCase": "pendukung-dan-penasihat-kreditor",
+    "service": "Pendukung dan Penasihat Kreditor",
+    "Title": "<i>Monitoring Accountant</i> untuk Perusahaan Pemrosesan Gas",
+    "DateofClosing": "Sedang Berjalan",
+    "DateofClosingMark": "Proyek berjalan sejak Desember 2017",
+    "Value": "USD 91",
+    "Saying": "juta",
+
+    "ProjectOverview": [
+      {
+        "1": "Perusahaan merupakan pemain dalam jasa pemrosesan gas dengan kapasitas sebesar 140 MMSCFD yang juga menyediakan layanan kompresi gas alam untuk Pembangkit Listrik Tenaga Gas 920 MW milik PJB. Pada bulan Desember 2017, AJCapital berhasil memimpin penyelesaian restrukturisasi atas utang sindikasi sebesar USD 91,25 juta yang terdiri atas fasilitas utang konvensional dan syariah."
+      },
+      {
+        "1": "Syarat-syarat dan ketentuan-kententuan baru yang telah disepakati dalam <i>term sheets</i> mencakup pemantauan bulanan atas arus kas Perusahaan dan perhitungan <i>cash waterfall</i> untuk keperluan percepatan pembayaran/<i>cash sweep</i>"
+      },
+      {
+        "1": "Para pemberi pinjaman dan Perusahaan sepakat untuk menunjuk AJCapital sebagai <i>Monitoring Accountant</i> untuk membantu dalam proses implementasi rencana restrukturisasi, memantau arus kas Perusahaan setiap bulannya, dan memastikan kepatuhan terhadap mekanisme <i>cash waterfall</i>."
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Perusahaan telah gagal dalam restukturisasi utang sebelumnya, sehingga bank menjadi sangat berhati-hati dan ingin memastikan adanya kontrol dan pemantauan dengan mekanisme <i>cash waterfall</i> yang ketat dan kompleks."
+      },
+      {
+        "2": "Sebagai bagian dari rencana restrukturisasi utang dengan bank, Perusahaan juga membuat perjanjian terpisah untuk melunasi utang usahanya terhadap beberapa pemasok utama. Dengan berbagai permintaan pembayaran dari para pemasok utama ini di masa lampau, bank ingin memastikan bahwa pembayaran ini dijalankan sesuai dengan ketentuan yang telah disetujui untuk mencegah segala tindakan hukum dari para pemasok utama."
+      },
+      {
+        "2": "Sejumlah pembayaran terhadap bank dan para pemasok utama bergantung pada harga CP Aramco sehingga membutuhkan pemantauan dan kalkulasi secara bulanan."
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Menciptakan kerangka pemantauan kas secara bulanan untuk memantau penerimaan dan pengeluaran kas Perusahaan."
+      },
+      {
+        "3": "Membantu agen fasilitas yang ditunjuk bank dalam menjalankan mekanisme <i>cash waterfall</i>, termasuk tapi tidak terbatas pada perhitungan (i) pembayaran bunga & pokok bulanan yang terjadwal, (ii) alokasi pada rekening cadangan untuk penyelesaian utang, (iii) alokasi pada rekening <i>cash sweep</i> dan menjalankan percepatan pembayaran, (iv) alokasi untuk kebutuhan operasional dan pemeliharaan Perusahaan, dan (v) alokasi pada akun cadangan operasional, jika ada."
+      },
+      {
+        "3": "Merekonsiliasi seluruh rekening bank Perusahaan yang dipantau untuk memastikan kepatuhan terhadap ketentuan-ketentuan yang telah disepakati secara bulanan."
+      },
+      {
+        "3": "Memperoleh dokumen-dokumen pendukung untuk pengeluaran-pengeluaran kas Perusahaan."
+      },
+      {
+        "3": "Memastikan komitmen pembayaran kepada para pemasok utama dijalankan sesuai dengan ketentuan-ketentuan yang disepakati."
+      },
+      { "3": "Mengemukakan setiap penemuan kepada bank dan agen fasilitas. " }
+    ],
+
+    "ProjectOutcome": [
+      {
+        "4": "Mendistribusikan Laporan Akuntan Pemantau Bulanan kepada bank, agen fasilitas dan Perusahaan sejak Desember 2017."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "header": "Proyek MEO",
+    "TypeofCase": "pendukung-dan-penasihat-kreditor",
+    "service": "Pendukung dan Penasihat Kreditor",
+    "Title": "Penasihat Pemegang Obligasi dalam Restrukturisasi",
+    "DateofClosing": "Sedang Berjalan",
+    "DateofClosingMark": "Sedang Berjalan",
+    "Value": "USD 450",
+    "Saying": "juta",
+
+    "ProjectOverview": [
+      {
+        "1": "Michlyn Express Offshore Limited (“MEO”) adalah penyedia kapal pendukung dan transportasi proyek industri minyak dan gas lepas pantai. Berkantor pusat di Singapura, MEO telah menyediakan dukungan di bidang kelautan sejak tahun 1970, dengan wilayah operasi di Asia Tenggara, Timur Tengah, Australia dan berkembang ke Amerika Latin, Afrika, dan India."
+      },
+      {
+        "1": "MEO adalah salah satu perusahaan yang mengajukan permohonan untuk perlindungan insolvensi dibawah Bagian 211B Undang-Undang Restrukturisasi Perusahaan di Singapura yang baru direvisi."
+      },
+      {
+        "1": "Kami dilibatkan oleh <i>Informal Steering Committee</i> Pemegang Obligasi di proyek ini untuk mewakili kepentingan para pemilik obligasi dalam proses restrukturisasi MEO. "
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "MEO merupakan salah satu korban yang dirugikan atas penurunan pasar OSV global dimana keuntungan mereka turun secara signifikan. "
+      },
+      {
+        "2": "Setelah menerbitkan obligasi di pasar ritel Singapura tahun 2015 (jatuh tempo November 2018), MEO tidak dapat memenuhi kewajibannya atas obligasi utama senilai USD 300 juta ataupun membayar obligasi sebesar USD 150 juta yang jatuh tempo di 2018, yang kemudian diperdagangkan pada <i>distressed hedge funds</i>. "
+      },
+      {
+        "2": "Dengan kondisi pasar yang buruk ditambah dengan banyaknya kasus kebangkrutan dalam beberapa tahun terakhir, opsi rekstrukturisasi menjadi terbatas dan mencari investor baru juga menjadi suatu hal yang sulit untuk dilakukan. "
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Selama proyek berlangsung, kami sangat terlibat dalam proses negosiasi dengan Perusahaan, penasihat keuangan dan penasihat hukumnya, serta pemangku kepentingan yang lain termasuk <i>Security Investors Association</i>, Singapura."
+      }
+    ],
+    "ProjectOutcome": [{ "4": "Proyek sedang berjalan" }]
+  },
+  {
+    "id": "6",
+    "header": "Proyek CRO Pakan Ternak",
+    "TypeofCase": "pendukung-dan-penasihat-kreditor",
+    "service": "Pendukung dan Penasihat Kreditor",
+    "Title": "<i>Chief Restructuring Officer</i> (CRO) dan Dukungan <i>Steering Committee</i>",
+    "DateofClosing": "Sedang Berjalan",
+    "DateofClosingMark": "Sedang Berjalan",
+    "Value": "IDR 3,2",
+    "Saying": "triliun",
+
+    "ProjectOverview": [
+      {
+        "1": "Serangkaian peristiwa tidak diperkirakan yang disebabkan oleh persaingan eksternal ditambah dengan ekspansi yang buruk ke Pulau Jawa membuat klien kami, Grup perusahaan peternakan unggas terintegrasi dari Kalimantan Barat, gagal dalam melakukan pembayaran utangnya. Setelah diskusi bilateral dengan para kreditor terkait rencana restrukturisasi, dua kreditor akhirnya mengajukan PKPU ke pengadilan niaga."
+      },
+      {
+        "1": "Kami langsung dilibatkan untuk menindaklanjuti proses pengajuan PKPU. Kami menemukan bahwa situasi antara Grup dan Para Kreditornya tidak berjalan baik. "
+      },
+      {
+        "1": "Tugas kami adalah sebagai CRO saat implementasi Perjanjian Perdamaian pasca-PKPU yang telah disetujui oleh pengadilan dan juga memberikan bantuan kepada <i>Steering Committee</i> dari pihak kreditor sebagai fungsi pengawas. "
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Masalah operasional yang berkepanjangan dan tekanan kompetitif pada marjin pendapatan membuat modal kerja grup tergerus sehingga membatasi operasional perusahaan. Kebutuhan akan modal kerja tambahan menjadi hal penting dalam negosiasi restrukturisasi. "
+      },
+      {
+        "2": "Kreditor sebagai pemangku kepentingan, terdiri dari para pihak yang memiliki kepentingan yang berbeda-beda, sehingga menciptakan proses negosiasi yang sulit. Hal ini semakin diperumit dengan adanya penjualan utang grup milik salah satu bank utama ke <i>distress fund</i>. "
+      },
+      {
+        "2": "Sistem pelaporan keuangan yang buruk dan audit yang lemah menimbulkan kekhawatiran terkait nilai yang dilaporkan dan digunakan."
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "<i>Chief Restructuring Officer</i>. Dalam penugasan ini kami: (1) bekerjasama dengan direksi Grup untuk melakukan implementasi dan melaksanakan persyaratan restrukturisasi yang tercantum dalam Perjanjian Perdamaian; dan (2) melaksanakan pemantauan arus kas dan tinjauan atas pembayaran dan persetujuan. Peran utama CRO adalah melakukan peninjauan dan implementasi atas sistem akuntansi baru, inisiasi dan pengawasan penjualan aset non operasional, serta dukungan dalam penjualan bisnis operasional."
+      },
+      {
+        "3": "<i>Steering Committee Support</i>: dalam tugas ini kami membantu <i>Steering Committee</i> dari pihak kreditor dalam pelaksanaan dan proses administrasi yang tertuang dalam Perjanjian Perdamaian."
+      }
+    ],
+    "ProjectOutcome": [
+      {
+        "4": "Perjanjian Perdamaian disetujui oleh para kreditor termasuk dengan penjualan aset non-operasional dan bisnis utama untuk penyelesaian utang dimana kekurangan pembayaran akan dihapuskan."
+      },
+      {
+        "4": "<i>Steering Committee</i> dari pihak Kreditor telah dibentuk dan telah bekerja sesuai dengan peran mereka sebagaimana didefinisikan di Perjanjian Perdamaian."
+      },
+      { "4": "Proses penjualan masih berlangsung. " }
+    ]
+  },
+  {
+    "id": "7",
+    "header": "Proyek Trikomsel Singapura",
+    "TypeofCase": "investigasi-keuangan-dan-dukungan-litigasi",
+    "service": "Investigasi Keuangan dan Dukungan Litigasi",
+    "Title": "Penunjukan Kurator (oleh Pengadilan Singapura) dan Dukungan Litigasi",
+    "DateofClosing": "Sedang Berjalan",
+    "DateofClosingMark": "Sedang Berjalan",
+    "Value": "SGD 215",
+    "Saying": "juta",
+    "ProjectOverview": [
+      {
+        "1": "PT Trikomsel Oke Tbk, perusahaan induk dari Trikomsel Pte Ltd dan Trikomsel Singapore Pte Ltd (“Trikomsel Singapura”), adalah sebuah perusahaan penyedia produk dan layanan telekomunikasi seluler di Indonesia. "
+      },
+      {
+        "1": "Trikomsel Singapura menerbitkan dua seri obligasi di Singapura untuk investor ritel dengan nilai SGD 215 juta. "
+      },
+      {
+        "1": "Direktur Pelaksana AJCapital Advisory, Luke Furler, ditunjuk sebagai Kurator Trikomsel Singapura oleh Pengadilan Tinggi Singapura (“Kurator”)."
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Sebelum penunjukkan Kurator, perusahaan induk telah menyelesaikan proses restrukturisasi di Indonesia yang diimplementasikan melalui PKPU. "
+      },
+      {
+        "2": "Sejumlah pertanyaan diajukan kepada Kurator mengenai kegiatan-kegiatan bisnis perusahaan sebelum proses likuidasi, terutama terkait nilai aset-aset perusahaan di beberapa periode."
+      },
+      {
+        "2": "Keberadaan bisnis di Indonesia dengan kreditor Trikomsel yang berbasis di Singapura, meskipun bukan hal yang unik, menghadirkan beberapa hambatan dalam proses pemulihan utang."
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Setelah investigasi awal yang kami lakukan atas kegiatan-kegiatan bisnis perusahaan, Kurator membawa kasus pertama yang sukses mendapatkan pendanaan litigasi secara komersial dari pihak ketiga dalam kasus insolvensi ke hadapan Pengadilan Singapura. "
+      },
+      {
+        "3": "Kurator saat ini bekerja dengan salah satu penyandang dana litigasi pihak ketiga yang telah diakui secara global untuk menginvestigasi lebih lanjut dan menentukan apakah terdapat pemulihan utang bagi para kreditor Trikomsel Singapura."
+      }
+    ],
+    "ProjectOutcome": [
+      {
+        "4": "Proyek masih berlangsung"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "header": "Proyek Siva <i>Shipping</i>",
+    "TypeofCase": "likuidasi-pemberesan-dan-penunjukan-pengadilan",
+    "service": "Likuidasi, Pemberesan dan Penunjukan Pengadilan",
+    "Title": "Penunjukan sebagai Kurator, Pengadilan Singapura",
+    "DateofClosing": "Sedang Berjalan",
+    "DateofClosingMark": "Sedang Berjalan",
+    "Value": "SGD 3",
+    "Saying": "miliar",
+    "ProjectOverview": [
+      {
+        "1": "Direktur Pelaksana AJCapital Advisory, Luke Furler, ditunjuk sebagai Kurator dari Siva Bulk Limited dan Siva Shipping Intl. Pte. Limited (secara keseluruhan ‘Siva Shipping’) oleh Pengadilan Tinggi Singapura."
+      },
+      {
+        "1": "Sebelum penunjukkan ini, Siva Shipping merupakan perusahaan perkapalan terkemuka yang beroperasi secara global. "
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Segera setelah penunjukan Kurator, beberapa kapal masih berada dalam perjalanan di berbagai yuridiksi. Kurator dengan cepat mencari tahu status pelayaran kapal-kapal tersebut, bernegosiasi dengan semua pihak yang terkait, mencegah penangkapan kapal, sehingga kapal-kapal tersebut berhasil menyelesaikan perjalanan masing-masing."
+      },
+      {
+        "2": "Selain isu operasional, ada lebih dari 20 proses litigasi yang berlangsung secara terpisah dalam skala global termasuk di London, Singapura, Spanyol, Republik Rakyat Tiongkok (RRT), dan Amerika Serikat. Kurator serta penasihat hukumnya  mempelajari fakta-fakta dari setiap kasus dan melanjutkan proses litigasi menggunakan beberapa contoh, termasuk kasus yang ramai dipublikasikan, Dibalo Fortune Inc , sebuah kasus hukum terdahulu di Singapura yang mendukung Kurator. "
+      },
+      {
+        "2": "Investigasi-investigasi substansial dilakukan dalam kasus ini setelah adanya tuduhan serius terhadap manajemen sebelumnya. Hasil investigasi ini bersifat rahasia."
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Setelah menstabilkan aspek operasi bisnis, kami mengambil kendali atas seluruh aset dan catatan perusahaan yang tersedia untuk memungkinkan kami memeriksa dengan seksama seluruh bisnis perusahaan dalam rangka proses likuidasi."
+      },
+      {
+        "3": "Kami memperoleh lebih banyak hasil pengembalian aset daripada yang diperkirakan (melalui proses litigasi) dan sedang dalam proses pembayaran dividen yang lebih tinggi dari yang diperkirakan kepada kreditor."
+      }
+    ],
+    "ProjectOutcome": [{ "4": "Proyek sedang berjalan" }]
+  },
+  {
+    "id": "9",
+    "header": "Proyek Zetta Jet",
+    "TypeofCase": "likuidasi-pemberesan-dan-penunjukan-pengadilan",
+    "service": "Likuidasi, Pemberesan dan Penunjukan Pengadilan",
+    "Title": "Bab 7 Perwakilan Wali Amanat Insolvensi Amerika Serikat <i>(Chapter 7 Bankruptcy Trustee Representative)</i>, Agen Likuidasi",
+    "DateofClosing": "Sedang Berjalan",
+    "DateofClosingMark": "Sedang Berjalan",
+    "Value": "",
+    "Saying": "Dirahasiakan",
+    "ProjectOverview": [
+      {
+        "1": "Zetta Jet Pte. Ltd (“Zetta Jet”) merupakan penyedia layanan jet pribadi terkemuka berpusat di Singapura yang mempunyai dan menyewakan sekitar 20 unit pesawat pribadi mewah sebelum kejatuhannya."
+      },
+      {
+        "1": "Zetta Jet dikenakan proteksi Undang-Undang Insolvensi Amerika Serikat (AS) Bab 11, yang kemudian dikonversi ke Bab 7,  diikuti dengan tuduhan penipuan yang dilakukan oleh CEO terdahulu."
+      },
+      {
+        "1": "Wali Amanat Insolvensi AS <i>(US Bankruptcy Trustee)</i> menunjuk salah satu direktur kami, Luke Furler, sebagai perwakilan resmi dan agen kurator di Asia."
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Pada waktu penunjukan kami, ada beberapa pesawat yang berlokasi di Singapura yang membutuhkan perhatian segera untuk memastikan seluruh pesawat tersebut telah diamankan atas nama pemodal utama mereka."
+      },
+      {
+        "2": "Sebagai tambahan, dengan mempertimbangkan adanya tuduhan penipuan serius dan proses litigasi terkait, penjagaan terhadap laporan keuangan dan catatan-catatan perusahaan menjadi sangat penting."
+      },
+      {
+        "2": "Beberapa aset telah teridentifikasi secara global, termasuk kapal-kapal pesiar dan mobil-mobil mewah, yang membutuhkan kerja sama antara berbagai penasihat Wali Insolvensi di berbagai negara."
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Kami mengambil kendali atas seluruh aset dan catatan atas Zetta Jet di Singapura serta bekerja bersama penasihat-penasihat Wali Insolvensi di berbagai negara untuk memastikan tugas mereka sudah disampaikan ke tingkat yang paling tinggi."
+      }
+    ],
+    "ProjectOutcome": [{ "4": "Proyek sedang berjalan" }]
+  },
+  {
+    "id": "10",
+    "header": "Proyek Gas",
+    "TypeofCase": "penasihat-ma-dan-penggalangan-dana",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "Title": "Proyek Gas",
+    "DateofClosing": "Selesai",
+    "DateofClosingMark": "Selesai",
+    "Value": "",
+    "Saying": "Dirahasiakan",
+    "ProjectOverview": [
+      {
+        "1": "Klien kami adalah sebuah produsen minyak dan gas milik negara, yang diperintahkan untuk mengonsolidasikan bagian-bagian tertentu dari rantai logistik dan distribusi gas yang diatur oleh negara. Hal ini termasuk pengambilalihan saham mayoritas dari sebuah perusahaan distribusi gas utama dan memasukkan salah satu anak perusahaan ke dalamnya."
+      },
+      {
+        "1": "Jangka waktu yang diberikan oleh proyek ini sangat ketat dan juga melibatkan pengawasan regulasi dan perhatian dari publik yang intens."
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Rahasia"
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Bekerja sama dengan tim transaksi Klien untuk: mengembangkan strategi transaksi dan pilihan struktur yang sesuai; melakukan uji tuntas/<i>due diligence</i> mengidentifikasi tugas-tugas penting dan masalah yang harus diatasi; menentukan analisis utama yang diperlukan untuk mencapai kesepakatan dalam negosiasi."
+      },
+      {
+        "3": "Membuat sebuah <i>financial model</i> yang komprehensif dan proyeksi berdasarkan analisis dan data dari riset pasar untuk digunakan dalam penentuan <i>fair value</i> dari masing-masing entitas yang terlibat dalam transaksi ini."
+      },
+      {
+        "3": "Memimpin negosiasi, di bawah instruksi dari Klien bersama penasihat lainnya. Dalam proses ini, kami mendukung keputusan Klien dengan analisis, alternatif negosiasi/taktik lain dan mendokumentasikan kegiatan transaksi selama proses ini."
+      },
+      {
+        "3": "Bekerja sama dengan penasihat hukum dan penasihat lainnya dalam penyusunan, negosiasi dan pelaksanaan dokumen yang telah disepakati."
+      }
+    ],
+    "ProjectOutcome": [
+      {
+        "4": "Transaksi selesai"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "header": "Proyek Vanilla",
+    "TypeofCase": "penasihat-ma-dan-penggalangan-dana",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "Title": "Proyek Vanilla",
+    "DateofClosing": "Maret 2014",
+    "DateofClosingMark": "Maret 2014",
+    "Value": "USD 31,5",
+    "Saying": "juta",
+
+    "ProjectOverview": [
+      {
+        "1": "Klien kami yang merupakan produsen produk bahan makanan natural (“Perusahaan”) sebelumnya telah membiayai kembali utang yang jatuh tempo sebesar USD 15,5 juta dari bank BUMN ke badan investasi situasi khusus yang berlokasi di Hong Kong. Perusahaan berada dalam pasar yang sedang bertumbuh dan membutuhkan tambahan modal sebesar USD 16 juta untuk mendanai kebutuhan belanja modal, modal kerja, dan penyelesaian utang pihak ketiga."
+      },
+      {
+        "1": "Kami memiliki dua tujuan. Pertama, membantu perusahaan untuk kembali memasuki sistem perbankan Indonesia (yang sebelumnya berada dalam keadaan gagal bayar) dengan mendanai kembali utang yang jatuh tempo kepada badan investasi keadaan khusus dan menambah investasi dan modal kerja. Kedua, membantu meningkatkan keadaan struktur modal perusahaan dengan mendatangkan investor baru. "
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Pendanaan yang diperoleh dari Hong Kong bukan hanya mahal, namun juga memiliki perjanjian yang membebankan dan tambahan biaya jaminan. Satu-satunya cara bagi Perusahaan untuk menggalang pendanaan bank baru untuk pertumbuhan bisnis adalah dengan membayar kembali pendanaan tersebut."
+      },
+      {
+        "2": "Sebagai Perusahaan yang sebelumnya pernah gagal membayar utang bank di Indonesia, mereka secara efektif terblokir dari sistem perbankan domestik paling minimum 12 bulan."
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Membantu pengembangan dan evaluasi pendanaan, penyelesaian utang dan <i>value capture strategy</i> secara menyeluruh."
+      },
+      {
+        "3": "Membantu Perusahaan dalam negosiasi dan mendapatkan kebutuhan pendanaan dari <i>private equity</i> dengan keinginan dan kapabilitas untuk mendukung pertumbuhan perusahaan."
+      },
+      {
+        "3": "Memberikan nasihat terhadap ketentuan komersil utama dan struktur pendanaan kembali serta eksekusinya, khususnya memastikan adanya kesesuaian dengan syarat dan ketentuan pembelian oleh <i>private equity</i>."
+      },
+      {
+        "3": "Menyiapkan dan memberi nasihat terhadap valuasi Perusahaan di berbagai tahapan."
+      },
+      {
+        "3": "Mengatur dan mengoordinasikan uji tuntas yang dilakukan oleh <i>private equity</i> dan bank."
+      },
+      {
+        "3": "Mengatur dan mengkordinasikan pelaksanaan dan penutupan pendanaan dari <i>private equity</i> dan bank. "
+      }
+    ],
+    "ProjectOutcome": [
+      {
+        "4": "Berhasil meraih pendanaan kembali dari bank sebesar USD 15,5 juta."
+      },
+      {
+        "4": "Berhasil meraih investasi dari sebuah <i>private equity</i> sebesar USD 16 juta. "
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "header": "Proyek Switch",
+    "TypeofCase": "penasihat-ma-dan-penggalangan-dana",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "Title": "Proyek Switch",
+    "DateofClosing": "Maret 2019",
+    "DateofClosingMark": "Penutupan pertama pada September 2018, Penutupan kedua pada Maret 2019",
+    "Value": "",
+    "Saying": "Dirahasiakan",
+
+    "ProjectOverview": [
+      {
+        "1": "Klien kami, salah satu dari 4 lembaga <i>switching</i> ATM di Indonesia (“Perusahaan”), memulai strategi pertumbuhan dengan cara ekspansi. Perusahaan tidak hanya mencari cara untuk meningkatkan pertumbuhan bisnis model yang sudah ada, namun Perusahaan juga mengembangkan model bisnis baru dengan kartu-kartu yang belum terjangkau dalam jaringan Perusahaan dan sektor <i>fintech</i>."
+      },
+      {
+        "1": "Tujuan kami adalah untuk membantu Perusahaan dalam mencari mitra ekuitas strategis yang tepat untuk membantu mereka dalam mengimplementasikan strategi tersebut."
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Pengawasan perijinan serta regulasi membatasi jangkauan calon mitra strategis dari dalam maupun luar negeri, serta menyulitkan perolehan persetujuan untuk merubah susunan kepemilikan saham."
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Bersama dengan pemegang saham, Perusahaan, penasihat hukum, dan penasihat-penasihat lainnya menentukan strategi transaksi dan struktur pendanaan, termasuk: i) Pengembangan strategi negosiasi yang optimal dalam menentukan poin-poin kesepakatan utama serta parameter-parameter lainnya; ii) Membantu Perusahaan dalam pembuatan strategi dan proyeksi keuangan untuk dipresentasikan kepada para Investor; serta iii) Menyusun presentasi yang berisi informasi tentang Perusahaan/<i>pitch book</i> kepada para investor."
+      },
+      {
+        "3": "Memimpin dan mengatur proses perolehan komitmen awal dari para Investor."
+      },
+      {
+        "3": "Mengatur proses transaksi dari  pelaksanaan hingga penutupan."
+      },
+      {
+        "3": "Mengoordinasikan aktivitas-aktivitas dari tenaga ahli lainnya dalam mengeksekusi seluruh dokumentasi yang diperlukan."
+      }
+    ],
+    "ProjectOutcome": [
+      {
+        "4": "Berhasil mendapatkan penambahan modal baru sebesar 49% oleh salah satu Grup konglomerasi Indonesia yang memiliki ketertarikan pada sektor keuangan dan <i>fintech</i>. "
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "header": "Proyek <i>Debt Buy Back</i>",
+    "TypeofCase": "manajemen-inisiatif-dan-pendukung-perusahaan",
+    "service": "Manajemen Inisiatif dan Pendukung Perusahaan",
+    "Title": "Penasehat dan Dukungan Pembelian Utang",
+    "DateofClosing": "Oktober 2015",
+    "DateofClosingMark": "Oktober 2015",
+    "Value": "USD 290",
+    "Saying": "juta",
+    "ProjectOverview": [
+      {
+        "1": "Sebagai pemegang saham terbesar di sebuah kompleks petrokimia yang telah direstrukturisasi, Klien meminta kami untuk membantu mereka dalam memperoleh kepemilikan tambahan, dalam bentuk ekuitas dan utang di target perusahaan (“Perseroan”), untuk mengendalikan seluruh struktur modal."
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Perseroan memiliki kelompok pemegang saham yang beragam dengan kepentingan yang berbeda-beda dan terkadang bertentangan. Sebagian besar dari kelompok pemegang saham sedang berencana <i>exit</i>, termasuk didalamnya adalah pendiri,  para kreditor, dan investor strategis."
+      },
+      {
+        "2": "Perseroan membutuhkan pendanaan modal kerja, tetapi pendanaan dari pihak ketiga tidak dapat diperoleh tanpa dukungan dari para pemegang saham. Kelompok pemegang saham tidak mampu atau tidak bersedia untuk memberikan dukungan yang diperlukan."
+      },
+      {
+        "2": "Masalah kepercayaan di antara para pemegang saham ditambah dengan keragaman dalam kepemilikan di mana tidak ada satu pun entitas pengendali semakin mempersulit struktur manajemen dan revitalisasi pabrik."
+      },
+      {
+        "2": "Posisi keuangan Perseroan terus memburuk karena masalah di atas meskipun pabrik memiliki kemampuan yang cukup dan pasar yang menarik untuk produk-produknya."
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Membantu pengembangan dan evaluasi terhadap saham dan pembelian kembali utang, <i>value proposition</i> serta <i>value capture strategy</i> secara menyeluruh."
+      },
+      {
+        "3": "Membantu Klien dalam melakukan negosiasi atas persyaratan komersil utama dengan penjual ekuitas dan utang dan menyarankan cara <i>structuring</i> dan pelaksanaan."
+      },
+      {
+        "3": "Memeriksa dan memberikan saran mengenai penilaian jaminan yang akan dibeli kembali melalui berbagai tahapan proses."
+      },
+      {
+        "3": "Menganalisis struktur dan tata kelola Perseroan yang telah ditentukan oleh Anggaran Dasar dan memberikan Klien beberapa strategi alternatif untuk mengubah dan mengelola Perseroan."
+      },
+      {
+        "3": "Membantu pelaksanaan perubahan jajaran direksi dan tata kelola Perseroan melalui perubahan Anggaran Dasar."
+      }
+    ],
+    "ProjectOutcome": [
+      {
+        "4": "Klien berhasil memperoleh posisi pengendali Perseroan"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "header": "Proyek Prospektus",
+    "TypeofCase": "manajemen-inisiatif-dan-pendukung-perusahaan",
+    "service": "Manajemen Inisiatif dan Pendukung Perusahaan ",
+    "Title": "Implementasi Pasca-PKPU – Penerbitan Saham Ekuitas Kreditor dan Obligasi Wajib Konversi",
+    "DateofClosing": "Juli 2017",
+    "DateofClosingMark": "Juli 2017",
+    "Value": " USD 2,6",
+    "Saying": "miliar",
+
+    "ProjectOverview": [
+      {
+        "1": "Perusahaan Indonesia yang terdaftar di Bursa Efek Indonesia yang bergerak di bidang pertambangan batu bara dan mineral telah sukses merestrukturisasi utang sebesar USD 7 miliar (atau setara dengan IDR 93 triliun) melalui PKPU dimana AJCapital juga ikut serta dalam proses restrukturisasi."
+      },
+      {
+        "1": "Sebagai bagian dari rencana restrukturisasi, Perusahaan harus (a) mengkonversi USD 2 miliar utang ke dalam 28,75 miliar lembar saham baru; dan (b) mengalihkan utang sebesar USD 639 juta menjadi Obligasi Wajib Konversi (OWK)."
+      },
+      {
+        "1": "Tujuan kami adalah untuk memberi dukungan dan saran kepada Perusahaan dalam proses implementasi pasca-PKPU yaitu mengeluarkan saham baru dan Obligasi Wajib Konversi (OWK), membuat prospektus, serta manajemen proyek secara keseluruhan."
+      }
+    ],
+    "ProjectIssues": [
+      {
+        "2": "Peraturan dan Undang-Undang Pasar Modal Indonesia menyebutkan bahwa saham yang diterbitkan tanpa Hak Memesan Efek Terlebih Dahulu (HMETD) tidak dapat diperdagangkan selama berlangsungnya masa tenggang (satu tahun) setelah pendaftaran saham tersebut di bursa. Sebagian besar dari kreditor Perusahaan menolak periode masa tenggang selama satu tahun. Perusahaan kemudian harus mengeluarkan saham dengan HMETD sebagaimana diatur dalam Peraturan Otoritas Jasa Keuangan (OJK) dengan pengungkapan dan persyaratan tambahan yang substansial. "
+      },
+      {
+        "2": "Proyek ini melibatkan banyak tenaga ahli yang terdiri atas penasihat hukum, notaris, auditor, dan penjamin emisi efek dengan tenggat waktu yang ketat sebagaimana telah ditentukan dalam Perjanjian Perdamaian yang telah disahkan."
+      },
+      {
+        "2": "Sehubungan dengan keunikan sifat OWK tersebut, calon wali amanat di Indonesia serta Kustodian Sentral Efek Indonesia (KSEI) mewajibkan penjelasan yang rinci dalam beberapa rangkaian pertemuan hingga mereka merasa cukup."
+      },
+      {
+        "2": "Dikarenakan Perusahaan memiliki profil sebagai perusahaan terbuka, beberapa korespondensi dengan Bursa Efek Indonesia (BEI) perlu dilaksanakan, serta klarifikasi sehubungan dengan penerbitan saham dan OWK juga diperlukan. OJK juga telah melakukan tinjauan mengenai pengajuan Perusahaan dengan seksama, yang kemudian diikuti dengan berbagai permintaan mengenai informasi dan pertanyaan-pertanyaan yang substansial."
+      }
+    ],
+    "WhatWeDid": [
+      {
+        "3": "Memimpin persiapan pembuatan prospektus sejak pembuatan rancangan awal hingga versi akhir termasuk menyesuaikan perubahan-perubahan yang diminta oleh OJK, pengkajian perjanjian  wali amanat dalam dan luar negeri, serta penyelesaian dokumentasi pembeli siaga."
+      },
+      {
+        "3": "Berkoordinasi dan bekerja sama dengan Perusahaan, penasihat hukum, notaris, auditor, serta penjamin emisi efek untuk memastikan seluruh dokumen pernyataan registrasi sudah dipersiapkan untuk diserahkan kepada OJK dan BEI."
+      },
+      {
+        "3": "Berperan penting dalam memberikan klarifikasi terhadap pertanyaan-pertanyaan OJK, BEI, KSEI, serta wali amanat mengenai persyaratan-persyaratan komersil serta mekanisme konversi saham dan OWK."
+      }
+    ],
+    "ProjectOutcome": [
+      {
+        "4": "OJK menerima revisi akhir dari prospektus Perusahaan dan menerbitkan Pernyataan Efektif. Saham baru dan OWK diterbitkan kepada kreditor sesuai dengan tenggat waktu yang ditetapkan pada Perjanjian Perdamaian. "
+      }
+    ]
+  }
+]

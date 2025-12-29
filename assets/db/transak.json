@@ -1,0 +1,512 @@
+[
+  {
+    "id": "1",
+    "service": "Manajemen Inisiatif dan Pendukung Perusahaan ",
+    "name": "Pemantauan Portofolio Perusahaan Telekomunikasi",
+    "country": "Indonesia",
+    "time": "Maret 2019",
+    "status": "Sedang berjalan",
+    "client": "Rahasia",
+    "value": "N/A"
+  },
+  {
+    "id": "2",
+    "service": "Pendukung dan Penasihat Kreditor",
+    "name": "Restrukturisasi Surat Obligasi Perusahaan OSV Singapura",
+    "country": "Singapura",
+    "time": "Maret 2019",
+    "status": "Sedang berjalan",
+    "client": "Miclyn Express Offshore Limited",
+    "value": "USD 450 Juta"
+  },
+  {
+    "id": "3",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "name": "Proyeksi Finansial dan Analisa Modal Kerja Perusahaan Infrastruktur",
+    "country": "Singapura",
+    "time": "Maret 2019",
+    "status": "Sedang berjalan",
+    "client": "Rahasia",
+    "value": "USD 3 Miliar"
+  },
+  {
+    "id": "4",
+    "service": "Manajemen Inisiatif dan Pendukung Perusahaan ",
+    "name": "Pengembangan Rencana Bisnis Kawasan Industri ",
+    "country": "Indonesia",
+    "time": "Februari 2019",
+    "status": "Sedang berjalan",
+    "client": "Rahasia",
+    "value": "USD 1 Miliar"
+  },
+  {
+    "id": "5",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "name": "Manajemen Proyek & Penggalangan Dana Perusahaan Start Up",
+    "country": "Indonesia",
+    "time": "Maret 2019",
+    "status": "Sedang berjalan",
+    "client": "GoHalalGo",
+    "value": "N/A"
+  },
+  {
+    "id": "6",
+    "service": "Manajemen Inisiatif dan Pendukung Perusahaan",
+    "name": "Konsultasi Perusahaan Global dalam Pelaporan Finansial Terintegrasi sebagai Persiapan Penggalangan Modal",
+    "country": "Singapura",
+    "time": "Oktober 2018",
+    "status": "Selesai",
+    "client": "Rahasia",
+    "value": "USD 80 Juta"
+  },
+  {
+    "id": "7",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "Restrukturisasi Utang Perusahaan Batu Bara",
+    "country": "Indonesia",
+    "time": "September 2018",
+    "status": "Selesai (Desember 2018)",
+    "client": "Rahasia",
+    "value": "USD 60 Juta"
+  },
+  {
+    "id": "8",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "Restrukturisasi Utang Perusahaan LPG",
+    "country": "Indonesia",
+    "time": "Agustus 2018",
+    "status": "Sedang berjalan",
+    "client": "Rahasia",
+    "value": "USD 40 Juta"
+  },
+  {
+    "id": "9",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "PKPU Perusahaan Pembiayaan",
+    "country": "Indonesia",
+    "time": "Agustus 2018",
+    "status": "Selesai (Oktober 2018)",
+    "client": "PT Sunprima Nusantara Pembiayaan",
+    "value": "IDR 4.1 Triliun"
+  },
+  {
+    "id": "10",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "Restrukturisasi Utang Perusahaan Card",
+    "country": "Indonesia",
+    "time": "Juli 2018",
+    "status": "Sedang berjalan",
+    "client": "Rahasia",
+    "value": "IDR 840 Miliar"
+  },
+  {
+    "id": "11",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "Restrukturisasi Utang Perusahaan Pengeboran Minyak & Gas",
+    "country": "Indonesia",
+    "time": "Juli 2018",
+    "status": "Sedang berjalan",
+    "client": "PT Apexindo Pratama Duta Tbk",
+    "value": "USD 319.7 Juta"
+  },
+  {
+    "id": "12",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "PKPU Perusahaan Manufaktur Botol Plastik II",
+    "country": "Indonesia",
+    "time": "Juni 2018",
+    "status": "Selesai (Juli 2018)",
+    "client": "PT Namasindo Plas Abadi & Afiliasi",
+    "value": "IDR 1.7 Triliun"
+  },
+  {
+    "id": "13",
+    "service": "Pendukung dan Penasihat Kreditor",
+    "name": "Penasihat Pemegang Surat Obligasi dari Perusahaan Perkapalan ",
+    "country": "Singapura",
+    "time": "Juni 2018",
+    "status": "Selesai(November 2018)",
+    "client": "Rahasia",
+    "value": "SGD 100 Juta"
+  },
+  {
+    "id": "14",
+    "service": "Kepailitan dan Pengampuan",
+    "name": "Penutupan Sukarela Perusahaan Asuransi UK (diadakan melalui Singapura) ",
+    "country": "Singapura",
+    "time": "Mei 2018",
+    "status": "Selesai (Januari 2019)",
+    "client": "Rahasia",
+    "value": "N/A"
+  },
+  {
+    "id": "15",
+    "service": "Kepailitan dan Pengampuan",
+    "name": "Representatif Asia dan Agen Likuidasi dari Wali Amanat Kepailitan Amerika Serikat (United States Bankruptcy Trustee) (Chapter 7)",
+    "country": "Singapura",
+    "time": "Februari 2018",
+    "status": "Sedang berjalan",
+    "client": "Zetta Jet Pte Ltd",
+    "value": "N/A"
+  },
+  {
+    "id": "16",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "PKPU Perusahaan Manufaktur Botol Plastik I",
+    "country": "Indonesia",
+    "time": "Februari 2018",
+    "status": "Selesai (Mei 2018)",
+    "client": "PT Namasindo Plas ",
+    "value": "IDR 3.9 Triliun"
+  },
+  {
+    "id": "17",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "Pemantauan Kas Perusahaan LPG",
+    "country": "Indonesia",
+    "time": "Desember 2017",
+    "status": "Sedang berjalan",
+    "client": "Rahasia",
+    "value": "USD 92.5 Juta"
+  },
+  {
+    "id": "8",
+    "service": "Manajemen Inisiatif dan Pendukung Perusahaan ",
+    "name": "Uji Tuntas Komersil Perusahaan Distribusi Gas",
+    "country": "Indonesia",
+    "time": "November 2017",
+    "status": "Selesai (April 2018)",
+    "client": "Rahasia",
+    "value": "N/A"
+  },
+  {
+    "id": "19",
+    "service": "Manajemen Inisiatif dan Pendukung Perusahaan",
+    "name": "Valuasi terhadap Instrumen Kewajiban Kontinjensi",
+    "country": "Indonesia",
+    "time": "September 2017",
+    "status": "Selesai (Januari 2018)",
+    "client": "Rahasia",
+    "value": "USD 100 Juta"
+  },
+  {
+    "id": "20",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "Implementasi PKPU: Manajemen Turnaround dan Chief Restructuring Officer",
+    "country": "Indonesia",
+    "time": "Agustus 2017",
+    "status": "Sedang berjalan",
+    "client": "Sujaya Group ",
+    "value": "IDR 3.2 Triliun"
+  },
+  {
+    "id": "21",
+    "service": "Investigasi Keuangan dan Dukungan Litigasi",
+    "name": "Kurator dan Pendanaan Litigasi oleh Pihak Ketiga",
+    "country": "Singapura",
+    "time": "Juli 2017",
+    "status": "Sedang berjalan",
+    "client": "Trikomsel Singapore Pte Ltd (dalam likuidasi)",
+    "value": "SGD 225 Juta"
+  },
+  {
+    "id": "22",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "Restrukturisasi Utang Perusahaan LPG ",
+    "country": "Indonesia",
+    "time": "Mei 2017",
+    "status": "Selesai (Maret 2018)",
+    "client": "Rahasia",
+    "value": "USD 92.5 Juta"
+  },
+  {
+    "id": "23",
+    "service": "Manajemen Inisiatif dan Pendukung Perusahaan ",
+    "name": "Penerbitan Ekuitas dan Obligasi Wajib Konversi",
+    "country": "Indonesia",
+    "time": "April 2017",
+    "status": "Selesai (Juli 2017)",
+    "client": "PT. Bumi Resources Tbk ",
+    "value": "USD 2.6 Miliar"
+  },
+  {
+    "id": "24",
+    "service": "Kepailitan dan Pengampuan",
+    "name": "Kurator untuk Perusahaan Perkapalan ",
+    "country": "Singapura",
+    "time": "Januari 2017",
+    "status": "Sedang berjalan",
+    "client": "Siva Ships International Pte Limited (dalam likuidasi)",
+    "value": "USD 3 Miliar"
+  },
+  {
+    "id": "25",
+    "service": "Kepailitan dan Pengampuan",
+    "name": "Kurator untuk Perusahaan Perkapalan",
+    "country": "Singapura",
+    "time": "Desember 2016",
+    "status": "Sedang berjalan",
+    "client": "Siva Bulk Limited (dalam likuidasi)",
+    "value": "USD 3 Miyar"
+  },
+  {
+    "id": "26",
+    "service": "Kepailitan dan Pengampuan",
+    "name": "Likuidator dari Perusahaan Transportasi (Ride Hailing) di Singapura",
+    "country": "Singapura",
+    "time": "November 2016",
+    "status": "Selesai (Desember 2017)",
+    "client": "Karhoo Singapore Pte Ltd",
+    "value": "N/A"
+  },
+  {
+    "id": "27",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "PKPU Perusahaan Peternakan dan Pakan Ternak",
+    "country": "Indonesia",
+    "time": "Oktober 2016",
+    "status": "Selesai (Juli 2017)",
+    "client": "Sujaya Group",
+    "value": "IDR 3.2 Triliun"
+  },
+  {
+    "id": "28",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "name": "Konsultasi M&A Perusahaan Gas",
+    "country": "Indonesia",
+    "time": "Juli 2016",
+    "status": "Selesai (Januari 2017)",
+    "client": "Rahasia",
+    "value": "N/A"
+  },
+  {
+    "id": "29",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "name": "Restrukturisasi Korporat dan Penggalangan Dana atas Perusahaan Teknologi Bantuan Reproduksi",
+    "country": "Indonesia",
+    "time": "Mei 2016",
+    "status": "Sedang berjalan",
+    "client": "Rahasia",
+    "value": "N/A"
+  },
+  {
+    "id": "30",
+    "service": "Pendukung dan Penasihat Kreditor",
+    "name": "Penasihat Kreditur dari Perusahaan Penggilingan Gula di Vietnam",
+    "country": "Singapura",
+    "time": "April 2016",
+    "status": "Selesai (Juni 2017)",
+    "client": "Rahasia",
+    "value": "USD 250 Juta"
+  },
+  {
+    "id": "31",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "PKPU Perusahaan Batubara ",
+    "country": "Indonesia",
+    "time": "April 2016",
+    "status": "Selesai (November 2016)",
+    "client": "PT. Bumi Resources Tbk ",
+    "value": "USD 7 Miliar"
+  },
+  {
+    "id": "32",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "PKPU Perusahaan Pengemasan ",
+    "country": "Indonesia",
+    "time": "April 2016",
+    "status": "Selesai (Januari 2017)",
+    "client": "PT. Dwi Aneka Jaya Kemasindo Tbk ",
+    "value": "IDR 1.2 Triliun"
+  },
+  {
+    "id": "33",
+    "service": "Pendukung dan Penasihat Kreditor",
+    "name": "Penasihat Kreditor dalam Restrukrisasi Utang Perusahaan Daya",
+    "country": "Indonesia",
+    "time": "April 2016",
+    "status": "Selesai (Juni 2017)",
+    "client": "Rahasia",
+    "value": "USD 191.3 Juta"
+  },
+  {
+    "id": "34",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "name": "Konsultansi Sisi Jual Perusahaan Gerbang Pembayaran",
+    "country": "Indonesia",
+    "time": "April 2016",
+    "status": "Selesai (Juli 2018)",
+    "client": "Rahasia",
+    "value": "N/A"
+  },
+  {
+    "id": "35",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "name": "Penggalanan Dana Perusahaan CNG/LNG Companies",
+    "country": "Indonesia",
+    "time": "Januari 2016",
+    "status": "Selesai (January 2017)",
+    "clietn": "Rahasia",
+    "value": "N/A"
+  },
+  {
+    "id": "36",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "Dukungan Implementasi Transaksi PKPU Perusahaan Perkebunan dan Perdagangan Teh",
+    "country": "Indonesia",
+    "time": "November 2015",
+    "status": "Selesai (Maret 2016)",
+    "client": "PT. Sariwangi Agriculture Estates Agency",
+    "value": "USD 107 Juta"
+  },
+  {
+    "id": "37",
+    "service": "Pendukung dan Penasihat Kreditor",
+    "name": "Dukungan dan Konsultansi Kreditor Perusahaan Batubara",
+    "country": "Indonesia",
+    "time": "Juli 2015",
+    "status": "Selesai (Maret 2016)",
+    "client": "Rahasia",
+    "value": "USD 25 Juta"
+  },
+  {
+    "id": "38",
+    "service": "Manajemen Inisiatif dan Pendukung Perusahaan",
+    "name": "Dukungan Transaksi Akuisisi Saham dan Surat Utang Perusahaan Petrokimia ",
+    "country": "Indonesia",
+    "time": "Juni 2015",
+    "status": "Selesai (Oktober 2015)",
+    "client": "Rahasia",
+    "value": "USD 290 Juta"
+  },
+  {
+    "id": "39",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "Restrukturisasi Utang Perusahaan Otomotif ",
+    "country": "Indonesia",
+    "time": "Mei 2015",
+    "status": "Selesai (Desember 2015)",
+    "client": "Rahasia",
+    "value": "IDR 200 Miliar"
+  },
+  {
+    "id": "40",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "PKPU Perusahaan Perkebunan dan Perdagangan teh ",
+    "country": "Indonesia",
+    "time": "Mei 2015",
+    "status": "Selesai (Oktober 2015)",
+    "client": "PT. Sariwangi Agricultural Estates Agency ",
+    "value": "USD 107 Juta"
+  },
+  {
+    "id": "41",
+    "service": "Manajemen Inisiatif dan Pendukung Perusahaan ",
+    "name": "Uji Tuntas Komersil Perusahaan Perabotan ",
+    "country": "Indonesia",
+    "time": "Januari 2015",
+    "status": "Selesai (Oktober 2015)",
+    "client": "Rahasia",
+    "value": "N/A"
+  },
+  {
+    "id": "42",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "PKPU Perusahaan Telekomunikasi",
+    "country": "Indonesia",
+    "time": "Oktober 2014",
+    "status": "Selesai (Desember 2014)",
+    "client": "PT. Bakrie Telecom Tbk. ",
+    "value": "IDR 12 Triliun"
+  },
+  {
+    "id": "43",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "Dukungan Implementasi Transaksi PKPU Perusahaan Petrokimia  ",
+    "country": "Indonesia",
+    "time": "Februari 2013",
+    "status": "Selesai (Desember 2014)",
+    "client": "PT. Trans-Pacific Petrochemical Indonesia ",
+    "value": "USD 1.5 Miliar"
+  },
+  {
+    "id": "44",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "name": "Penggalangan Dana Produsen Bahan Mentah Alami Makanan ",
+    "country": "Indonesia",
+    "time": "Februari 2013",
+    "status": "Selesai (Maret 2014)",
+    "client": "Rahasia",
+    "value": "USD 31.5 Juta"
+  },
+  {
+    "id": "45",
+    "service": "Manajemen Inisiatif dan Pendukung Perusahaan ",
+    "name": "Layanan Valuasi untuk Perusahaan Batubara",
+    "country": "Indonesia",
+    "time": "Januari 2013",
+    "status": "Selesai (Mei 2013)",
+    "client": "PT. Sembawang Development PTE. LTD. ",
+    "value": "USD 111 Juta"
+  },
+  {
+    "id": "46",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "PKPU Perusahaan Petrokimia ",
+    "country": "Indonesia",
+    "time": "November 2012",
+    "status": "Selesai (Desember 2012)",
+    "client": "PT. Trans-Pacific Petrochemical Indonesia",
+    "value": "USD 1.9 Miliar"
+  },
+  {
+    "id": "47",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "name": "Penggalanan Dana Perusahaan Jalan Tol  ",
+    "country": "Indonesia",
+    "time": "Juni 2011",
+    "status": "Selesai (August 2013)",
+    "client": "Rahasia",
+    "value": "IDR 5 Triliun"
+  },
+  {
+    "id": "48",
+    "service": "Restrukturisasi Utang dan Manajemen Turnaround",
+    "name": "PKPU Maskapai Penerbangan ",
+    "country": "Indonesia",
+    "time": "April 2011",
+    "status": "Selesai (Agustus 2011)",
+    "client": "PT. Mandala Airlines ",
+    "value": "IDR 2.5 Triliun"
+  },
+  {
+    "id": "49",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "name": "Dukungan Akuisisi atas Perusahaan Batubara ",
+    "country": "Indonesia",
+    "time": "Oktober 2010",
+    "status": "Selesai (Maret 2011)",
+    "client": "PT. Bumi Resources Tbk",
+    "value": "USD 3 Miliar"
+  },
+  {
+    "id": "50",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "name": "Akuisisi Perusahaan Layanan Direktori dan Call Center",
+    "country": "Indonesia",
+    "time": "Februari 2008",
+    "status": "Selesai (Juni 2009)",
+    "client": "PT. Multimedia Nusantara",
+    "value": "IDR 598 Miliar"
+  },
+  {
+    "id": "51",
+    "service": "Penasihat M&A dan Penggalangan Dana",
+    "name": "Akuisisi Perusahaan Administrator Pihak Ketiga untuk Asuransi",
+    "country": "Indonesia",
+    "time": "Maret 2008",
+    "status": "Selesai (Juli 2008)",
+    "client": "PT. Multimedia Nusantara",
+    "value": "IDR 128 Miliar"
+  }
+]

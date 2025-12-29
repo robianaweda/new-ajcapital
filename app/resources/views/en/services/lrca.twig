@@ -1,0 +1,68 @@
+{% extends 'template/layout_en_content.twig' %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <img src="{{ base_url() }}/assets/img/pages/Liquidation.jpg" alt="" width="100%" />
+            <p>&nbsp;</p>
+            <h4>Insolvency</h4>
+            <p>
+                Insolvency regimes comprise both winding up procedures and rehabilitative
+                      procedures. The former includes liquidations and receiverships while the
+                      latter encompass the likes of Penundaan Kewajiban Pembayaran Utang or
+                      "PKPU", Judicial Management and Schemes of Arrangement.
+            </p>
+            <p>
+                A company facing financial distress may attempt to rehabilitate itself or
+                      proceed with a dissolution process. In fact, dissolution procedures are
+                      often used outside of events of distress to wind-up a company that has
+                      outlived its economic usefulness.
+            </p>
+            <p>
+                We take appointment under such a process, and the accompanying fiduciary
+                      responsibility, very seriously. We have been appointed in a formal (court)
+                      capacity on some of the most complex and contentious cross border
+                      insolvencies in Asia in recent years, including Trikomsel, Zetta Jet and
+                      Siva Shipping Group.
+            </p>
+            <p>
+                Our insolvency support and advisory services, subject to some
+                      jurisdictional restrictions, include:
+            </p>
+            <ol class="roman-list">
+                <li>Accepting roles as a private or court appointed Receivers</li>
+                <li>Accepting roles as a private or court appointed Liquidators</li>
+                <li>Accepting roles as the Administrator of a Scheme of Arrangement</li>
+                <li>Accepting roles as a Scheme Manager</li>
+                <li>Accepting roles as a Judicial manager</li>
+                <li>Expert advisor to the Court in a PKPU process</li>
+                <li>Managing a PKPU process</li>
+            </ol>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <div class="row" id="nav-case-study">
+        {% for data in page.data %}
+            {% if data.TypeofCase == page.service %}
+                <div class="card" style="width: 25rem;margin: 12px;">
+                    <div class="card-body">
+                        <div class="title-case">
+                            <span style="font-size:10px;float:left;margin-top:15px;">Case Study</span>
+                            <span><img alt="" src="{{ base_url() }}/assets/img/logo/logo-landing-transparent-sm.png" style="float: right;margin-top: 0px;" width="70px" /></span>
+                        </div>
+                        <h5 class="card-title" style="margin-top:80px;margin-bottom: 0px;">
+                            {{ data.header }}
+                        </h5>
+                        <span style="font-size: 10px;">{{ data.DateofClosing }}</span><br/><br/>
+                        <p style="margin-top:20px;">
+                            <span style="margin-top: 40px;">
+                                <a href="{{ base_url() }}/EN/services/{{ page.service }}/{{ data.id }}#nav-case-study" class="btn btn-outline-light btn-sm">Read More</a>
+                            </span>
+                            <span class="sc-box-value">{{ data.Value }}</span>
+                        </p>
+                        <span class="sc-box-value-saying">{{ data.Saying }}</span>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

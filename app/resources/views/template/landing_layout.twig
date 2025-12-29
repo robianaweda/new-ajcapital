@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+    <html
+    class="no-js"> <!--<![endif]-->
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142618670-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-142618670-1');
+        </script>
+
+        <meta charset="utf-8"/>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <title>AJCapital Advisory | Welcome</title>
+        <meta content="" name="description"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link href="{{ base_url() }}/assets/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="{{ base_url() }}/assets/css/ajcapitalstyle.css" rel="stylesheet"/>
+        <link rel="icon" type="image/png" href="{{base_url()}}/assets/img/bkgr/green_leaf_logo.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">		
+		<style>
+					.modal-dialog {
+						top: 5%;
+						max-width: 850px !important;
+					}
+					.modal-header, .modal-content, .modal-footer {
+						border: 0;
+						color: white;
+						background-color: #36762C;
+					}-
+					.modal-header {
+						padding-top: 8px;
+						padding-bottom: 5px;
+					}
+					.modal-content {
+						font-size: 0.9em;
+					}
+					.small-text {
+						font-size: 16px;
+					}
+					h3 {
+						font-size: 1.4em;
+						font-weight: bold;
+					}
+					@media (max-width: 576px) { 
+						.modal-dialog {
+							top: 0;
+							max-width: 850px !important;
+						}
+						h3 {
+							font-size: 1.2em;
+							font-weight: bold;
+						}
+					}
+			</style>
+    </head>
+    <body
+        class="bg">
+        <!--[if lt IE 7]>
+                              <p class="browsehappy">
+                                You are using an <strong>outdated</strong> browser. Please
+                                <a href="#">upgrade your browser</a> to improve your experience.
+                              </p>
+                            <![endif]-->
+        <div class="container-logo"> {% block content %}{% endblock %}
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<img src="https://www.ajcapital.asia/assets/img/logo/logo-landing-transparent-sm.png" style="width: 80px;"/><button class="btn btn-success btn-sm btn-flat" data-dismiss="modal" aria-label="Close">
+									close
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<h3>Notice</h3>
+										<p>AJCapital has implemented a work from home policy.<br />
+										Please be assured that we will continue with our daily operations through emails, phone calls, and web conferencing.
+										<br />For any enquires or urgent matters, you may contact us as follows: </p>
+									</div>
+									<div class="col-md-6 col-12">
+										<h3>Pemberitahuan</h3>
+										<p>AJCapital saat ini menerapkan kebijakan bekerja dari rumah.<br />
+										Kami memastikan bahwa kami tetap memberikan pelayanan setiap hari kerja melalui emails, telephone dan web conference.
+										<br />Untuk permintaan yang mendesak, silahkan anda menghubungi kami di kontak nomor dan email di bawah ini:</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<p><h3>Singapore:</h3>
+											Luke Furler<br />
+											HP: + 65 9821-4124 (Voice or WA)<br />
+											Email: luke.furler@ajcapital.asia<br /><br />
+											
+											Hubert Chang<br />
+											HP: +65 8139-6647 (Voice or WA)<br />
+											Email: hubert.chang@ajcapital.asia
+											</p>
+									</div>	
+									<div class="col-md-6 col-12">
+										<p><h3>Jakarta:</h3>
+											Fransiscus Alip <br />
+											HP: +62 815-1181-19388 (Voice or WA) </br />
+											Email: fransiscus.alip@ajcapital.co.id<br /><br />
+											
+											Ms. Yuana (PA to the BOD):<br />
+											HP: +62 811-8802-788 (Voice or WA)<br />
+											Email: info@ajcapital.co.id
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<p>Our apologies for any inconvinience.</p>
+									</div>
+									<div class="col-md-6 col-12">
+											<p>Mohon maaf atas ketidaknyamanan ini.</p>
+									</div>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+						<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+						<script async defer src="https://www.ajcapital.asia/assets/js/bootstrap.min.js"></script>
+						<script>
+							$(document).ready(function(){
+								$('#myModal').on('show.bs.modal', function (e) {
+									$('.modal .modal-dialog').attr('class', 'modal-dialog fadeInUpBig animated');
+								})
+								$('#myModal').on('hide.bs.modal', function (e) {
+									$('.modal .modal-dialog').attr('class', 'modal-dialog fadeOutDownBig animated');
+								})
+
+								$('#myModal').modal('hide');
+							});
+							
+						</script>
+            <script async defer src="{{ base_url() }}/assets/js/bootstrap.min.js"></script>
+        </body>
+    </html>

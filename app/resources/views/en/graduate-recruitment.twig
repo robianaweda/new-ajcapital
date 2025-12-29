@@ -1,0 +1,208 @@
+{% extends 'template/layout_en_content.twig' %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div calss="col-md-12">
+                <p style="padding-left:15px">
+                    <a href="{{ base_url()}}/EN/careers" class="btn btn-success btn-sm">Back to Careers Page</a>
+                </p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Graduate Recruitment</h3>
+                <p>We will provide you with an engaging, challenging and demanding working environment to help you develop and grow your strategic and corporate finance skills whether you are an undergraduate or a postgraduate.</p>
+                <p>For the right people, we offer a great opportunity to an exceptional start in the world of corporate advisory. One that will jumpstart your professional journey.</p>
+                <h3>Qualifications</h3>
+                <table class="table">
+                    <tr>
+                        <td>Experience</td>
+                        <td>Fresh graduates welcome</td>
+                    </tr>
+                    <tr>
+                        <td>Education</td>
+                        <td>Bachelor’s degree from any major is welcome, with preference from economics, finance, business and management, accounting, industrial engineering and law</td>
+                    </tr>
+                    <tr>
+                        <td>GPA</td>
+                        <td>3.25 minimum</td>
+                    </tr>
+                    <tr>
+                        <td>IT literacy</td>
+                        <td>High degree of familiarity with MS Office applications</td>
+                    </tr>
+                    <tr>
+                        <td>Language</td>
+                        <td>Intermediate to advance (interview will be conducted in English)</td>
+                    </tr>
+                </table>
+                <h3>Job Description</h3>
+                <ul>
+                    <li>Under supervision conduct research, define data collection approaches, produce quantitative analyses and provide concise explanations and insights of said work</li>
+                    <li>Conduct hypothesis driven analyses, formulate and document assumptions and clarify underlying issues</li>
+                    <li>Organize, attend meetings and prepare meeting notes as a basis for next steps forward</li>
+                    <li>Provide support to partners, project managers and team mates</li>
+                    <li>Prepare client documents either in MS Powerpoint, MS Word, and/or MS Excel</li>
+                </ul>
+                <p>All candidates who meet the above requirements are encouraged to submit their resumes with the accompanying cover letters to info@ajcapital.co.id. If you feel this vacancy may be suitable for a colleague please feel free to forward these details to them.</p>
+
+                <hr style="margin: 40px 0;">
+
+                <h3>Apply Now</h3>
+                <p>Submit your application by filling out the form below. Please attach your CV in PDF format (max 1 MB).</p>
+
+                {% if page.info == 'sent' %}
+                    <div class="alert alert-success" role="alert">
+                        Thank you for your application. We will review your CV and contact you shortly.
+                    </div>
+                {% elseif page.info == 'error' %}
+                    <div class="alert alert-danger" role="alert">
+                        Sorry, there was an error submitting your application. Please try again or contact us at info@ajcapital.co.id
+                    </div>
+                {% endif %}
+
+                <form method="post" action="{{ base_url() }}/send-job-application" enctype="multipart/form-data" id="jobApplicationForm">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="fullname">Full Name <span class="text-danger">*</span></label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="fullname" name="fullname" type="text" required {% if page.info == 'sent' %} disabled {% endif %}/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="dob">Date of Birth <span class="text-danger">*</span></label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="dob" name="dob" type="date" required {% if page.info == 'sent' %} disabled {% endif %}/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="email">Email Address <span class="text-danger">*</span></label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="email" name="email" type="email" required {% if page.info == 'sent' %} disabled {% endif %}/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="phone">Phone Number <span class="text-danger">*</span></label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="phone" name="phone" type="tel" required {% if page.info == 'sent' %} disabled {% endif %}/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="education">Last Education <span class="text-danger">*</span></label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="education" name="education" required {% if page.info == 'sent' %} disabled {% endif %}>
+                                <option value="">-- Select Education Level --</option>
+                                <option value="High School">High School</option>
+                                <option value="Associate Degree">Associate Degree</option>
+                                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                <option value="Master's Degree">Master's Degree</option>
+                                <option value="Doctoral Degree">Doctoral Degree</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Recruitment Type <span class="text-danger">*</span></label>
+                        <div class="col-sm-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="recruitment_type" id="fresh_graduate" value="Fresh Graduate" required {% if page.info == 'sent' %} disabled {% endif %}>
+                                <label class="form-check-label" for="fresh_graduate">
+                                    Fresh Graduate
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="recruitment_type" id="experience" value="Experience" {% if page.info == 'sent' %} disabled {% endif %}>
+                                <label class="form-check-label" for="experience">
+                                    Experience
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="cv">Upload CV <span class="text-danger">*</span></label>
+                        <div class="col-sm-9">
+                            <input class="form-control-file" id="cv" name="cv" type="file" accept=".pdf" required {% if page.info == 'sent' %} disabled {% endif %}/>
+                            <small class="form-text text-muted">PDF format only, maximum file size: 1 MB</small>
+                            <div id="fileError" class="text-danger" style="display: none; margin-top: 5px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-9 offset-sm-3">
+                            <button class="btn btn-success" type="submit" id="submitBtn" {% if page.info == 'sent' %} disabled {% endif %}>
+                                Submit Application
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <script>
+                    document.getElementById('jobApplicationForm').addEventListener('submit', function(e) {
+                        var fileInput = document.getElementById('cv');
+                        var fileError = document.getElementById('fileError');
+                        var submitBtn = document.getElementById('submitBtn');
+
+                        fileError.style.display = 'none';
+                        fileError.textContent = '';
+
+                        if (fileInput.files.length > 0) {
+                            var file = fileInput.files[0];
+                            var fileSize = file.size;
+                            var fileName = file.name;
+                            var fileExtension = fileName.split('.').pop().toLowerCase();
+
+                            // Check file extension
+                            if (fileExtension !== 'pdf') {
+                                e.preventDefault();
+                                fileError.textContent = 'Please upload a PDF file only.';
+                                fileError.style.display = 'block';
+                                return false;
+                            }
+
+                            // Check file size (1 MB = 1048576 bytes)
+                            if (fileSize > 1048576) {
+                                e.preventDefault();
+                                fileError.textContent = 'File size must not exceed 1 MB. Your file size is ' + (fileSize / 1048576).toFixed(2) + ' MB.';
+                                fileError.style.display = 'block';
+                                return false;
+                            }
+
+                            // Disable button to prevent double submission
+                            submitBtn.disabled = true;
+                            submitBtn.textContent = 'Submitting...';
+                        }
+                    });
+
+                    // File input change event to show file info
+                    document.getElementById('cv').addEventListener('change', function(e) {
+                        var fileError = document.getElementById('fileError');
+                        fileError.style.display = 'none';
+
+                        if (this.files.length > 0) {
+                            var file = this.files[0];
+                            var fileSize = (file.size / 1048576).toFixed(2);
+                            var fileExtension = file.name.split('.').pop().toLowerCase();
+
+                            if (fileExtension !== 'pdf') {
+                                fileError.textContent = 'Please select a PDF file.';
+                                fileError.style.display = 'block';
+                                this.value = '';
+                            } else if (file.size > 1048576) {
+                                fileError.textContent = 'File size (' + fileSize + ' MB) exceeds the maximum limit of 1 MB.';
+                                fileError.style.display = 'block';
+                                this.value = '';
+                            }
+                        }
+                    });
+                </script>
+
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'partials/_main.twig' %}
+
+{% block main %}
+
+    {% if record|default %}
+
+        <h1 class="mt-5">{{ record|title }}</h1>
+
+        {{ record.content }}
+
+    {% endif %}
+
+{% endblock main %}
+

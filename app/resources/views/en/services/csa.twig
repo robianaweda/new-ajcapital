@@ -1,0 +1,90 @@
+{% extends 'template/layout_en_content.twig' %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <img src="{{ base_url() }}/assets/img/pages/services-csa.jpg" width="100%" />
+            <p>&nbsp;</p>
+            <h4>Creditor</h4>
+            <p>
+                Creditors of companies engaged in complex restructurings, distressed
+                      situations, or court processes need an advisor with the right skills and
+                      expertise. We offer tailored creditor advisory services with deep
+                      in-country and regional knowledge and networks to assist individual
+                      creditors, lender groups, banks, bondholders and other investors to
+                      evaluate the risks and opportunities associated with such situations.
+            </p>
+            <p>
+                Recent engagements have included advising creditors on distressed
+                      situations ranging in size and complexity from large companies with
+                      operations across multiple jurisdictions to middle market companies,
+                      private and publicly held.
+            </p>
+            <p>
+                Our creditor support and advisory services include:
+            </p>
+            <ol class="roman-list">
+                <li>
+                    Advising on formal and informal debt restructurings including: (i)
+                            Schemes of Arrangement; and (ii) Indonesian Suspension of Debt Payment
+                            processes (PKPU)
+                </li>
+                <li>
+                    Conducting operational and financial reviews and sustainable debt load
+                            assessment, including stress testing for risks and opportunities and
+                            assessing loan recovery prospects
+                </li>
+                <li>
+                    Managing interim situations and turnarounds (Chief Restructuring Officer
+                            or other Interim Directorships) during and post restructuring
+                </li>
+                <li>Conducting cash monitoring and working capital management</li>
+                <li>Carrying out cost and control processes reviews</li>
+                <li>
+                    Coordinating and advising steering committees overseeing the
+                            restructuring of a distressed situation
+                </li>
+                <li>
+                    Valuing collateral packages on both going concern and liquidation basis
+                </li>
+                <li>
+                    Monitoring restructuring / business plan implementation and compliance
+                </li>
+                <li>
+                    Negotiating key terms and commercial amendments to existing credit
+                            facilities, or for new documentation as the case may be, as well as
+                            managing the execution and closing process
+                </li>
+                <li>
+                    Valuing NPL portfolios and determining appropriate exit strategies
+                </li>
+            </ol>
+            <p>&nbsp;</p>
+            <div class="row" id="nav-case-study">
+                {% for data in page.data %}
+                    {% if data.TypeofCase == page.service %}
+                        <div class="card" style="width: 25rem;margin: 12px;">
+                            <div class="card-body">
+                                <div class="title-case">
+                                    <span style="font-size:10px;float:left;margin-top:15px;">Case Study</span>
+                                    <span><img alt="" src="{{ base_url() }}/assets/img/logo/logo-landing-transparent-sm.png" style="float: right;margin-top: 0px;" width="70px" /></span>
+                                </div>
+                                <h5 class="card-title" style="margin-top:80px;margin-bottom: 0px;">
+                                    {{ data.header }}
+                                </h5>
+                                <span style="font-size: 10px;">{{ data.DateofClosing }}</span><br/><br/>
+                                <p style="margin-top:20px;">
+                                    <span style="margin-top: 40px;">
+                                        <a href="{{ base_url() }}/EN/services/{{ page.service }}/{{ data.id }}#nav-case-study" class="btn btn-outline-light btn-sm">Read More</a>
+                                    </span>
+                                    <span class="sc-box-value">{{ data.Value }}</span>
+                                </p>
+                                <span class="sc-box-value-saying">{{ data.Saying }}</span>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <p class="pages-content">&nbsp;</p>
+{% endblock %}

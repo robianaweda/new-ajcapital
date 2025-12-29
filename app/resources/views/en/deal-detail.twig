@@ -1,0 +1,165 @@
+{% extends 'template/layout_en_content.twig' %}
+{% block content %}
+    {% for deal in page.data %}
+        {% if deal.id == page.id %}
+            {# Hero Section with Featured Image and Metadata #}
+            <div class="deal-hero" style="margin-bottom: 40px;">
+                <div class="deal-meta-header" style="margin-bottom: 20px;">
+                    <span class="deal-date" style="color: #666; font-size: 14px; margin-right: 15px;">
+                        <i class="fa fa-calendar"></i> {{ deal.DateofClosing }}
+                    </span>
+                    <span class="deal-category-badge" style="background: #06832a; color: white; padding: 6px 14px; border-radius: 4px; font-size: 13px; font-weight: 600; text-transform: uppercase;">
+                        Deal
+                    </span>
+                </div>
+
+                {# Main Title #}
+                <h1 class="deal-title" style="font-size: 36px; font-weight: 700; color: #2c3e50; line-height: 1.3; margin-bottom: 20px;">
+                    {{ deal.header }}
+                </h1>
+
+                {# Deal Value Display #}
+                {% if deal.Value %}
+                <div class="deal-value-card" style="background: linear-gradient(135deg, #06832a 0%, #055722 100%); padding: 30px; border-radius: 8px; margin-bottom: 30px;">
+                    <div style="color: white;">
+                        <div style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; opacity: 0.9;">Transaction Value</div>
+                        <div style="font-size: 48px; font-weight: 700; line-height: 1;">{{ deal.Value }}</div>
+                        <div style="font-size: 20px; margin-top: 5px; opacity: 0.95;">{{ deal.Saying }}</div>
+                    </div>
+                </div>
+                {% endif %}
+
+                {# Service Category #}
+                <div class="deal-service-info" style="background: #f8f9fa; padding: 15px 20px; border-left: 4px solid #06832a; margin-bottom: 30px;">
+                    <strong style="color: #06832a; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Service Line</strong>
+                    <div style="font-size: 16px; color: #2c3e50; margin-top: 5px;">{{ deal.service }}</div>
+                </div>
+            </div>
+
+            {# Main Content Sections #}
+            <div class="deal-content" style="font-size: 16px; line-height: 1.8; color: #333;">
+
+                {# Project Overview Section #}
+                {% if deal.ProjectOverview is defined and deal.ProjectOverview|length > 0 %}
+                <section class="content-section" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 28px; font-weight: 700; color: #06832a; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 3px solid #06832a;">
+                        Project Overview
+                    </h2>
+                    {% for overview in deal.ProjectOverview %}
+                        <p style="margin-bottom: 20px; text-align: justify;">{{ overview['1'] }}</p>
+                    {% endfor %}
+                </section>
+                {% endif %}
+
+                {# Project Issues/Challenges Section #}
+                {% if deal.ProjectIssues is defined and deal.ProjectIssues|length > 0 %}
+                <section class="content-section" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 28px; font-weight: 700; color: #06832a; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 3px solid #06832a;">
+                        Challenges
+                    </h2>
+                    <ul class="styled-list" style="list-style: none; padding-left: 0;">
+                        {% for issue in deal.ProjectIssues %}
+                        <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                            <i class="fa fa-check-circle" style="position: absolute; left: 0; top: 5px; color: #06832a; font-size: 18px;"></i>
+                            {{ issue['2'] }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+                {% endif %}
+
+                {# What We Did Section #}
+                {% if deal.WhatWeDid is defined and deal.WhatWeDid|length > 0 %}
+                <section class="content-section" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 28px; font-weight: 700; color: #06832a; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 3px solid #06832a;">
+                        Our Approach
+                    </h2>
+                    <ul class="styled-list" style="list-style: none; padding-left: 0;">
+                        {% for action in deal.WhatWeDid %}
+                        <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                            <i class="fa fa-arrow-circle-right" style="position: absolute; left: 0; top: 5px; color: #06832a; font-size: 18px;"></i>
+                            {{ action['3'] }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+                {% endif %}
+
+                {# Project Outcome Section #}
+                {% if deal.ProjectOutcome is defined and deal.ProjectOutcome|length > 0 %}
+                <section class="content-section" style="margin-bottom: 50px;">
+                    <h2 style="font-size: 28px; font-weight: 700; color: #06832a; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 3px solid #06832a;">
+                        Outcome
+                    </h2>
+                    <div class="outcome-grid" style="background: #f8f9fa; padding: 30px; border-radius: 8px;">
+                        <ul class="styled-list" style="list-style: none; padding-left: 0; margin: 0;">
+                            {% for outcome in deal.ProjectOutcome %}
+                            <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                                <i class="fa fa-trophy" style="position: absolute; left: 0; top: 5px; color: #06832a; font-size: 18px;"></i>
+                                {{ outcome['4'] }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </section>
+                {% endif %}
+
+            </div>
+
+            {# Call to Action Section #}
+            <div class="cta-section" style="margin-top: 60px; padding: 40px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; text-align: center;">
+                <h3 style="font-size: 24px; color: #2c3e50; margin-bottom: 15px;">Interested in Similar Services?</h3>
+                <p style="color: #666; margin-bottom: 25px; font-size: 16px;">Learn more about our {{ deal.service }} capabilities or contact us for a consultation.</p>
+                <div>
+                    <a href="{{ base_url() }}/EN/services/{{ deal.TypeofCase }}" class="btn" style="background: #06832a; color: white; padding: 12px 30px; border-radius: 5px; text-decoration: none; margin: 0 10px; display: inline-block; font-weight: 600;">
+                        View Service Page
+                    </a>
+                    <a href="{{ base_url() }}/EN/contactus" class="btn" style="background: white; color: #06832a; padding: 12px 30px; border: 2px solid #06832a; border-radius: 5px; text-decoration: none; margin: 0 10px; display: inline-block; font-weight: 600;">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+
+            {# Back to Deals Button #}
+            <div style="margin-top: 40px;">
+                <a href="{{ base_url() }}/EN/deals" style="color: #06832a; font-weight: 600; text-decoration: none;">
+                    <i class="fa fa-arrow-left"></i> Back to All Deals
+                </a>
+            </div>
+
+        {% endif %}
+    {% endfor %}
+
+    {# Custom Styles #}
+    <style>
+        .deal-content p {
+            font-family: Georgia, serif;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .deal-title {
+                font-size: 28px !important;
+            }
+
+            .deal-value-card div:nth-child(2) {
+                font-size: 36px !important;
+            }
+
+            .content-section h2 {
+                font-size: 22px !important;
+            }
+
+            .btn {
+                display: block !important;
+                margin: 10px 0 !important;
+            }
+        }
+    </style>
+
+{% endblock %}

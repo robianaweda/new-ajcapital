@@ -1,0 +1,32 @@
+# Dependencies
+/vendor/
+composer.lock
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+error_log
+error_log-*
+*.log
+
+# Cache
+/cache/
+/tmp/
+
+# Sensitive files
+credentials.txt
+secrets.txt

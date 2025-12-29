@@ -1,0 +1,527 @@
+[{
+    "ID":1,
+    "lang":"ID",
+    "service":"Corporate Initiative Management and Support",
+    "name":"Portfolio Monitoring Telecommunication Company"
+    "country":"Indonesia",
+    "time":"March 2019",
+    "status":"Ongoing",
+    "client":"Confidential",
+    "value":"N/A",
+},
+{
+    "ID":2,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"Bondholder Restructuring of Distressed Singapore OSV Company", 
+    "country":"Singapore",
+    "time":"March 2019",
+    "status":"Ongoing",
+    "client":"Miclyn Express Offshore Limited",
+    "value":"USD 450 Million",
+},
+{
+    "ID":3,
+    "service":"M&A Advisory",
+    "name":"Financial Modelling and Working Capital Analysis of Infrastructure Company", 
+    "country":"Singapore",
+    "time":"March 2019",
+    "status":"Ongoing",
+    "client":"Confidential", 
+    "value":"USD3 Billion",
+},
+{
+    "ID":4,
+    "service":"Corporate Initiative Management and Support",
+    "name":"Business Plan Development Industrial Estate",
+    "country":"Indonesia",
+    "February 2019",
+    "status":"Ongoing",
+    "Client":"Confidential",
+    "value":"USD 1 Billion",
+},
+{
+    "ID":5,
+    "service":"Fund Raising",
+    "name":"Start Up PMO & Fundraising"  
+    "country":"Indonesia",
+    "time":"March 2019",
+    "status":"Ongoing",
+    "client":"GoHalalGo",
+    "value":"N/A",
+},
+{
+    "ID":6,
+    "service":"Corporate Initiative Management and Support",
+    "name":"Advising Global Business on Integrated Financial Reporting in Preparation for Capital Raising",
+    "country":"Singapore",
+    "time":"October 2018",
+    "status":"Closed",
+    "Client":"Confidential",
+    "value":"USD 80 Million",
+},
+{
+    "ID":7,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"Voluntary Restructuring Coal Company", 
+    "country":"Indonesia",
+    "time":"September 2018",
+    "status":"Closed (December 2018)",
+    "Client":"Confidential",
+    "value":"USD 60 Million",
+},
+{
+    "ID":8,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"Voluntary Restructuring LPG Company", 
+    "country":"Indonesia",
+    "time":"August 2018",
+    "status":"Ongoing",
+    "Client":"Confidential",
+    "value":"USD 40 Million",
+},
+{
+    "ID":9,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"PKPU Multi Finance Company",
+    "country":"Indonesia",
+    "time":"August 2018",
+    "status":"Closed (October 2018)",
+    "client":"PT Sunprima Nusantara Pembiayaan",
+    "value":"IDR 4.1 Trilliun",
+},
+{
+    "ID":10,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"Voluntary Restructuring Smart Card Company", 
+    "country":"Indonesia",
+    "time":"July 2018",
+    "status":"Ongoing",
+    "Client":"Confidential",
+    "value":"IDR 840 Billion",
+},
+{
+    "ID":11,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"Voluntary Restructuring Oil & Gas Drilling Company",
+    "country":"Indonesia",
+    "time":"July 2018",
+    "status":"Ongoing",
+    "client":"PT Apexindo Pratama Duta Tbk",
+    "value":"USD 319.7 Million",
+},
+{
+    "ID":12,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"PKPU Plastic Bottle Manufacturer Company II",
+    "country":"Indonesia",
+    "time":"June 2018",
+    "status":"Closed (July 2018)",
+    "client":"PT Namasindo Plas Abadi & Affiliations",
+    "value":"IDR 1.7 Trilliun",
+},
+{
+    "ID":13,
+    "service":"Debt Restructuring & Turnaround Management",
+    "Bondholder Restructuring Advisory to a Distressed Shipping Company", 
+    "country":"Singapore",
+    "time":"June 2018",
+    "status":"Closed (November 2018)",
+    "client":"Confidential",
+    "value":"SGD 100 Million",
+},
+{
+    "ID":14,
+    "service":"Insolvency",
+    "name":"Creditors Voluntary Winding Up of a UK Insurance Company (held via Singapore)",
+    "country":"Singapore",
+    "time":"May 2018",
+    "status":"Closed (January 2019)",
+    "Client":"Confidential",
+    "value":"N/A",
+},
+{
+    "ID":15,
+    "service":"Insolvency",
+    "name":"United Stated Bankruptcy Trustee (Chapter 7) Asian Representative and Liquidation Agent Singapore",
+    "time":"February 2018",
+    "status":"Ongoing",
+    "Zetta Jet Pte Ltd",
+    "value":"N/A",
+},
+{
+    "ID":16,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"PKPU Plastic Bottle Manufacturer Company I",
+    "country":"Indonesia",
+    "time":"February 2018",
+    "status":"Closed (May 2018)",
+    "client":"PT Namasindo Plas",
+    "value":"IDR 3.9 Trilliun",
+},
+{
+    "ID":17,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"Monitoring Accountant LPG Company",
+    "country":"Indonesia",
+    "time":"December 2017",
+    "status":"Ongoing",
+    "Client":"Confidential",
+    "value":"USD 92.5 Million",
+},
+{
+    "ID":18,
+    "service":"Corporate Initiative Management and Support",
+    "name":"Commercial Due Diligence of a Gas Distribution Company",
+    "country":"Indonesia",
+    "time":"November 2017",
+    "status":"Closed (April 2018)",
+    "Client":"Confidential",
+    "value":"N/A",
+},
+{
+    "ID":19,
+    "service":"Corporate Initiative Management and Support",
+    "name":"Valuation of a Contingent Liability Instrument",
+    "country":"Indonesia",
+    "time":"September 2017",
+    "status":"Closed (January 2018)",
+    "Client":"Confidential",
+    "value":"USD 100 Million",
+},
+},
+{
+    "ID":20,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"Post-PKPU Turn Around Management and CRO",
+    "country":"Indonesia",
+    "time":"August 2017",
+    "status":"Ongoing",
+    "client":"Sujaya Group", 
+    "value":"IDR 3.2 Trilliun",
+},
+{ 
+    "ID":21,
+    "service":"Insolvency",
+Court Appointed Liquidator and Third Party Litigation Funding
+Singapore
+"time":"July 2017
+    "status":"Ongoing",
+Trikomsel Singapore Pte Ltd (In Compulsory Liquidation)
+SGD 225 Million",
+},
+{ 
+    "ID":22,
+"service":"Debt Restructuring & Turnaround Management",
+Voluntary Restructuring LPG Company 
+    "country":"Indonesia",
+    "time":"May 2017
+    "status":"Closed", 
+(March 2018)
+    "Client":"Confidential",
+    "value":"USD 92.5 Million",
+},
+{ 
+    "ID":23,
+"service":"Corporate Initiative Management and Support",
+Equity Right and MCB Issuance 
+    "country":"Singapore",
+"time":"April 2017
+    "status":"Closed", 
+(July 2017)
+PT. Bumi Resources Tbk 
+    "value":"USD 2.6 Billion",
+},
+{ 
+    "ID":24,
+"service":"Insolvency
+Court Appointed Liquidator of a Distressed Shipping Company 
+    "country":"Singapore",
+"time":"January 2017
+    "status":"Ongoing",
+Siva Ships International Pte Limited (In Compulsory Liquidation)
+    "value":"USD 3 Billion",
+},
+{ 
+    "ID":25,
+        "service":"Insolvency
+        Court Appointed Liquidator of a Distressed Shipping Company
+    "country":"Singapore",
+        "time":"December 2016
+    "status":"Ongoing",
+        Siva Bulk Limited (In Compulsory Liquidation)
+    "value":"USD 3 Billion",
+},
+{ 
+    "ID":26,
+    "service":"Insolvency",
+    Creditors Voluntary Liquidator of a Ride Hailing Business in Singapore
+    Singapore
+    "time":"November 2016
+    "status":"Closed", (December 2017)
+    Karhoo Singapore Pte Ltd
+    "value":"N/A",
+},
+{ 
+    "ID":27,
+    "service":"Debt Restructuring & Turnaround Management",
+    PKPU Debt Restructuring of Farm and Feed Company
+    "country":"Indonesia",
+    "time":"October 2016
+    "status":"Closed", 
+    (July 2017)
+    Sujaya Group
+    "value":"IDR 3.2 Trilliun",
+},
+{ 
+    "ID":28,
+"service":"M&A Advisory
+M&A Advisory of Oil & Gas Companies
+    "country":"Indonesia",
+    "time":"July 2016
+    "status":"Closed", 
+(January 2017)
+    "Client":"Confidential", 
+    "value":"N/A",
+},
+{ 
+    "ID":29,
+"service":"Fund Raising
+Corporate Restructuring and Fund Raising of Assisted Reproductive Technology Company 
+    "country":"Indonesia",
+    "time":"May 2016
+    "status":"Ongoing",
+    "Client":"Confidential", 
+    "value":"N/A",
+},
+{ 
+    "ID":30,
+"service":"Creditor Support & Advisory
+Creditor Support and Advisory of Sugar Milling business in VieTrilliun",am
+Singapore
+"time":"April 2016
+    "status":"Closed", (June 2017)
+    "Client":"Confidential",
+    "value":"USD 250 Million",
+},
+{ 
+    "ID":31,
+"service":"Debt Restructuring & Turnaround Management",
+PKPU Debt Restructuring of Coal Company 
+    "country":"Indonesia",
+    "time":"April 2016
+    "status":"Closed",
+(November 2016)
+PT. Bumi Resources Tbk 
+    "value":"USD 7 Billion",
+3},
+{ 
+    "ID":2,
+    "service":"Debt Restructuring & Turnaround Management",
+PKPU Debt Restructuring of Packaging Company 
+    "country":"Indonesia",
+    "time":"April 2016
+    "status":"Closed", 
+(January 2017)
+PT. Dwi Aneka Jaya Kemasindo Tbk 
+    "value":"IDR 1.2 Trilliun",
+},
+{ 
+    "ID":33,
+"service":"Creditor Support & Advisory
+Creditor Support and Advisory of Power Vendor Company Debt Restructuring
+    "country":"Indonesia",
+    "time":"April 2016
+    "status":"Closed", 
+(June 2017)
+    "Client":"Confidential", 
+    "value":"USD 191.3 Million",
+},
+{ 
+    "ID":34,
+"service":"M&A Advisory
+Sell Side Advisory of Payment Gateway 
+    "country":"Indonesia",
+    "time":"April 2016
+    "status":"Closed",
+(July 2018)
+    "Client":"Confidential", 
+    "value":"N/A",
+},
+{ 
+    "ID":35,
+"service":"Fund Raising
+Fund Raising of CNG/LNG Companies
+    "country":"Indonesia",
+    "time":"January 2016
+    "status":"Closed", (January 2017)
+    "Client":"Confidential", 
+    "value":"N/A",
+},
+{ 
+    "ID":36,
+"service":"Debt Restructuring & Turnaround Management",
+PKPU Implementation and Transaction Support of Tea Plantation and Trading Company
+    "country":"Indonesia",
+    "time":"November 2015
+    "status":"Closed", 
+(March 2016)
+PT. Sariwangi Agriculture Estates Agency
+    "value":"USD 107 Million",
+},
+{ 
+    "ID":37,
+"service":"Creditor Support & Advisory
+Creditor Support and Advisory of Coal Company 
+    "country":"Indonesia",
+    "time":"July 2015
+    "status":"Closed", 
+(March 2016)
+    "Client":"Confidential", 
+    "value":"USD 25 Million", 
+},
+{ 
+    "ID":38,
+"service":"Corporate Initiative Management and Support",
+Transaction Support of Shares and Notes Acquisition of Petrochemical Company 
+    "country":"Indonesia",
+    "time":"June 2015
+    "status":"Closed", 
+(October 2015)
+    "Client":"Confidential", 
+    "value":"USD 290 Million",
+},
+{ 
+    "ID":39,
+"service":"Debt Restructuring & Turnaround Management",
+Debt Restructuring of Automotive Company 
+    "country":"Indonesia",
+    "time":"May 2015
+    "status":"Closed", (December 2015)
+    "Client":"Confidential", 
+    "value":"IDR 200 Billion", 
+},
+{ 
+    "ID":40,
+"service":"Debt Restructuring & Turnaround Management",
+PKPU Debt Restructuring of Tea Plantation and Trading Company 
+    "country":"Indonesia",
+    "time":"May 2015
+    "status":"Closed", 
+(October 2015)
+PT. Sariwangi Agricultural Estates Agency 
+    "value":"USD 107 Million",
+},
+{ 
+    "ID":41,
+"service":"Corporate Initiative Management and Support",
+Commercial Due Diligence of Furniture Companies
+    "country":"Indonesia",
+    "time":"January 2015
+    "status":"Closed", 
+(October 2015)
+    "Client":"Confidential", 
+    "value":"N/A",
+
+},
+{ 
+    "ID":42,
+    "service":"ebt Restructuring & Turnaround Management",
+    "name":"PKPU Debt Restructuring of Telco Company",
+    "country":"Indonesia",
+    "time":"October 2014",
+    "status":"Closed (December 2014)",
+    "client":"PT. Bakrie Telecom Tbk. ",
+    "value":"IDR 12 Trilliun",
+},
+{ 
+    "ID":43,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"PKPU Implementation Transaction Support of Petrochemical Company",
+    "country":"Indonesia",
+    "time":"February 2013",
+    "status":"Closed (December 2014)",
+    "client":"PT. Trans-Pacific Petrochemical Indonesia", 
+    "value":"USD 1.5 Billion", 
+},
+{ 
+    "ID":4
+    "service":"Fund Raising",
+    "name":"Fundraising for Natural Ingredient Producer",
+    "country":"Indonesia",
+    "time":"February 2013"<
+    "status":"Closed (March 2014)",
+    "Client":"Confidential", 
+    "value":"USD 31.5 Million", 
+},
+{ 
+    "ID":45,
+    "service":"Corporate Initiative Management and Support",
+    "name":"Valuation Service of Coal Company ",
+    "country":"Indonesia",
+    "time":"January 2013",
+    "status":"Closed (May 2013)",
+    "client":"PT. Sembawang Development PTE. LTD.", 
+    "value":"USD 111 Million",
+},
+{ 
+    "ID":46,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"PKPU Debt Restructuring of Petrochemical Company",
+    "country":"Indonesia",
+    "time":"November 2012",
+    "status":"Closed (December 2012)",
+    "client":"PT. Trans-Pacific Petrochemical Indonesia",
+    "value":"USD 1.9 Billion", 
+},
+{ 
+    "ID":47,
+    "service":"Fund Raising",
+    "name":"Fund Raising for Toll Road Companies",
+    "country":"Indonesia",
+    "time":"June 2011",
+    "status":"Closed (August 2013)"'
+    "client":"Confidential",
+    "value":"IDR 5 Trilliun", 
+},
+{ 
+    "ID":48,
+    "service":"Debt Restructuring & Turnaround Management",
+    "name":"PKPU Debt Restructuring of Airline Company",
+    "country":"Indonesia",
+    "time":"April 2011",
+    "status":"Closed (August 2011)",
+    "client":"PT. Mandala Airlines", 
+    "value":"IDR 2.5 Trilliun",
+},
+{ 
+    "ID":49,
+    "service":"M&A Advisory",
+    "name":"Acquisition Support of Coal Company",
+    "country":"Indonesia",
+    "time":"October 2010",
+    "status":"Closed (March 2011)",
+    "client":"PT. Bumi Resources Tbk",
+    "value":"USD 3 Billion",
+},
+{ 
+    "ID":50,
+    "service":"M&A Advisory",
+    "name":"Acquisition of Directory and Call Center Services",
+    "country":"Indonesia",
+    "time":"February 2008",
+    "status":"Closed (June 2009)",
+    "client":"PT. Multimedia Nusantara",
+    "value":"IDR 598 Billion",
+},
+{ 
+    "ID":51,
+    "service":"M&A Advisory";
+    "name":"Acquisition of Third Party Administrator in Health Insurance"
+    "country":"Indonesia",
+    "time":"March 2008",
+    "status":"Closed (July 2008)",
+    "client":"PT. Multimedia Nusantara",
+    "value":"IDR 128 Billion", 
+}]
+
+

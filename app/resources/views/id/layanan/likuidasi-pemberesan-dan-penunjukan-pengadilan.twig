@@ -1,0 +1,65 @@
+{% extends 'template/layout_id_content.twig' %}
+{% block content %}
+    <img alt="" src="{{ base_url() }}/assets/img/pages/Liquidation.jpg" width="100%" />
+    <p>&nbsp;</p>
+    <h4>Insolvensi</h4>
+    <div class="row">
+        <div class="col-md-12">
+            <p>Masa insolvensi terdiri dari prosedur pembubaran dan prosedur rehabilitasi. Prosedur pembubaran termasuk likuidasi dan pemberesan sedangkan prosedur rehabilitasi meliputi situasi seperti Penundaan Kewajiban Pembayaran Utang (PKPU),
+                                                                                                Manajemen Yudisial
+                                                                                                dan
+                <i>Schemes of Arrangement</i>.
+            </p>
+            <p>Perusahaan yang menghadapi kesulitan keuangan dapat berupaya merehabilitasi perusahaannya atau beralih pada proses pembubaran. Bahkan, prosedur pembubaran sering digunakan di luar peristiwa kesulitan seperti mengakhiri sebuah perusahaan yang telah melampaui manfaat ekonominya.
+            </p>
+            <p>Kami menerima penugasan seperti ini, dan tanggung jawab fidusia yang menyertainya dengan sangat serius. Kami secara formal ditunjuk dalam sidang pengadilan di Singapura pada beberapa kasus kepailitan yang sangat kompleks dan kontroversial dalam beberapa tahun terakhir ini, termasuk diantaranya adalah Trikomsel, Zetta Jet dan Siva
+                <i>Shipping Group</i>.
+            </p>
+            <p>Layanan Insolvensi dan Penasihatan kami, tunduk pada beberapa batasan yurisdiksi, termasuk:
+            </p>
+            <ol class="roman-list">
+                <li>Menerima peran sebagai Kurator yang ditunjuk oleh kreditor ataupun pengadilan</li>
+                <li>Menerima peran sebagai Likuidator yang ditunjuk oleh kreditor atau pengadilan</li>
+                <li>Menerima peran sebagai Administrator pada
+                    <i>Scheme of Arrangement</i>
+                </li>
+                <li>Menerima peran sebagai Pengelola Skema
+                </li>
+                <li>Menerima peran sebagai Pengelola Yudisial
+                </li>
+                <li>Tenaga ahli di Pengadilan dalam proses PKPU</li>
+                <li>Mengelola proses PKPU</li>
+            </ol>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <div class="row" id="nav-studi-kasus">
+        {% for data in page.data %}
+            {% if data.TypeofCase == page.service %}
+                <div class="card" style="width: 25rem;margin: 12px;">
+                    <div class="card-body">
+                        <div class="title-case">
+                            <span style="font-size:10px;float:left;margin-top:15px;">Studi Kasus</span>
+                            <span><img alt="" src="{{ base_url() }}/assets/img/logo/logo-landing-transparent-sm.png" style="float: right;margin-top: 0px;" width="70px" /></span>
+                        </div>
+                        <h5 class="card-title" style="margin-top:80px;margin-bottom: 0px;">
+                            {{ data.header | raw }}
+                        </h5>
+                        <span style="font-size: 10px;">{{ data.DateofClosing }}</span><br/><br/>
+                        <p style="margin-top:20px;">
+                            <span style="margin-top: 40px;">
+                                <a href="{{ base_url() }}/ID/layanan/{{ page.service }}/{{ data.id }}#nav-studi-kasus" class="btn btn-outline-light btn-sm">Baca</a>
+                            </span>
+                            <span class="sc-box-value">{{
+                            data.Value
+                          }}</span>
+                        </p>
+                        <span class="sc-box-value-saying">{{
+                          data.Saying
+                        }}</span>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

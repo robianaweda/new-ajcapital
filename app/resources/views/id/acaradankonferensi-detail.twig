@@ -1,0 +1,243 @@
+{% extends 'template/layout_id_content.twig' %}
+{% block content %}
+    <nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{{ base_url }}/ID">Beranda</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="{{ base_url }}/ID/acaradankonferensi">Acara & Konferensi</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">{{ page.event.title }}</li>
+        </ol>
+    </nav>
+
+    <article class="event-detail">
+        <div class="event-detail-header">
+            <h1 class="event-detail-title">{{ page.event.title }}</h1>
+            <div class="event-detail-meta">
+                <span class="meta-item">
+                    <i class="fa fa-calendar"></i> {{ page.event.date }}
+                </span>
+                {% if page.event.location %}
+                    <span class="meta-item">
+                        <i class="fa fa-map-marker"></i> {{ page.event.location }}
+                    </span>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="event-detail-content">
+            {% if page.event.image %}
+                <div class="event-image mb-4">
+                    <img src="{{ base_url() }}{{ page.event.image }}" alt="{{ page.event.title }}" class="img-fluid"/>
+                </div>
+            {% endif %}
+
+            <div class="event-description">
+                {{ page.event.description|nl2br }}
+            </div>
+
+            <div class="event-info">
+                {% if page.event.venue %}
+                    <p class="info-item">
+                        <span class="info-label">Tempat:</span>
+                        <span class="info-value">{{ page.event.venue }}</span>
+                    </p>
+                {% endif %}
+
+                {% if page.event.organizer %}
+                    <p class="info-item">
+                        <span class="info-label">Diselenggarakan oleh:</span>
+                        <span class="info-value">{{ page.event.organizer }}</span>
+                    </p>
+                {% endif %}
+
+                {% if page.event.reference %}
+                    <p class="info-item">
+                        <span class="info-label">Referensi:</span>
+                        <span class="info-value">
+                            <a href="{{ page.event.reference }}" target="_blank" rel="noopener noreferrer" class="reference-link">
+                                {{ page.event.reference }}
+                                <i class="fa fa-external-link"></i>
+                            </a>
+                        </span>
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="event-detail-footer">
+            <a href="{{ base_url }}/ID/acaradankonferensi" class="btn btn-outline-success">
+                <i class="fa fa-arrow-left"></i> Kembali ke Acara & Konferensi
+            </a>
+        </div>
+    </article>
+
+    <style>
+        /* Remove extra spacing from rows */
+        .container .row {
+            margin-bottom: 0 !important;
+        }
+
+        .breadcrumb {
+            background-color: #f8f9fa !important;
+            padding: 0.75rem 1rem;
+            border-radius: 0.25rem;
+            font-size: 0.9rem;
+            margin-bottom: 1rem !important;
+        }
+
+        .breadcrumb-item a {
+            color: #2c5530;
+            text-decoration: none;
+        }
+
+        .breadcrumb-item a:hover {
+            color: #4a8a4f;
+            text-decoration: underline;
+        }
+
+        .breadcrumb-item.active {
+            color: #6c757d;
+        }
+
+        .event-detail {
+            margin-top: 0;
+            margin-bottom: 3rem;
+            background-color: transparent !important;
+        }
+
+        .event-detail-header {
+            border-bottom: 2px solid #2c5530;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.25rem;
+            background-color: transparent !important;
+        }
+
+        .event-detail-title {
+            color: #2c5530 !important;
+            font-weight: 600;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.25;
+            background-color: transparent !important;
+        }
+
+        .event-detail-meta {
+            color: #666 !important;
+            font-size: 0.95rem;
+            background-color: transparent !important;
+            margin-bottom: 0;
+        }
+
+        .meta-item {
+            margin-right: 1.5rem;
+            display: inline-block;
+            color: #666 !important;
+        }
+
+        .meta-item i {
+            color: #2c5530 !important;
+            margin-right: 0.5rem;
+        }
+
+        .event-detail-content {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #333 !important;
+            background-color: transparent !important;
+        }
+
+        .event-image img {
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-description {
+            margin-bottom: 0.75rem;
+            color: #333 !important;
+            background-color: transparent !important;
+        }
+
+        .event-description p {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .event-info {
+            background-color: #f8f9fa !important;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            border-left: 4px solid #2c5530;
+            margin-top: 0.75rem;
+        }
+
+        .info-item {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-label {
+            color: #2c5530 !important;
+            font-weight: 600;
+            display: inline-block;
+            min-width: 170px;
+        }
+
+        .info-value {
+            color: #333 !important;
+        }
+
+        .reference-link {
+            color: #2c5530 !important;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .reference-link:hover {
+            color: #4a8a4f !important;
+            text-decoration: underline;
+        }
+
+        .reference-link i {
+            font-size: 0.85rem;
+            margin-left: 0.25rem;
+        }
+
+        .event-detail-footer {
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+            border-top: 1px solid #dee2e6;
+            background-color: transparent !important;
+        }
+
+        .btn-outline-success {
+            color: #2c5530 !important;
+            border-color: #2c5530 !important;
+            padding: 0.5rem 1.5rem;
+            background-color: transparent !important;
+        }
+
+        .btn-outline-success:hover {
+            background-color: #2c5530 !important;
+            border-color: #2c5530 !important;
+            color: white !important;
+        }
+
+        @media (max-width: 768px) {
+            .event-detail-title {
+                font-size: 1.5rem;
+            }
+
+            .info-label {
+                display: block;
+                margin-bottom: 0.25rem;
+            }
+        }
+    </style>
+{% endblock %}

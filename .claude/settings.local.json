@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(composer:*)",
+      "Bash(C:xamppphpphp.exe --version)",
+      "Bash(/c/xampp/php/php.exe:*)",
+      "Bash(curl:*)",
+      "Bash(find:*)",
+      "Bash(test:*)",
+      "Bash(C:/xampp/php/php.exe:*)",
+      "Bash(ls:*)",
+      "Bash(php:*)",
+      "Bash(cat:*)",
+      "Bash(C:/xampp-8.1.25/php/php.exe:*)",
+      "Bash(del composer-setup.php)",
+      "Bash(for:*)",
+      "Bash(do curl -s -o /dev/null -w \"Request $i: %{time_total}s\\\\n\" http://localhost/new-ajcapital/EN)",
+      "Bash(done)",
+      "Bash(mkdir:*)",
+      "Bash(powershell:*)",
+      "Bash(move *.md report)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

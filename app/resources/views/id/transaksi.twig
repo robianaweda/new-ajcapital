@@ -1,0 +1,163 @@
+{% extends 'template/layout_id_content.twig' %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title">Transaksi</h2>
+                <p class="page-description">Rekam jejak kami dalam transaksi dan layanan konsultasi yang sukses di berbagai sektor dan industri.</p>
+                <hr style="border-top: 2px solid #06832a; width: 80px; margin-left: 0;" />
+            </div>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="service-filter" style="font-weight: 600; color: #06832a;">Filter berdasarkan Kategori Layanan:</label>
+                    <select class="form-control" id="service-filter" style="max-width: 500px;">
+                        <option value="all">Semua Layanan</option>
+                        <option value="Restrukturisasi dan Turnaround Management">Restrukturisasi dan Turnaround Management</option>
+                        <option value="Pendukung dan Penasihat Kreditor">Pendukung dan Penasihat Kreditor</option>
+                        <option value="Investigasi Keuangan dan Dukungan Litigasi">Investigasi Keuangan dan Dukungan Litigasi</option>
+                        <option value="Likuidasi, Pemberesan dan Penunjukan Pengadilan">Likuidasi, Pemberesan dan Penunjukan Pengadilan</option>
+                        <option value="Penasihat M&A dan Penggalangan Dana">Penasihat M&A dan Penggalangan Dana</option>
+                        <option value="Manajemen Inisiatif dan Pendukung Perusahaan">Manajemen Inisiatif dan Pendukung Perusahaan</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deals Listing -->
+        <div class="row" style="margin-top: 20px;" id="deals-container">
+            {% for deal in page.data %}
+                <div class="col-md-12 deal-item" data-service="{{ deal.service }}" style="margin-bottom: 30px;">
+                    <div class="deal-card" style="border-left: 4px solid #06832a; padding: 20px; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="deal-meta" style="margin-bottom: 10px;">
+                                    <span class="deal-date" style="color: #666; font-size: 14px; margin-right: 15px;">
+                                        <i class="fa fa-calendar"></i> {{ deal.DateofClosing }}
+                                    </span>
+                                    <span class="deal-category" style="background: #06832a; color: white; padding: 4px 12px; border-radius: 3px; font-size: 12px; font-weight: 600;">
+                                        TRANSAKSI
+                                    </span>
+                                </div>
+                                <h4 class="deal-title" style="color: #06832a; font-weight: 600; margin-bottom: 10px;">
+                                    {{ deal.header }}
+                                </h4>
+                                <p class="deal-service" style="color: #666; font-size: 14px; margin-bottom: 10px;">
+                                    <strong>Layanan:</strong> {{ deal.service|raw }}
+                                </p>
+                                {% if deal.ProjectOverview[0]['1'] is defined %}
+                                <p class="deal-excerpt" style="color: #333; line-height: 1.6; margin-bottom: 15px;">
+                                    {{ deal.ProjectOverview[0]['1']|slice(0, 250) }}{% if deal.ProjectOverview[0]['1']|length > 250 %}...{% endif %}
+                                </p>
+                                {% endif %}
+                                <a href="{{ base_url() }}{{ deal_url(deal, 'ID') }}" class="btn btn-outline-success btn-sm" style="border-color: #06832a; color: #06832a;">
+                                    Baca Studi Kasus Lengkap <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-3 text-right">
+                                <div class="deal-value" style="text-align: right;">
+                                    {% if deal.Value %}
+                                    <div style="font-size: 32px; font-weight: 700; color: #06832a; line-height: 1;">
+                                        {{ deal.Value }}
+                                    </div>
+                                    <div style="font-size: 16px; color: #666; margin-top: 5px;">
+                                        {{ deal.Saying }}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- No Results Message -->
+        <div class="row" id="no-results" style="display: none; margin-top: 40px;">
+            <div class="col-md-12 text-center">
+                <p style="color: #666; font-size: 16px;">Tidak ada transaksi yang ditemukan untuk kategori layanan yang dipilih.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Styles -->
+    <style>
+        .deal-card:hover {
+            box-shadow: 0 4px 12px rgba(6, 131, 42, 0.2) !important;
+            transform: translateY(-2px);
+        }
+
+        .page-title {
+            color: #06832a;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .page-description {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        #service-filter {
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 10px 12px;
+            font-size: 14px;
+            height: auto;
+            min-height: 45px;
+            line-height: 1.5;
+        }
+
+        #service-filter option {
+            padding: 8px;
+            line-height: 1.6;
+        }
+
+        #service-filter:focus {
+            border-color: #06832a;
+            box-shadow: 0 0 0 0.2rem rgba(6, 131, 42, 0.1);
+        }
+
+        .btn-outline-success:hover {
+            background-color: #06832a !important;
+            border-color: #06832a !important;
+            color: white !important;
+        }
+    </style>
+
+    <!-- Filter JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterSelect = document.getElementById('service-filter');
+            const dealItems = document.querySelectorAll('.deal-item');
+            const noResults = document.getElementById('no-results');
+
+            filterSelect.addEventListener('change', function() {
+                const selectedService = this.value;
+                let visibleCount = 0;
+
+                dealItems.forEach(function(item) {
+                    const itemService = item.getAttribute('data-service');
+
+                    if (selectedService === 'all' || itemService.includes(selectedService) || selectedService.includes(itemService)) {
+                        item.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Show/hide no results message
+                if (visibleCount === 0) {
+                    noResults.style.display = 'block';
+                } else {
+                    noResults.style.display = 'none';
+                }
+            });
+        });
+    </script>
+{% endblock %}

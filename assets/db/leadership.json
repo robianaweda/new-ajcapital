@@ -1,0 +1,9 @@
+[
+  {
+    "id": "gs",
+    "name": "Geoffrey D Simms",
+    "title": "Senior Managing Director",
+    "pic": "{{ base_url() }}/assets/img/leadership/gs_profile.jpg",
+    "Background": "Geoff Simms, the Senior Managing Partner and Founder of AJCapital, has over 30 years of experience within finance, restructuring and strategy in Asia Pacific. Geoff has covered extensively banking and finance, telecom, petrochemical, property and resource sectors."
+  }
+]

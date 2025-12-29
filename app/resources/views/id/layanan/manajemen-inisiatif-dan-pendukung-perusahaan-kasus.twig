@@ -1,0 +1,196 @@
+{% extends 'template/layout_id_content.twig' %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <img alt="" src="{{ base_url() }}/assets/img/pages/services-cims.jpg" width="100%" />
+            <p>&nbsp;</p>
+            <h4>Perusahaan</h4>
+            <p>
+                Mentransformasi perusahaan, baik dengan mengambil perusahaan publik
+                                                                                                                                                                                                                                                                                                            swasta atau melalui inisiatif strategis, memerlukan kemampuan manajemen
+                                                                                                                                                                                                                                                                                                            proyek dan manajemen organisasi perusahaan yang baik dan dikombinasikan
+                                                                                                                                                                                                                                                                                                            dengan jaringan yang tepat untuk mempercepat penangkapan nilai, dengan
+                                                                                                                                                                                                                                                                                                            mengidentifikasi secara cepat peluang dan mencocokkannya dengan sumber
+                                                                                                                                                                                                                                                                                                            daya yang diperlukan atau mitra yang sesuai.
+            </p>
+            <p>
+                Sebagai contoh, pada transformasi perusahaan tertutup menjadi perusahaan
+                                                                                                                                                                                                                                    publik, perusahaan akan mendapat pengawasan dan syarat
+                                                                                                                                                                                                                                    pelaporan yang lebih ketat yang untuk menjaganya memerlukan upaya yang
+                                                                                                                                                                                                                                    lebih besar. Kami dapat mendukung klien kami dalam masa transisi ini
+                                                                                                                                                                                                                                    dengan menilai kecukupan atas: (1) akuntansi dan kebijakan pelaporan, proses
+                                                                                                                                                                                                                                    dan sistem akuntansi; (2) staf keuangan dan pajak; (3) laporan keuangan dan
+                                                                                                                                                                                                                                    pengungkapan; dan (4) lingkungan pengendalian internal.
+
+            </p>
+            <p>
+                Contoh transformasi lain untuk dipertimbangkan adalah
+                <i>spin-off</i>
+                atas unit
+                                                                                                                                                                                                                                                                                                            bisnis strategis untuk mendirikan anak perusahaan yang baru. Dalam
+                                                                                                                                                                                                                                                                                                            situasi seperti ini ada banyak tantangan yang dihadapi oleh manajemen,
+                                                                                                                                                                                                                                                                                                            seperti benturan kepentingan antar pemangku kepentingan, kecemasan
+                                                                                                                                                                                                                                                                                                            karyawan, kepatuhan terhadap peraturan, dan memaksimalkan dampaknya bagi
+                                                                                                                                                                                                                                                                                                            nilai pemegang saham.
+            </p>
+            <p>
+                Jasa kami untuk manajemen inisiatif dan dukungan perusahaan meliputi:
+            </p>
+            <ul>
+                <li>
+                    Menilai kinerja saat ini melalui uji tuntas komersial dan keuangan dan
+                                                                                                                                                                                                                                                                                                                                                                                  tolok ukur industri
+                </li>
+                <li>
+                    Bekerja dengan manajemen mengenai inisiatif strategis untuk memenuhi
+                                                                                                                                                                                                                                                                                                                                                                                  kebutuhan dan, jika diperlukan, mengidentifikasi peluang nilai yang
+                                                                                                                                                                                                                                                                                                                                                                                  dapat ditangkap dengan mitra strategis yang tepat
+                </li>
+                <li>
+                    Mengidentifikasi calon mitra, manajemen outreach dan relationship,
+                                                                                                                                                                                                                                                                                                                                                                                  negosiasi ketentuan dan syarat-syarat kunci, serta mengelola proses
+                                                                                                                                                                                                                                                                                                                                                                                  eksekusi dan penyelesaian
+                </li>
+                <li>
+                    Melakukan dan mempersiapkan analisis keuangan, pemodelan dan dampak
+                                                                                                                                                                                                                                                                                                                                                                                  valuasi dari inisiatif korporasi
+                </li>
+                <li>
+                    Menilai keadaan saat ini dan memberikan rekomendasi yang dapat
+                                                                                                                                                                                                                                                                                                                                                                                  ditindaklanjuti untuk memastikan lancarnya proses untuk mengubah dari
+                                                                                                                                                                                                                                                                                                                                                                                  perusahaan tertutup menjadi perusahaan terbuka
+                </li>
+                <li>Mengelola akuntan eksternal dan penasihat profesional lainnya</li>
+                <li>
+                    Mengelola proyek jangka panjang skala besar yang kompleks yang
+                                                                                                                                                                                                                                                                                                                                                                                  melibatkan beberapa pemangku kepentingan termasuk lembaga-lembaga
+                                                                                                                                                                                                                                                                                                                                                                                  multilateral
+                </li>
+                <li>
+                    Mengembangkan pemantauan manajemen proyek dan alat-alat penjejak yang
+                                                                                                                                                                                                                                                                                                                                                                                  diperlukan
+                </li>
+                <li>Membuat dan mengawasi sebuah Project Management Office (PMO)</li>
+            </ul>
+            <p>&nbsp;</p>
+            <div class="row" id="nav-studi-kasus">
+                <div class="col-md-6">
+                    <div class="box-casestudy">
+                        <p>
+                            <span style="font-size:12px;margin-top: 30px;float:left;">Studi Kasus</span>
+                            <span><img alt="" src="{{base_url()}}/assets/img/logo/logo-transparent.png" style="float: right;" width="80px" /></span>
+                        </p>
+                        {% for rowow in page.data %}
+                            {%if rowow.id == page.id %}
+                                <p style="margin-top:100px;">
+                                    <h3 class="text-green" style="letter-spacing:2px;font-weight: bolder;">{{rowow.header | raw }}</h3>
+                                    <span style="font-size: 12px;">{{rowow.DateofClosing}}</span><br/><br/>
+                                </p>
+                                <div class="row" style="margin-top: 40px;">
+                                    <div class="col-md-12">
+                                        <a href="{{ base_url() }}/ID/layanan/{{page.service}}#nav-studi-kasus" class="btn btn-outline-green btn-sm" style="float:left;">Tutup</a>
+                                        <h1 class="text-green text-right sc-detail-value" style="margin-top:0px;">{{rowow.Value}}</h1>
+                                        <span class="text-green" style="font-weight:bolder: 16px;float:right;margin-top: -10px;">{{rowow.Saying}}</span>
+                                    </div>
+                                </div>
+                                <dl class="row" style="margin-top: 40px;">
+                                    <dt class="col-sm-4" style="font-size: 12px;color: #06832a;">Jenis Kasus
+                                        <span class="float-right">:</span>
+                                    </dt>
+                                    <dd class="col-sm-8" style="font-size: 12px;color: #06832a;">{{rowow.service | raw }}</dd>
+
+                                    <dt class="col-sm-4" style="font-size: 12px;color: #06832a;">Judul
+                                        <span class="float-right">:</span>
+                                    </dt>
+                                    <dd class="col-sm-8" style="font-size: 12px;color: #06832a;">{{rowow.Title | raw }}</dd>
+
+                                    <dt class="col-sm-4" style="font-size: 12px;color: #06832a;">Status
+                                        <span class="float-right">:</span>
+                                    </dt>
+                                    <dd class="col-sm-8" style="font-size: 12px;color: #06832a;">{{ rowow.DateofClosingMark}}</dd>
+
+                                    <dt class="col-sm-4 text-truncate" style="font-size: 12px;color: #06832a;">Nilai
+                                        <span class="float-right">:</span>
+                                    </dt>
+                                    <dd class="col-sm-8" style="font-size: 12px;color: #06832a;">{{rowow.Value}}
+                                        {{rowow.Saying}}</dd>
+                                </dl>
+                                <p>
+                                    <h5 class="text-green" style="letter-spacing: 3px;margin-top:40px;font-weight: bold">IKHTISAR PROYEK</h5>
+                                    <ul class="list-sm">
+                                        {% for key,po in rowow.ProjectOverview %}
+                                            <li>
+                                                {{po.1 | raw }}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <h5 class="text-green" style="letter-spacing: 3px;font-weight: bolder">ISU PROYEK</h5>
+                                    <ul class="list-sm">
+                                        {% for key,ci in rowow.ProjectIssues %}
+                                            <li>
+                                                {{ci.2 | raw }}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <h5 class="text-green" style="letter-spacing: 3px;font-weight: bold;">APA YANG KAMI LAKUKAN</h5>
+                                    <ul class="list-sm">
+                                        {% for key,wwd in rowow.WhatWeDid %}
+                                            <li>
+                                                {{wwd.3 | raw }}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <h5 class="text-green" style="letter-spacing: 3px;font-weight: bold">Hasil Proyek</h5>
+                                    <ul class="list-sm">
+                                        {% for key,pout in rowow.ProjectOutcome %}
+                                            <li>
+                                                {{pout.4 | raw }}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <br/>
+                                    <p class="text-center">
+                                        <a href="{{ base_url() }}/ID/layanan/{{page.service}}#nav-studi-kasus" class="btn btn-outline-green btn-sm mx-auto ">Tutup</a>
+                                    </p>
+                                </p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        {% for data in page.data %}
+                            {% if data.TypeofCase == page.service %}
+                                {% if data.id != page.id %}
+                                    <div class="card" style="width: 25rem;margin: 12px;">
+                                        <div class="card-body">
+                                            <div class="title-case">
+                                                <span style="font-size:10px;float:left;margin-top:15px;">Studi Kasus</span>
+                                                <span><img alt="" src="{{ base_url() }}/assets/img/logo/logo-landing-transparent-sm.png" style="float: right;margin-top: 0px;" width="70px" /></span>
+                                            </div>
+                                            <h5 class="card-title" style="margin-top:80px;margin-bottom: 0px;">
+                                                {{ data.header | raw }}
+                                            </h5>
+                                            <span style="font-size: 10px;">{{ data.DateofClosing }}</span><br/><br/>
+                                            <p style="margin-top:20px;">
+                                                <span style="margin-top: 40px;">
+                                                    <a href="{{ base_url() }}/ID/layanan/{{ page.service }}/{{ data.id }}#nav-studi-kasus" class="btn btn-outline-light btn-sm">Baca</a>
+                                                </span>
+                                                <span class="sc-box-value">{{
+                                    data.Value
+                                  }}</span>
+                                            </p>
+                                            <span class="sc-box-value-saying">{{
+                                  data.Saying
+                                }}</span>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

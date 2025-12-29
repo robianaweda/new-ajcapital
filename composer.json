@@ -1,0 +1,15 @@
+{
+  "require": {
+    "php": ">=8.1",
+    "slim/slim": "^3.12",
+    "slim/twig-view": "^2.5",
+    "phpmailer/phpmailer": "^6.12",
+    "league/oauth2-client": "^2.9",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "config": {
+    "platform": {
+      "php": "8.1.0"
+    }
+  }
+}

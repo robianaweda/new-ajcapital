@@ -1,0 +1,49 @@
+<div class="container-fluid">
+{% if page.uri == 'tentangkami' %}
+    <nav class="nav flex-column">
+        <ul class="side-link">
+            {# SOFT DELETE - Hidden from menu but still accessible via direct URL
+            <li {% if page.sub == 'yang-membedakan-kami' %} class="active" {% endif %}>
+                <a class="nav-link" href="{{ base_url() }}/ID/tentangkami/yang-membedakan-kami">Yang Membedakan Kami</a>
+            </li>
+            <li {%if page.sub == 'kepemimpinan-kami'%} class="active" {% endif %}>
+                <a class="nav-link" href="{{ base_url() }}/ID/tentangkami/kepemimpinan-kami">Kepemimpinan Kami</a>
+            </li>
+            #}
+            <li {%if page.sub == 'transaksi-dan-studi-kasus'%} class="active" {% endif %}>
+                <a class="nav-link" href="{{ base_url() }}/ID/tentangkami/transaksi-dan-studi-kasus">Transaksi dan Studi Kasus</a>
+            </li>
+            <li {%if page.sub == 'acara-dan-konferensi'%} class="active" {% endif %}>
+                <a class="nav-link" href="{{ base_url() }}/ID/tentangkami/acara-dan-konferensi">Acara dan Konferensi</a>
+            </li>
+
+        </ul>
+    </nav>
+{% elseif page.uri == 'layanan' %}
+    <nav class="nav flex-column">
+        <ul class="side-link">
+            <li {% if page.sub == 'restrukturisasi-dan-turnaround-management' %} class="active" {% endif %}>
+                <a class="nav-link" href="{{ base_url() }}/ID/layanan/restrukturisasi-dan-turnaround-management">Restrukturisasi dan <i>Turnaround Management</i>
+                </a>
+            </li>
+            <li {% if page.sub == 'pendukung-dan-penasihat-kreditor' %} class="active" {% endif %}>
+                <a class="nav-link" href="{{ base_url() }}/ID/layanan/pendukung-dan-penasihat-kreditor">Pendukung dan Penasihat Kreditor</a>
+            </li>
+            {# SOFT DELETE - Hidden from menu but still accessible via direct URL
+            <li {% if page.sub == 'investigasi-keuangan-dan-dukungan-litigasi' %} class="active" {% endif %}>
+                <a class="nav-link" href="{{ base_url() }}/ID/layanan/investigasi-keuangan-dan-dukungan-litigasi">Investigasi Keuangan dan Dukungan Litigasi</a>
+            </li>
+            <li {% if page.sub == 'likuidasi-pemberesan-dan-penunjukan-pengadilan'%} class="active" {% endif %}>
+                <a class="nav-link" href="{{ base_url() }}/ID/layanan/likuidasi-pemberesan-dan-penunjukan-pengadilan">Likuidasi, Pemberesan dan Penunjukan Pengadilan</a>
+            </li>
+            #}
+            <li {% if page.sub == 'penasihat-ma-dan-penggalangan-dana' %} class="active" {% endif %}>
+                <a class="nav-link" href="{{ base_url() }}/ID/layanan/penasihat-ma-dan-penggalangan-dana">Penasihat M&A dan Penggalangan Dana</a>
+            </li>
+            <li {% if page.sub == 'manajemen-inisiatif-dan-pendukung-perusahaan'%} class="active" {% endif %}>
+                <a class="nav-link" href="{{ base_url() }}/ID/layanan/manajemen-inisiatif-dan-pendukung-perusahaan">Manajemen Inisiatif dan Pendukung Perusahaan</a>
+            </li>
+        </ul>
+    </nav>{% else %}
+{% endif %}
+</div>

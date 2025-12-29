@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <div class="lang-bar">
+        <a class="lang-link" href="{{ base_url }}/EN">EN</a>
+        |
+        <a class="lang-link active" href="{{ base_url }}/ID">ID</a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="{{ base_url }}/ID">
+            <img src="{{ base_url() }}/assets/img/logo/logo-transparent.png" width="150px" alt="" />
+        </a>
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item {% if page.uri == 'ID' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/ID">Beranda
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item {% if page.uri == 'tentangkami' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/ID/tentangkami">Tentang Kami</a>
+                </li>
+                <li class="nav-item {% if page.uri == 'kepemimpinankami' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/ID/tentangkami/kepemimpinan-kami">Kepemimpinan Kami</a>
+                </li>
+                <li class="nav-item {% if page.uri == 'layanan' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/ID/layanan">Layanan</a>
+                </li>
+                <li class="nav-item {% if page.uri == 'transaksi' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/ID/transaksi">Transaksi</a>
+                </li>
+                <li class="nav-item {% if page.uri == 'acaradankonferensi' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/ID/acaradankonferensi">Acara & Konferensi</a>
+                </li>
+                <li class="nav-item {% if page.uri == 'karir' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/ID/karir">Karir</a>
+                </li>
+                <li class="nav-item {% if page.uri == 'hubungikami' %} active {% endif %}">
+                    <a class="nav-link" href="{{ base_url }}/ID/hubungikami">Hubungi Kami</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            <hr class="top-bar" />
+        </div>
+    </div>
+</div>

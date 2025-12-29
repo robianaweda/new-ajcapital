@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+    <html
+    class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <title>AJCapital Advisory | Welcome</title>
+        <meta content="" name="description"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link href="{{ base_url() }}/assets/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="{{ base_url() }}/assets/css/ajcapitalstyle.css" rel="stylesheet"/>
+        <link rel="icon" type="image/png" href="{{base_url()}}/assets/img/bkgr/green_leaf_logo.png"/>
+    </head>
+    <body
+        class="bg">
+        <!--[if lt IE 7]>
+                      <p class="browsehappy">
+                        You are using an <strong>outdated</strong> browser. Please
+                        <a href="#">upgrade your browser</a> to improve your experience.
+                      </p>
+                    <![endif]-->
+        <div class="container-logo">
+            {% block content %}{% endblock %}
+        </div>
+        <script async defer src="{{ base_url() }}/assets/js/bootstrap.min.js"></script>
+    </body>
+</html>

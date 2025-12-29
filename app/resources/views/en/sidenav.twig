@@ -1,0 +1,49 @@
+<div class="container-fluid">
+    {% if page.uri == 'aboutus' %}
+        <nav class="nav flex-column">
+            <ul class="side-link">
+                {# SOFT DELETE - Hidden from menu but still accessible via direct URL
+                <li {% if page.sub == 'whatmakeusdifferent' %} class="active" {% endif %}>
+                    <a class="nav-link" href="{{ base_url() }}/EN/aboutus/whatmakeusdifferent">What Make Us Different</a>
+                </li>
+                <li {%if page.sub == 'ourleadership'%} class="active" {% endif %}>
+                    <a class="nav-link" href="{{ base_url() }}/EN/aboutus/ourleadership">Our Leadership</a>
+                </li>
+                #}
+                <li {%if page.sub == 'transactionsandcasestudy'%} class="active" {% endif %}>
+                    <a class="nav-link" href="{{ base_url() }}/EN/aboutus/transactionsandcasestudy">Transactions and Case Study</a>
+                </li>
+                <li {%if page.sub == 'eventsandconferences'%} class="active" {% endif %}>
+                    <a class="nav-link" href="{{ base_url() }}/EN/aboutus/eventsandconferences">Events and Conferences</a>
+                </li>
+            </ul>
+        </nav>
+    {% elseif page.uri == 'services' %}
+        <nav class="nav flex-column">
+            <ul class="side-link">
+                <li {% if page.sub == 'debt-restructurings-and-turnaround-management' %} class="active" {% endif %}>
+                    <a class="nav-link" href="{{ base_url() }}/EN/services/debt-restructurings-and-turnaround-management">Debt Restructurings and Turnaround Management
+                    </a>
+                </li>
+                <li {% if page.sub == 'creditor-support-and-advisory'%} class="active" {% endif %}>
+                    <a class="nav-link" href="{{ base_url() }}/EN/services/creditor-support-and-advisory">Creditor Support and Advisory</a>
+                </li>
+                {# SOFT DELETE - Hidden from menu but still accessible via direct URL
+                <li {% if page.sub == 'financial-investigations-and-litigation-support'%} class="active" {% endif %}>
+                    <a class="nav-link" href="{{ base_url() }}/EN/services/financial-investigations-and-litigation-support">Financial Investigations and Litigation Support</a>
+                </li>
+                <li {% if page.sub == 'liquidation-receivership-and-court-appointments'%} class="active" {% endif %}>
+                    <a class="nav-link" href="{{ base_url() }}/EN/services/liquidation-receivership-and-court-appointments">Liquidation, Receivership and Court appointments</a>
+                </li>
+                #}
+                <li {% if page.sub == 'ma-advisory-and-fundraising' %} class="active" {% endif %}>
+                    <a class="nav-link" href="{{ base_url() }}/EN/services/ma-advisory-and-fundraising">M&A Advisory and Fund Raising</a>
+                </li>
+                <li {% if page.sub == 'corporate-initiative-management-and-support'%} class="active" {% endif %}>
+                    <a class="nav-link" href="{{ base_url() }}/EN/services/corporate-initiative-management-and-support">Corporate Initiative Management and Support</a>
+                </li>
+            </ul>
+        </nav>
+{% else %}
+    {% endif %}
+</div>

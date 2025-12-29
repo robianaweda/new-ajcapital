@@ -1,0 +1,5 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^ajcapital\.co\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.ajcapital\.co\.id$
+RewriteRule ^/?$ "https\:\/\/ajcapital\.asia\/" [R=301,L]

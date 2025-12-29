@@ -1,0 +1,60 @@
+@import "https://fonts.googleapis.com/css?family=Lato";
+@import "https://fonts.googleapis.com/css?family=Libre+Baskerville";
+
+body,
+html {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../img/bkgr/bg_green.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h4 {
+  margin-top: 80px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.container-logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+a.en-link:link,
+a.en-link:visited,
+a.en-link:active {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 8px;
+}
+a.id-link:link,
+a.id-link:visited,
+a.id-link:active {
+  padding: 10px 11px;
+  color: #ffffff;
+  text-decoration: none;
+}
+a.en-link:hover {
+  color: #000;
+  border-radius: 25px;
+  background: #ffffff;
+  padding: 10px 8px;
+}
+a.id-link:hover {
+  color: #000;
+  border-radius: 25px;
+  background: #ffffff;
+  padding: 10px 11px;
+}

@@ -1,0 +1,216 @@
+{% extends 'template/layout_id_content.twig' %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div calss="col-md-12">
+                <p style="padding-left:15px">
+                    <a href="{{ base_url()}}/ID/karir" class="btn btn-success btn-sm">Kembali ke halaman Karir</a>
+                </p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="thumbnail thumbnail-box">
+                    <h3>Lowongan untuk
+                        <i>Fresh Graduate</i>
+                    </h3>
+                    <p>Kami menyediakan lingkungan kerja yang menarik dan menantang untuk membantu Anda mengembangkan dan meningkatkan kemampuan keuangan strategis dan korporat bagi Anda yang baru lulus S1 atau S2.</p>
+                    <p>Untuk orang-orang yang tepat, kami menawarkan kesempatan yang bagus untuk awal yang istimewa dalam dunia keuangan korporat; kesempatan yang akan meningkatkan perjalanan professional Anda.</h3>
+                    <h3>Kualifikasi</h3>
+                    <table class="table">
+                        <tr>
+                            <td width="20%;">Pengalaman</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Pendidikan</td>
+                            <td>Sarjana S1 dari semua jurusan, diutamakan untuk jurusan ekonomi, keuangan, bisnis & manajemen, akuntansi, teknik industri, dan hukum</td>
+                        </tr>
+                        <tr>
+                            <td>IPK</td>
+                            <td>Minimum 3.25</td>
+                        </tr>
+                        <tr>
+                            <td>Literasi IT</td>
+                            <td>Sangat familiar dengan aplikasi-aplikasi MS Office</td>
+                        </tr>
+                        <tr>
+                            <td>Bahasa Inggris</td>
+                            <td>Menengah hingga lanjut (wawancara akan dilaksanakan dalam Bahasa Inggris)</td>
+                        </tr>
+                    </table>
+                    <h3>Uraian Pekerjaan</h3>
+                    <ul>
+                        <li>Mengadakan riset, menentukan pendekatan dalam pengumpulan data, menyusun analisa kuantitatif, dan menyediakan penjelasan singkat serta wawasan relevan.</li>
+                        <li>Menyusun analisa berdasarkan hipotesa, merumuskan dan mendokumentasikan asumsi-asumsi, serta menjelaskan dasar suatu masalah.</li>
+                        <li>Mengatur, menghadiri pertemuan, dan menyiapkan materi pertemuan sebagai dasar untuk langkah selanjutnya.</li>
+                        <li>Memberikan bantuan untuk
+                            <i>partner</i>, manajer proyek, dan teman satu tim.</li>
+                        <li>Menyiapkan dokumen-dokumen klien dalam MS Office.</li>
+                    </ul>
+                    <p>Kami mendorong semua kandidat yang memenuhi persyaratan di atas untuk mengirimkan
+                        <i>resume</i>
+                        dan juga surat pengantar/<i>cover letter</i>
+                        ke info@ajcapital.co.id. Jika Anda merasa bahwa lowongan ini mungkin cocok untuk seseorang, jangan ragu untuk menyampaikannya ke mereka.
+                    </p>
+
+                    <hr style="margin: 40px 0;">
+
+                    <h3>Kirim Lamaran Sekarang</h3>
+                    <p>Kirimkan lamaran Anda dengan mengisi formulir di bawah ini. Silakan lampirkan CV Anda dalam format PDF (maksimal 1 MB).</p>
+
+                    {% if page.info == 'sent' %}
+                        <div class="alert alert-success" role="alert">
+                            Terima kasih atas lamaran Anda. Kami akan meninjau CV Anda dan menghubungi Anda segera.
+                        </div>
+                    {% elseif page.info == 'error' %}
+                        <div class="alert alert-danger" role="alert">
+                            Maaf, terjadi kesalahan saat mengirim lamaran Anda. Silakan coba lagi atau hubungi kami di info@ajcapital.co.id
+                        </div>
+                    {% endif %}
+
+                    <form method="post" action="{{ base_url() }}/kirim-lamaran-kerja" enctype="multipart/form-data" id="jobApplicationForm">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="fullname">Nama Lengkap <span class="text-danger">*</span></label>
+                            <div class="col-sm-9">
+                                <input class="form-control" id="fullname" name="fullname" type="text" required {% if page.info == 'sent' %} disabled {% endif %}/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="dob">Tanggal Lahir <span class="text-danger">*</span></label>
+                            <div class="col-sm-9">
+                                <input class="form-control" id="dob" name="dob" type="date" required {% if page.info == 'sent' %} disabled {% endif %}/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="email">Alamat Email <span class="text-danger">*</span></label>
+                            <div class="col-sm-9">
+                                <input class="form-control" id="email" name="email" type="email" required {% if page.info == 'sent' %} disabled {% endif %}/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="phone">Nomor Handphone <span class="text-danger">*</span></label>
+                            <div class="col-sm-9">
+                                <input class="form-control" id="phone" name="phone" type="tel" required {% if page.info == 'sent' %} disabled {% endif %}/>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="education">Pendidikan Terakhir <span class="text-danger">*</span></label>
+                            <div class="col-sm-9">
+                                <select class="form-control" id="education" name="education" required {% if page.info == 'sent' %} disabled {% endif %}>
+                                    <option value="">-- Pilih Jenjang Pendidikan --</option>
+                                    <option value="SMA/SMK">SMA/SMK</option>
+                                    <option value="Diploma (D3)">Diploma (D3)</option>
+                                    <option value="Sarjana (S1)">Sarjana (S1)</option>
+                                    <option value="Magister (S2)">Magister (S2)</option>
+                                    <option value="Doktor (S3)">Doktor (S3)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Tipe Rekrutmen <span class="text-danger">*</span></label>
+                            <div class="col-sm-9">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="recruitment_type" id="fresh_graduate" value="Fresh Graduate" required {% if page.info == 'sent' %} disabled {% endif %}>
+                                    <label class="form-check-label" for="fresh_graduate">
+                                        Fresh Graduate
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="recruitment_type" id="experience" value="Berpengalaman" {% if page.info == 'sent' %} disabled {% endif %}>
+                                    <label class="form-check-label" for="experience">
+                                        Berpengalaman
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="cv">Upload CV <span class="text-danger">*</span></label>
+                            <div class="col-sm-9">
+                                <input class="form-control-file" id="cv" name="cv" type="file" accept=".pdf" required {% if page.info == 'sent' %} disabled {% endif %}/>
+                                <small class="form-text text-muted">Format PDF saja, ukuran maksimum: 1 MB</small>
+                                <div id="fileError" class="text-danger" style="display: none; margin-top: 5px;"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-9 offset-sm-3">
+                                <button class="btn btn-success" type="submit" id="submitBtn" {% if page.info == 'sent' %} disabled {% endif %}>
+                                    Kirim Lamaran
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <script>
+                        document.getElementById('jobApplicationForm').addEventListener('submit', function(e) {
+                            var fileInput = document.getElementById('cv');
+                            var fileError = document.getElementById('fileError');
+                            var submitBtn = document.getElementById('submitBtn');
+
+                            fileError.style.display = 'none';
+                            fileError.textContent = '';
+
+                            if (fileInput.files.length > 0) {
+                                var file = fileInput.files[0];
+                                var fileSize = file.size;
+                                var fileName = file.name;
+                                var fileExtension = fileName.split('.').pop().toLowerCase();
+
+                                // Check file extension
+                                if (fileExtension !== 'pdf') {
+                                    e.preventDefault();
+                                    fileError.textContent = 'Harap unggah file PDF saja.';
+                                    fileError.style.display = 'block';
+                                    return false;
+                                }
+
+                                // Check file size (1 MB = 1048576 bytes)
+                                if (fileSize > 1048576) {
+                                    e.preventDefault();
+                                    fileError.textContent = 'Ukuran file tidak boleh melebihi 1 MB. Ukuran file Anda adalah ' + (fileSize / 1048576).toFixed(2) + ' MB.';
+                                    fileError.style.display = 'block';
+                                    return false;
+                                }
+
+                                // Disable button to prevent double submission
+                                submitBtn.disabled = true;
+                                submitBtn.textContent = 'Mengirim...';
+                            }
+                        });
+
+                        // File input change event to show file info
+                        document.getElementById('cv').addEventListener('change', function(e) {
+                            var fileError = document.getElementById('fileError');
+                            fileError.style.display = 'none';
+
+                            if (this.files.length > 0) {
+                                var file = this.files[0];
+                                var fileSize = (file.size / 1048576).toFixed(2);
+                                var fileExtension = file.name.split('.').pop().toLowerCase();
+
+                                if (fileExtension !== 'pdf') {
+                                    fileError.textContent = 'Harap pilih file PDF.';
+                                    fileError.style.display = 'block';
+                                    this.value = '';
+                                } else if (file.size > 1048576) {
+                                    fileError.textContent = 'Ukuran file (' + fileSize + ' MB) melebihi batas maksimum 1 MB.';
+                                    fileError.style.display = 'block';
+                                    this.value = '';
+                                }
+                            }
+                        });
+                    </script>
+
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    {% endblock %}

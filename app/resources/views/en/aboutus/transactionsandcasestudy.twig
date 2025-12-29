@@ -1,0 +1,83 @@
+{% extends 'template/layout_en_content.twig' %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                        <a aria-controls="nav-transactions" aria-selected="true" class="nav-item nav-link active" data-toggle="tab" href="#nav-transactions" id="nav-transactions-tab" role="tab" style="color:  #06832a; border-bottom: 1px  #06832a solid">Transactions</a>
+                        <a aria-controls="nav-case-study" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#nav-case-study" id="nav-case-study-tab" role="tab" style="color:  #06832a; border-bottom: 1px  #06832a solid">Case Study</a>
+                    </div>
+                </nav>
+                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                    <div aria-labelledby="nav-transactions-tab" class="tab-pane fade show active" id="nav-transactions" role="tabpanel">
+                        <div id="trans">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <label for="service">By Services</label>
+                                        <select class="form-control" id="service" v-model="selectedService">
+                                            <option value="All">All</option>
+                                            <option value="Debt Restructuring & Turnaround Management">Debt Restructuring & Turnaround Management</option>
+                                            <option value="Creditor Support & Advisory">Creditor Support & Advisory</option>
+                                            <option value="Financial Investigations and Litigation Support">Financial Investigations and Litigation Support</option>
+                                            <option value="Liquidation Receivership and Court Appointments">Liquidation, Receivership and Court Appointments</option>
+                                            <option value="M&A Advisory and Fund Raising">M&A Advisory and Fund Raising</option>
+                                            <option value="Corporate Initiative Management and Support">Corporate Initiative Management and Support</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="country">By Country</label>
+                                        <select class="form-control" id="country" v-model="selectedLoc">
+                                            <option value="All">All</option>
+                                            <option value="Indonesia">Indonesia</option>
+                                            <option value="Singapore">Singapore</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="transactions-list">
+                                        <transactions v-bind:t="trans" v-for="trans in filteredTransactions"></transactions>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div aria-labelledby="nav-case-study-tab" class="tab-pane fade" id="nav-case-study" role="tabpanel">
+                        <div class="row">
+                            {% for data in page.data %}
+                                <div class="card" style="width: 25rem;margin: 12px;">
+                                    <div class="card-body">
+                                        <div class="title-case">
+                                            <span style="font-size:10px;float:left;margin-top:15px;">Case Study</span>
+                                            <span><img alt="" src="{{ base_url() }}/assets/img/logo/logo-landing-transparent-sm.png" style="float: right;margin-top: 0px;" width="70px" /></span>
+                                        </div>
+                                        <h5 class="card-title" style="margin-top:80px;margin-bottom: 0px;">
+                                            {{ data.header }}
+                                        </h5>
+                                        <span style="font-size: 10px;">{{ data.DateofClosing }}</span><br/><br/>
+                                        <p style="margin-top:20px;">
+                                            <span style="margin-top: 40px;">
+                                                <a href="{{ base_url() }}/EN/aboutus/transactionsandcasestudy/{{ data.id }}" class="btn btn-outline-light btn-sm">Read More</a>
+                                            </span>
+                                            <span class="sc-box-value">{{
+                    data.Value
+                  }}</span>
+                                        </p>
+                                        <span class="sc-box-value-saying">{{
+                  data.Saying
+                }}</span>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends 'template/layout_id_content.twig' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&nbsp;</p>
+                <div class="row">
+                    <div class="col-md-4 contact-us-border">
+                        <h5>KANTOR INDONESIA</h5>
+                        <h6>PT AJCapital Advisory</h6>
+                        <address style="font-size: 12px;">88@Kasablanka Office Tower A, Lt. 22
+                            <br/>
+                            Jl Casablanca Raya Kav. 88
+                            <br/>
+                            Jakarta 12870</address>
+                        <address style="font-size: 12px;">
+                            <i class="fa fa-envelope"></i>
+                            Surel 	: info@ajcapital.co.id<br/>
+                            <i class="fa fa-phone"></i>
+                            Telepon	: +62 21 295 68699<br/>
+                        </address>
+                        {# SOFT HIDE - Kantor Singapura disembunyikan tapi bisa di-restore jika diperlukan
+                        <p>&nbsp;</p>
+                        <h5>KANTOR SINGAPURA</h5>
+                        <h6>AJCapital Advisory Pte Limited</h6>
+                        <address style="font-size: 12px;">
+                            Level 42, Six Battery Road
+                            <br/>
+                            Singapore 049909
+                        </address>
+                        <address style="font-size: 12px;">
+                            <i class="fa fa-envelope"></i>
+                            Surel : info@ajcapital.asia<br/>
+                            <i class="fa fa-phone"></i>
+                            Telepon : +65 6232 2783
+                        </address>
+                        #}
+                    </div>
+                    <div class="col-md-8">
+                        <h4 style="letter-spacing: 2px;color: #06832a">Kirim Pesan Anda</h4>
+                        <p>
+                            Setiap kebutuhan itu unik dan kami ingin mengerti kebutuhan anda.
+                        </p>
+                        {% if page.info %}
+                            <div class="alert alert-success" role="alert">
+                                Terima kasih atas pesan. Kami akan menghubungi anda secepatnya.
+                            </div>
+                        {% endif %}
+                        <form method="post" action="{{base_url()}}/ID/kirim-kontak">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="name">Nama</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="name" name="name" type="text" value="" autocomplete="off" {% if page.info %} disabled {% endif %}/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="Email">Surel</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="email" name="email" placeholder="" type="text" autocomplete="off" {% if page.info %} disabled {% endif %}/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="phone">Telepon</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="phone" name="phone" placeholder="" type="tel" autocomplete="off" {% if page.info %} disabled {% endif %}/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="Pesan">Pesan</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" name="subject" id="subject" rows="4" autocomplete="off" {% if page.info %} disabled {% endif %}></textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-success" style="float:right" type="submit">
+                                Kirim
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

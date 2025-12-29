@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142618670-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-142618670-1');
+        </script>
+        <meta charset="utf-8"/>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta
+        content="width=device-width, initial-scale=1" name="viewport"/>
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="{{ page.description }}"/>
+        <meta content="umasuksma.com" name="author"/>
+        <link href="{{ base_url() }}/assets/img/favicon.ico" rel="icon"/>
+        <title>AJCapital Advisory |
+            {{ page.title }}</title>
+        <link rel="stylesheet" type="text/css" href="{{ base_url() }}/assets/css/slick.css"/>
+        <link
+        rel="stylesheet" type="text/css" href="{{ base_url() }}/assets/css/slick-theme.css"/>
+        <!-- Bootstrap core CSS -->
+        <link href="{{ base_url() }}/assets/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <link
+        crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet"/>
+        <!-- Custom styles for this template -->
+        <link href="{{ base_url() }}/assets/css/lang-style.css" rel="stylesheet"/>
+        <link rel="icon" type="image/png" href="{{ base_url() }}/assets/img/bkgr/green_leaf_logo.png"/>
+    </head>
+    <body class="bg-home">
+        {% include 'en/topnav.twig' %}
+        {% block content %}{% endblock %}
+        {% include
+    'template/footer.twig' %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ base_url }}/assets/js/slick.js"></script>
+        <script src="{{ base_url() }}/assets/js/bootstrap.min.js"></script>
+        <script src="{{ base_url() }}/assets/js/app.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".slider").slick({
+                    dots: true,
+                    autoplay: true,
+                    fade: true,
+                    autoplaySpeed: 5000,
+                    adaptiveHeight: true,
+                    cssEase: "linear",
+                    arrows: true,
+                    prevArrow: "<img class='a-left control-c prev slick-prev' src=' {{ base_url }}assets/img/bkgr/chevron-left.png'>",
+                    nextArrow: "<img class='a-right control-c next slick-next' src=' {{ base_url }}assets/img/bkgr/chevron-right.png'>"
+                });
+            });
+        </script>
+    </body>
+</html>
