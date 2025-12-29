@@ -36,6 +36,11 @@
                 </div>
             </div>
 
+            {# Featured Image - Setelah Service Line Info #}
+            {% if deal.image %}
+            <div class="deal-featured-image" style="width: 100%; height: 400px; background-image: url('{{ base_url() }}/assets/img/deals/{{ deal.image }}'); background-size: cover; background-position: center; border-radius: 8px; margin-bottom: 50px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"></div>
+            {% endif %}
+
             {# Main Content Sections #}
             <div class="deal-content" style="font-size: 16px; line-height: 1.8; color: #333;">
 
@@ -132,19 +137,34 @@
 
     {# Custom Styles #}
     <style>
-        .deal-content p {
-            font-family: Georgia, serif;
-        }
-
         .btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             transition: all 0.3s ease;
         }
 
+        .deal-featured-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .deal-featured-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+        }
+
         @media (max-width: 768px) {
             .deal-title {
                 font-size: 28px !important;
+            }
+
+            .deal-featured-image {
+                height: 250px !important;
             }
 
             .deal-value-card div:nth-child(2) {

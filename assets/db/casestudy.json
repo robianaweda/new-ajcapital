@@ -2,6 +2,7 @@
   {
     "id": "1",
     "header": "Project TPPI",
+    "image": "deal-1.jpg",
     "TypeofCase": "debt-restructurings-and-turnaround-management",
     "service": "Debt Restructurings and Turnaround Management",
     "Title": "TPPI PKPU and Implementation",
@@ -73,6 +74,7 @@
   {
     "id": "2",
     "header": "Project Shariah Restructuring",
+    "image": "deal-2.jpg",
     "TypeofCase": "debt-restructurings-and-turnaround-management",
     "service": "Debt Restructurings and Turnaround Management",
     "Title": "Voluntary Restructuring of Conventional and Shariah Syndicated Debts",
@@ -132,6 +134,7 @@
   {
     "id": "3",
     "header": "Project PKPU Namasindo",
+    "image": "deal-3.jpg",
     "TypeofCase": "debt-restructurings-and-turnaround-management",
     "service": "Debt Restructurings and Turnaround Management",
     "Title": "Namasindo Group Debt Restructuring via PKPU",
@@ -191,6 +194,7 @@
   {
     "id": "4",
     "header": "Project LPG Monitoring Accountant",
+    "image": "deal-4.jpg",
     "TypeofCase": "creditor-support-and-advisory",
     "service": "Creditor Support and Advisory",
     "Title": "Monitoring Accountant for Gas Processing Company",
@@ -247,9 +251,10 @@
   {
     "id": "5",
     "header": "Project MEO",
+    "image": "deal-5.jpg",
     "TypeofCase": "creditor-support-and-advisory",
-    "service": "Advisor to Bondholder’s in restructuring",
-    "Title": "Advisor to Bondholder’s in restructuring",
+    "service": "Advisor to Bondholder's in restructuring",
+    "Title": "Advisor to Bondholder's in restructuring",
     "DateofClosing": "Ongoing",
     "DateofClosingMark": "Ongoing",
     "Value": "USD 450",
@@ -287,6 +292,7 @@
   {
     "id": "6",
     "header": "Project CRO Feedmills",
+    "image": "deal-6.jpg",
     "TypeofCase": "creditor-support-and-advisory",
     "service": "Creditor Support and Advisory",
     "Title": "CRO and Steering Committee Support",
@@ -340,6 +346,7 @@
   {
     "id": "7",
     "header": "Project Trikomsel Singapore",
+    "image": "deal-7.jpg",
     "TypeofCase": "financial-investigations-and-litigation-support",
     "service": "Financial Investigations and litigation support",
     "Title": "Liquidator (Singapore) and Litigation Support",
@@ -386,6 +393,7 @@
   {
     "id": "8",
     "header": "Project Siva Shipping",
+    "image": "deal-8.jpg",
     "TypeofCase": "liquidation-receivership-and-court-appointments",
     "service": "Liquidation Receivership and Court Appointments",
     "Title": "Court appointed Liquidator, Singapore",
@@ -425,6 +433,7 @@
   {
     "id": "9",
     "header": "Project Zetta Jet",
+    "image": "deal-9.jpg",
     "TypeofCase": "liquidation-receivership-and-court-appointments",
     "service": "Liquidation Receivership and Court Appointments",
     "Title": "Chapter 7 Bankruptcy Trustee Representative, Liquidation Agent",
@@ -464,6 +473,7 @@
   {
     "id": "10",
     "header": "Project Gas",
+    "image": "deal-10.jpg",
     "TypeofCase": "ma-advisory-and-fundraising",
     "service": "M&A Advisory and Fund Raising",
     "Title": "Project Gas",
@@ -507,6 +517,7 @@
   {
     "id": "11",
     "header": "Project Vanilla",
+    "image": "deal-11.jpg",
     "TypeofCase": "ma-advisory-and-fundraising",
     "service": "M&A Advisory and Fund Raising",
     "Title": "Project Vanilla",
@@ -563,6 +574,7 @@
   {
     "id": "12",
     "header": "Project Switch",
+    "image": "deal-12.jpg",
     "TypeofCase": "ma-advisory-and-fundraising",
     "service": "M&A Advisory and Fund Raising",
     "Title": "Project Switch",
@@ -607,6 +619,7 @@
   {
     "id": "13",
     "header": "Project Debt Buy Back",
+    "image": "deal-13.jpg",
     "TypeofCase": "corporate-initiative-management-and-support",
     "service": "Corporate Initiative Management and Support",
     "Title": "Debt Buy Back Advisory Support",
@@ -659,6 +672,7 @@
   {
     "id": "14",
     "header": "Project Prospectus",
+    "image": "deal-14.jpg",
     "TypeofCase": "corporate-initiative-management-and-support",
     "service": "Corporate Initiative Management and Support",
     "Title": "Post-PKPU Implementation – Issuance of Creditors’ Equity Shares and MCB",
