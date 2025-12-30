@@ -71,6 +71,7 @@
                     {% endif %}
 
                     <form method="post" action="{{ base_url() }}/kirim-lamaran-kerja" enctype="multipart/form-data" id="jobApplicationForm">
+                        <input type="hidden" name="source_page" value="graduate">
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label" for="fullname">Nama Lengkap <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
@@ -117,15 +118,9 @@
                             <label class="col-sm-3 col-form-label">Tipe Rekrutmen <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="recruitment_type" id="fresh_graduate" value="Fresh Graduate" required {% if page.info == 'sent' %} disabled {% endif %}>
+                                    <input class="form-check-input" type="radio" name="recruitment_type" id="fresh_graduate" value="Fresh Graduate" required checked {% if page.info == 'sent' %} disabled {% endif %}>
                                     <label class="form-check-label" for="fresh_graduate">
                                         Fresh Graduate
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="recruitment_type" id="experience" value="Berpengalaman" {% if page.info == 'sent' %} disabled {% endif %}>
-                                    <label class="form-check-label" for="experience">
-                                        Berpengalaman
                                     </label>
                                 </div>
                             </div>
