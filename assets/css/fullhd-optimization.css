@@ -512,13 +512,289 @@ html {
 
 
 /* ========================================
+   CONTENT PAGES OPTIMIZATION (Services, etc.)
+   ======================================== */
+
+@media (min-width: 1920px) {
+
+  /* General content page container - ensure minimum height to push footer down */
+  #content {
+    min-height: 650px;
+  }
+
+  /* Content pages with minimal content */
+  #content .container-fluid,
+  #content .container {
+    padding-bottom: 80px;
+  }
+
+  /* Page images full width */
+  #content img[width="100%"],
+  #content img.img-fluid {
+    margin-bottom: 30px;
+  }
+
+  /* Page content text */
+  #content p.pages-content,
+  #content p[style*="font-size: 14px"],
+  #content p.lead {
+    font-size: 15px !important;
+    line-height: 1.9;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+  }
+
+  /* Hero sections in content pages */
+  #content .hero-section img {
+    max-height: 550px !important;
+  }
+
+  /* Paragraph spacing in content pages */
+  #content p:not(.pages-content) {
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+  }
+
+  /* Client Insights page */
+  #content .display-4 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  #content .carousel-inner {
+    min-height: 250px;
+    padding: 40px 0;
+  }
+
+  #content .carousel-item p.h5 {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+
+  /* Contact Us page */
+  #content .contact-us-border {
+    padding-right: 40px;
+    padding-bottom: 60px;
+  }
+
+  #content .contact-us-border h5 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  #content .contact-us-border h6 {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  #content .contact-us-border address {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  #content form {
+    padding-bottom: 80px;
+  }
+
+  #content form .form-group {
+    margin-bottom: 35px;
+  }
+
+  #content form .col-form-label {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  #content form .form-control {
+    font-size: 15px;
+    padding: 14px 18px;
+    min-height: 48px;
+  }
+
+  #content form textarea.form-control {
+    min-height: 180px;
+  }
+
+  #content form .btn {
+    padding: 12px 40px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+  }
+}
+
+
+/* 2K Resolution - Content Pages */
+@media (min-width: 2560px) {
+  #content {
+    min-height: 800px;
+  }
+
+  #content .container-fluid,
+  #content .container {
+    padding-bottom: 120px;
+  }
+
+  #content p[style*="font-size: 14px"],
+  #content p:not(.pages-content) {
+    font-size: 17px !important;
+  }
+
+  #content .hero-section img {
+    max-height: 650px !important;
+  }
+
+  /* Client Insights - 2K */
+  #content .display-4 {
+    font-size: 5rem;
+  }
+
+  #content .carousel-inner {
+    min-height: 300px;
+    padding: 60px 0;
+  }
+
+  #content .carousel-item p.h5 {
+    font-size: 1.6rem;
+  }
+
+  /* Contact Us - 2K */
+  #content .contact-us-border {
+    padding-bottom: 80px;
+  }
+
+  #content .contact-us-border h5 {
+    font-size: 20px;
+  }
+
+  #content .contact-us-border h6 {
+    font-size: 17px;
+  }
+
+  #content .contact-us-border address {
+    font-size: 16px;
+  }
+
+  #content form {
+    padding-bottom: 100px;
+  }
+
+  #content form .form-group {
+    margin-bottom: 45px;
+  }
+
+  #content form .col-form-label {
+    font-size: 17px;
+  }
+
+  #content form .form-control {
+    font-size: 17px;
+    padding: 16px 20px;
+    min-height: 54px;
+  }
+
+  #content form textarea.form-control {
+    min-height: 200px;
+  }
+
+  #content form .btn {
+    padding: 14px 50px;
+    font-size: 17px;
+  }
+}
+
+
+/* 4K Resolution - Content Pages */
+@media (min-width: 3840px) {
+  #content {
+    min-height: 1100px;
+  }
+
+  #content .container-fluid,
+  #content .container {
+    padding-bottom: 180px;
+  }
+
+  #content p[style*="font-size: 14px"],
+  #content p:not(.pages-content) {
+    font-size: 22px !important;
+  }
+
+  #content .hero-section img {
+    max-height: 800px !important;
+  }
+
+  /* Client Insights - 4K */
+  #content .display-4 {
+    font-size: 6.5rem;
+  }
+
+  #content .carousel-inner {
+    min-height: 400px;
+    padding: 80px 0;
+  }
+
+  #content .carousel-item p.h5 {
+    font-size: 2rem;
+  }
+
+  /* Contact Us - 4K */
+  #content .contact-us-border {
+    padding-bottom: 100px;
+  }
+
+  #content .contact-us-border h5 {
+    font-size: 26px;
+  }
+
+  #content .contact-us-border h6 {
+    font-size: 22px;
+  }
+
+  #content .contact-us-border address {
+    font-size: 20px;
+  }
+
+  #content form {
+    padding-bottom: 140px;
+  }
+
+  #content form .form-group {
+    margin-bottom: 60px;
+  }
+
+  #content form .col-form-label {
+    font-size: 22px;
+  }
+
+  #content form .form-control {
+    font-size: 22px;
+    padding: 20px 28px;
+    min-height: 64px;
+  }
+
+  #content form textarea.form-control {
+    min-height: 260px;
+  }
+
+  #content form .btn {
+    padding: 18px 60px;
+    font-size: 22px;
+  }
+}
+
+
+/* ========================================
    OUR LEADERSHIP PAGE OPTIMIZATION
    ======================================== */
 
 @media (min-width: 1920px) {
 
-  /* Leadership page container - ensure minimum height to push footer down */
-  #content {
+  /* Leadership page specific adjustments */
+  #content.leadership-content {
     min-height: 600px;
   }
 
