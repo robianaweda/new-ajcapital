@@ -57,139 +57,18 @@ $app->get('/EN/aboutus/whatmakeusdifferent', function (Request $request, Respons
     ];  
     return $this->view->render($response, 'en/aboutus/whatmakeusdifferent.twig', $vars);
 })->setName('whatmakeusdifferent');
-$app->get('/EN/aboutus/ourleadership', function (Request $request, Response $response, $args)   {
+$app->get('/EN/ourleadership', function (Request $request, Response $response, $args)   {
     $link = $request->getUri()->getPath();
     $path = explode('/',$link);
     $vars = [
         'page' => [
             'title' => 'Our Leadership',
             'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? ''
+            'sub' => ''
         ],
-    ];  
+    ];
     return $this->view->render($response, 'en/aboutus/ourleadership.twig', $vars);
 })->setName('ourleadership');
-$app->get('/EN/aboutus/ourleadership/geoffrey-d-simms', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Our Leadership',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'en/cv/gs.twig', $vars);
-})->setName('geoffrey-d-simms');
-$app->get('/EN/aboutus/ourleadership/fransiscus-alip', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Our Leadership',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'en/cv/fa.twig', $vars);
-})->setName('fransiscus-alip');
-
-$app->get('/EN/aboutus/ourleadership/luke-furler', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Our Leadership',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'en/cv/lf.twig', $vars);
-})->setName('luke-furler');
-
-$app->get('/EN/aboutus/ourleadership/dessi-natalegawa', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Our Leadership',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'en/cv/dn.twig', $vars);
-})->setName('dessi-natalegawa');
-
-$app->get('/EN/aboutus/ourleadership/ivan-ciptadi', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Our Leadership',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'en/cv/ic.twig', $vars);
-})->setName('ivan-ciptadi');
-
-$app->get('/EN/aboutus/ourleadership/stephani-lucia', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Our Leadership',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'en/cv/sl.twig', $vars);
-})->setName('stephani-lucia');
-$app->get('/EN/aboutus/ourleadership/michael-gunawan', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Our Leadership',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'en/cv/mg.twig', $vars);
-})->setName('michael-gunawan');
-$app->get('/EN/aboutus/ourleadership/zara-xue', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Our Leadership',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'en/cv/zx.twig', $vars);
-})->setName('zara-xue');
-$app->get('/EN/aboutus/ourleadership/susana-cassandra', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Our Leadership',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'en/cv/sc.twig', $vars);
-})->setName('susana-cassandra');
 $app->get('/EN/aboutus/transactionsandcasestudy', function (Request $request, Response $response, $args)   {
     $str = file_get_contents(__DIR__ . '../../assets/db/casestudy.json');
     $json_data=json_decode($str,true);
@@ -283,9 +162,18 @@ $app->get('/EN/eventsandconferences/{year}/{month}/{day}/{slug}', function (Requ
     return $this->view->render($response, 'en/eventsandconferences-detail.twig', $vars);
 })->setName('eventsandconferences-detail');
 
-// Redirect old URL to new URL for backward compatibility
+// Redirect old URL to new URL for backward compatibility - Events
 $app->get('/EN/aboutus/eventsandconferences', function (Request $request, Response $response, $args)   {
     return $response->withRedirect('/EN/eventsandconferences', 301);
+});
+
+// Redirect old URL to new URL for backward compatibility - Leadership
+$app->get('/EN/aboutus/ourleadership', function (Request $request, Response $response, $args)   {
+    return $response->withRedirect('/EN/ourleadership', 301);
+});
+$app->get('/EN/aboutus/ourleadership/{leader}', function (Request $request, Response $response, $args)   {
+    $leader = $args['leader'];
+    return $response->withRedirect('/EN/ourleadership/' . $leader, 301);
 });
 
 // English Route : Services
@@ -825,73 +713,18 @@ $app->get('/ID/tentangkami/yang-membedakan-kami', function (Request $request, Re
     ];  
     return $this->view->render($response, 'id/tentangkami/yang-membedakan-kami.twig', $vars);
 })->setName('yang-membedakan-kami');
-$app->get('/ID/tentangkami/kepemimpinan-kami', function (Request $request, Response $response, $args)   {
+$app->get('/ID/kepemimpinan-kami', function (Request $request, Response $response, $args)   {
     $link = $request->getUri()->getPath();
     $path = explode('/',$link);
     $vars = [
         'page' => [
             'title' => 'Kepemimpinan Kami',
             'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? ''
+            'sub' => ''
         ],
-    ];  
+    ];
     return $this->view->render($response, 'id/tentangkami/kepemimpinan-kami.twig', $vars);
 })->setName('kepemimpinan-kami');
-$app->get('/ID/tentangkami/kepemimpinan-kami/geoffrey-d-simms', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Kepemimpinan Kami',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'id/cv/gs.twig', $vars);
-})->setName('geoffrey-d-simms');
-$app->get('/ID/tentangkami/kepemimpinan-kami/fransiscus-alip', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Kepemimpinan Kami',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'id/cv/fa.twig', $vars);
-})->setName('fransiscus-alip');
-
-$app->get('/ID/tentangkami/kepemimpinan-kami/luke-furler', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Kepemimpinan Kami',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'id/cv/lf.twig', $vars);
-})->setName('luke-furler');
-
-$app->get('/ID/tentangkami/kepemimpinan-kami/dessi-natalegawa', function (Request $request, Response $response, $args)   {
-    $link = $request->getUri()->getPath();
-    $path = explode('/',$link);
-    $vars = [
-        'page' => [
-            'title' => 'Kepemimpinan Kami',
-            'uri' => $path[2] ?? '',
-            'sub' => $path[3] ?? '',
-            'leader' => $path[4] ?? ''
-        ],
-    ];  
-    return $this->view->render($response, 'id/cv/dn.twig', $vars);
-})->setName('dessi-natalegawa');
-
 $app->get('/ID/tentangkami/transaksi-dan-studi-kasus', function (Request $request, Response $response, $args)   {
     $str = file_get_contents(__DIR__ . '../../assets/db/studikasus.json');
     $json_data=json_decode($str,true);
@@ -985,9 +818,18 @@ $app->get('/ID/acaradankonferensi/{year}/{month}/{day}/{slug}', function (Reques
     return $this->view->render($response, 'id/acaradankonferensi-detail.twig', $vars);
 })->setName('acara-dan-konferensi-detail');
 
-// Redirect old URL to new URL for backward compatibility
+// Redirect old URL to new URL for backward compatibility - Events
 $app->get('/ID/tentangkami/acara-dan-konferensi', function (Request $request, Response $response, $args)   {
     return $response->withRedirect('/ID/acaradankonferensi', 301);
+});
+
+// Redirect old URL to new URL for backward compatibility - Leadership
+$app->get('/ID/tentangkami/kepemimpinan-kami', function (Request $request, Response $response, $args)   {
+    return $response->withRedirect('/ID/kepemimpinan-kami', 301);
+});
+$app->get('/ID/tentangkami/kepemimpinan-kami/{leader}', function (Request $request, Response $response, $args)   {
+    $leader = $args['leader'];
+    return $response->withRedirect('/ID/kepemimpinan-kami/' . $leader, 301);
 });
 
 // ID Route : layanan
