@@ -1,0 +1,56 @@
+{% extends 'template/layout_en_content.twig' %}
+{% block content %}
+    <div class="container">
+        <div class="row mb-5 mt-4">
+            <div class="col-md-4 text-center mb-4">
+                <h1 class="text-green font-weight-bold display-4">$8.4B</h1>
+                <h6 class="mb-0">Assets Under Management</h6>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <h1 class="text-green font-weight-bold display-4">98%</h1>
+                <h6 class="mb-0">Client Satisfaction</h6>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <h1 class="text-green font-weight-bold display-4">10+</h1>
+                <h6 class="mb-0">Years Experience</h6>
+            </div>
+        </div>
+        <hr class="my-5"/>
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h2 class="mb-4 text-center font-weight-bold">What Our Clients Say</h2>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <div id="testimonialCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="text-center py-5">
+                                <p class="h5 mb-4 font-weight-light font-italic px-md-5">"AJ Capital transformed our investment strategy. Their expertise and dedication to our success is unmatched."</p>
+                                <h6 class="font-weight-bold mb-1">PT Trans Pacific Petrochemical Indotama</h6>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="text-center py-5">
+                                <p class="h5 mb-4 font-weight-light font-italic px-md-5">"Professional, reliable, and results-driven. AJ Capital has been instrumental in our growth journey."</p>
+                                <h6 class="font-weight-bold mb-1">Namasindo Group</h6>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="text-center py-5">
+                                <p class="h5 mb-4 font-weight-light font-italic px-md-5">"The team's market insights and personalized approach have consistently exceeded our expectations."</p>
+                                <h6 class="font-weight-bold mb-1">Siva Shipping</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators position-relative mb-0" style="bottom: -30px;">
+                        <li data-target="#testimonialCarousel" data-slide-to="0" class="active bg-success"></li>
+                        <li data-target="#testimonialCarousel" data-slide-to="1" class="bg-secondary"></li>
+                        <li data-target="#testimonialCarousel" data-slide-to="2" class="bg-secondary"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

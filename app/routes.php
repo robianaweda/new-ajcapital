@@ -167,6 +167,24 @@ $app->get('/EN/aboutus/eventsandconferences', function (Request $request, Respon
     return $response->withRedirect('/EN/eventsandconferences', 301);
 });
 
+// English Route : Client Insights
+$app->get('/EN/clientinsights', function (Request $request, Response $response, $args)   {
+    $link = $request->getUri()->getPath();
+    $path = explode("/",$link);
+    $vars = [
+        'page' => [
+            'title' => 'Client Insights',
+            'uri' => 'clientinsights',
+        ],
+    ];
+    return $this->view->render($response, 'en/aboutus/clientinsights.twig', $vars);
+})->setName('clientinsights');
+
+// Redirect old URL to new URL for backward compatibility - Client Insights
+$app->get('/EN/aboutus/clientinsights', function (Request $request, Response $response, $args)   {
+    return $response->withRedirect('/EN/clientinsights', 301);
+});
+
 // Redirect old URL to new URL for backward compatibility - Leadership
 $app->get('/EN/aboutus/ourleadership', function (Request $request, Response $response, $args)   {
     return $response->withRedirect('/EN/ourleadership', 301);
@@ -821,6 +839,24 @@ $app->get('/ID/acaradankonferensi/{year}/{month}/{day}/{slug}', function (Reques
 // Redirect old URL to new URL for backward compatibility - Events
 $app->get('/ID/tentangkami/acara-dan-konferensi', function (Request $request, Response $response, $args)   {
     return $response->withRedirect('/ID/acaradankonferensi', 301);
+});
+
+// Indonesian Route : Client Insights
+$app->get('/ID/wawasanklien', function (Request $request, Response $response, $args)   {
+    $link = $request->getUri()->getPath();
+    $path = explode("/",$link);
+    $vars = [
+        'page' => [
+            'title' => 'Wawasan Klien',
+            'uri' => 'wawasanklien',
+        ],
+    ];
+    return $this->view->render($response, 'id/tentangkami/wawasan-klien.twig', $vars);
+})->setName('wawasan-klien');
+
+// Redirect old URL to new URL for backward compatibility - Client Insights
+$app->get('/ID/tentangkami/wawasan-klien', function (Request $request, Response $response, $args)   {
+    return $response->withRedirect('/ID/wawasanklien', 301);
 });
 
 // Redirect old URL to new URL for backward compatibility - Leadership

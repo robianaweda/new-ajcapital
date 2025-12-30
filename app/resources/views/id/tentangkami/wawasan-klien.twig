@@ -1,0 +1,56 @@
+{% extends 'template/layout_id_content.twig' %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row mb-5 mt-4">
+            <div class="col-md-4 text-center mb-4">
+                <h1 class="text-green font-weight-bold display-4">$8.4B</h1>
+                <h6 class="mb-0">Aset yang Dikelola</h6>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <h1 class="text-green font-weight-bold display-4">98%</h1>
+                <h6 class="mb-0">Kepuasan Klien</h6>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <h1 class="text-green font-weight-bold display-4">10+</h1>
+                <h6 class="mb-0">Tahun Pengalaman</h6>
+            </div>
+        </div>
+        <hr class="my-5"/>
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h2 class="mb-4 text-center font-weight-bold">Apa Kata Klien Kami</h2>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <div id="testimonialCarouselID" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="text-center py-5">
+                                <p class="h5 mb-4 font-weight-light font-italic px-md-5">"AJ Capital mengubah strategi investasi kami. Keahlian dan dedikasi mereka terhadap kesuksesan kami tidak tertandingi."</p>
+                                <h6 class="font-weight-bold mb-1">PT Trans Pacific Petrochemical Indotama</h6>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="text-center py-5">
+                                <p class="h5 mb-4 font-weight-light font-italic px-md-5">"Profesional, andal, dan berorientasi pada hasil. AJ Capital sangat berperan dalam perjalanan pertumbuhan kami."</p>
+                                <h6 class="font-weight-bold mb-1">Namasindo Group</h6>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="text-center py-5">
+                                <p class="h5 mb-4 font-weight-light font-italic px-md-5">"Wawasan pasar tim dan pendekatan yang dipersonalisasi secara konsisten melampaui harapan kami."</p>
+                                <h6 class="font-weight-bold mb-1">Siva Shipping</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators position-relative mb-0" style="bottom: -30px;">
+                        <li data-target="#testimonialCarouselID" data-slide-to="0" class="active bg-success"></li>
+                        <li data-target="#testimonialCarouselID" data-slide-to="1" class="bg-secondary"></li>
+                        <li data-target="#testimonialCarouselID" data-slide-to="2" class="bg-secondary"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
