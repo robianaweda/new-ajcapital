@@ -9,13 +9,13 @@
                 <li {%if page.sub == 'ourleadership'%} class="active" {% endif %}>
                     <a class="nav-link" href="{{ base_url() }}/EN/aboutus/ourleadership">Our Leadership</a>
                 </li>
-                #}
                 <li {%if page.sub == 'transactionsandcasestudy'%} class="active" {% endif %}>
                     <a class="nav-link" href="{{ base_url() }}/EN/aboutus/transactionsandcasestudy">Transactions and Case Study</a>
                 </li>
                 <li {%if page.sub == 'eventsandconferences'%} class="active" {% endif %}>
                     <a class="nav-link" href="{{ base_url() }}/EN/aboutus/eventsandconferences">Events and Conferences</a>
                 </li>
+                #}
             </ul>
         </nav>
     {% elseif page.uri == 'services' %}
