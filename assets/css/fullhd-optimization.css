@@ -512,6 +512,231 @@ html {
 
 
 /* ========================================
+   OUR LEADERSHIP PAGE OPTIMIZATION
+   ======================================== */
+
+@media (min-width: 1920px) {
+
+  /* Leadership page container - ensure minimum height to push footer down */
+  #content {
+    min-height: calc(100vh - 200px);
+  }
+
+  /* Leadership section padding for Full HD */
+  #leadership {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    min-height: 800px;
+  }
+
+  /* Leadership profile images - larger for Full HD */
+  .leader-link {
+    width: 180px !important;
+    height: 180px !important;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .leader-link:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(6, 131, 42, 0.4);
+  }
+
+  /* Leadership name and title typography */
+  #leadership .p-txt {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+
+  #leadership .p-txt-desc {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+  }
+
+  /* Leadership rows spacing */
+  #leadership .row {
+    margin-bottom: 80px;
+  }
+
+  /* CV/Bio content styling */
+  .text-cv {
+    padding: 40px 80px;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+  }
+
+  .text-cv h4 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .text-cv p {
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+  }
+
+  .text-cv ul.leadership-list {
+    font-size: 14px;
+    line-height: 1.8;
+    padding-left: 30px;
+  }
+
+  .text-cv ul.leadership-list li {
+    margin-bottom: 12px;
+  }
+
+  /* Close button styling */
+  .text-cv .btn-outline-green {
+    padding: 10px 25px;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  /* Chevron up icon */
+  .text-cv h2 i.fa-chevron-up {
+    font-size: 24px;
+  }
+
+  /* Address section spacing */
+  #leadership address {
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+
+  /* Mobile leadership section - hidden on Full HD */
+  .container-fluid.d-sm-block.d-md-none {
+    padding-bottom: 60px;
+  }
+
+  /* Desktop leadership section */
+  .container-fluid.d-none.d-md-block {
+    padding-bottom: 120px;
+  }
+
+  /* Spacing between leadership profile rows */
+  #leadership > .row:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  /* Additional spacing for collapsed content */
+  .collapse {
+    margin-bottom: 60px;
+  }
+
+  /* Leadership section bottom spacing */
+  #leadership::after {
+    content: '';
+    display: block;
+    height: 100px;
+  }
+}
+
+
+/* 2K Resolution - Leadership Page */
+@media (min-width: 2560px) {
+
+  #content {
+    min-height: calc(100vh - 250px);
+  }
+
+  #leadership {
+    padding-top: 80px;
+    padding-bottom: 150px;
+    min-height: 1000px;
+  }
+
+  .leader-link {
+    width: 220px !important;
+    height: 220px !important;
+  }
+
+  #leadership .p-txt {
+    font-size: 24px;
+    letter-spacing: 2.5px;
+  }
+
+  #leadership .p-txt-desc {
+    font-size: 17px;
+  }
+
+  .text-cv {
+    padding: 50px 120px;
+    font-size: 17px;
+  }
+
+  .text-cv h4 {
+    font-size: 26px;
+    letter-spacing: 4px;
+  }
+
+  .text-cv p {
+    font-size: 17px;
+  }
+
+  .text-cv ul.leadership-list {
+    font-size: 16px;
+  }
+}
+
+
+/* 4K Resolution - Leadership Page */
+@media (min-width: 3840px) {
+
+  #content {
+    min-height: calc(100vh - 300px);
+  }
+
+  #leadership {
+    padding-top: 120px;
+    padding-bottom: 200px;
+    min-height: 1400px;
+  }
+
+  .leader-link {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  #leadership .p-txt {
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+
+  #leadership .p-txt-desc {
+    font-size: 22px;
+  }
+
+  .text-cv {
+    padding: 70px 200px;
+    font-size: 22px;
+  }
+
+  .text-cv h4 {
+    font-size: 34px;
+    letter-spacing: 5px;
+  }
+
+  .text-cv p {
+    font-size: 22px;
+  }
+
+  .text-cv ul.leadership-list {
+    font-size: 20px;
+  }
+
+  .text-cv ul.leadership-list li {
+    margin-bottom: 16px;
+  }
+}
+
+
+/* ========================================
    PRINT OPTIMIZATIONS
    ======================================== */
 
