@@ -11,7 +11,7 @@
         "location": "Singapura",
         "organizer": "INSOL International",
         "reference": "https://www.insol.org/events/detail/76",
-        "image": "",
+        "image": "events-1.jpg",
         "featured": true
     },
     {
@@ -26,7 +26,7 @@
         "location": "Hong Kong",
         "organizer": "Debtwire",
         "reference": "https://events.debtwire.com/dw-apac-forum",
-        "image": "",
+        "image": "events-2.jpg",
         "featured": false
     },
     {
@@ -41,7 +41,7 @@
         "location": "Jakarta",
         "organizer": "INSOL",
         "reference": "https://www.insol.org/events/detail/74",
-        "image": "",
+        "image": "events-3.jpg",
         "featured": false
     },
     {
@@ -56,7 +56,7 @@
         "location": "Singapura",
         "organizer": "Singapore Law Society",
         "reference": "http://www.lawsociety.org.sg/conference/SIC2017/Default.aspx",
-        "image": "",
+        "image": "events-4.jpg",
         "featured": false
     },
     {
@@ -71,7 +71,7 @@
         "location": "Jakarta",
         "organizer": "INSOL",
         "reference": "",
-        "image": "",
+        "image": "events-5.jpg",
         "featured": false
     },
     {
@@ -86,7 +86,7 @@
         "location": "Hong Kong",
         "organizer": "ASIFMA, The Financial Times dan Latham & Watkins",
         "reference": "https://www.lw.com/events/debt-restructurings-asia-next-wave",
-        "image": "",
+        "image": "events-6.jpg",
         "featured": false
     },
     {
@@ -101,7 +101,7 @@
         "location": "Jakarta",
         "organizer": "Ernst & Young",
         "reference": "",
-        "image": "",
+        "image": "events-7.jpg",
         "featured": false
     },
     {
@@ -116,7 +116,7 @@
         "location": "Jakarta",
         "organizer": "Debtwire",
         "reference": "",
-        "image": "",
+        "image": "events-8.jpg",
         "featured": false
     },
     {
@@ -131,7 +131,7 @@
         "location": "Jakarta",
         "organizer": "Debtwire",
         "reference": "",
-        "image": "",
+        "image": "events-9.jpg",
         "featured": false
     },
     {
@@ -146,7 +146,7 @@
         "location": "Bandung",
         "organizer": "AJCapital",
         "reference": "",
-        "image": "",
+        "image": "events-10.jpg",
         "featured": false
     },
     {
@@ -161,7 +161,7 @@
         "location": "Hong Kong",
         "organizer": "Asia Society dan Latham and Watkins",
         "reference": "https://www.lw.com/events/Maximisingoutcomes",
-        "image": "",
+        "image": "events-11.jpg",
         "featured": false
     }
 ]

@@ -1,140 +1,351 @@
 {% extends 'template/layout_id_content.twig' %}
 {% block content %}
     <div class="container">
-        <div class="row mb-4">
+        <div class="row">
             <div class="col-md-12">
-                <h2 class="page-title">Acara & Konferensi</h2>
-                <p class="lead">AJCapital secara aktif berpartisipasi dalam acara industri, konferensi, dan seminar di seluruh kawasan Asia-Pasifik, berkontribusi pada diskusi tentang restrukturisasi, kepailitan, dan penasihat keuangan.</p>
+                <h1 class="page-title">ACARA & KONFERENSI</h1>
+                <p class="page-description">AJCapital secara aktif berpartisipasi dalam acara industri, konferensi, dan seminar di seluruh kawasan Asia-Pasifik, berkontribusi pada diskusi tentang restrukturisasi, kepailitan, dan penasihat keuangan.</p>
             </div>
         </div>
 
+        <!-- Filter Section -->
+        <div class="row" style="margin-top: 40px; margin-bottom: 40px;">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="location-filter" class="filter-label">Filter berdasarkan Lokasi:</label>
+                    <select class="form-control" id="location-filter">
+                        <option value="all">Semua Lokasi</option>
+                        <option value="Singapore">Singapura</option>
+                        <option value="Hong Kong">Hong Kong</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Bandung">Bandung</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events Listing - Three Column Grid for Desktop/Tablet -->
         {% if page.data %}
-            <div class="row">
+            <div class="row" id="events-container">
                 {% for event in page.data %}
                     {% set eventDate = event.shortDate|date_modify('0 days') %}
                     {% set year = eventDate|date('Y') %}
                     {% set month = eventDate|date('m') %}
                     {% set day = eventDate|date('d') %}
 
-                    <div class="col-md-12 mb-4">
-                        <div class="event-card">
-                            <div class="event-header">
-                                <h4 class="event-title">
-                                    <a href="{{ base_url }}/ID/acaradankonferensi/{{ year }}/{{ month }}/{{ day }}/{{ event.slug }}" class="event-link">
-                                        {{ event.title }}
-                                    </a>
-                                </h4>
-                                <p class="event-date">
-                                    <i class="fa fa-calendar"></i> {{ event.date }}
-                                    {% if event.location %}
-                                        <span class="ml-3">
-                                            <i class="fa fa-map-marker"></i> {{ event.location }}
-                                        </span>
+                    <div class="col-12 col-md-6 col-lg-4 event-item" data-location="{{ event.location }}">
+                        <a href="{{ base_url }}/ID/acaradankonferensi/{{ year }}/{{ month }}/{{ day }}/{{ event.slug }}" class="event-link">
+                            <article class="event-card">
+                                <!-- Square Thumbnail Image -->
+                                <div class="event-image" {% if event.image %}style="background-image: url('{{ base_url() }}/assets/img/events/{{ event.image }}'); background-size: cover; background-position: center;"{% endif %}>
+                                    {% if not event.image %}
+                                    <div class="image-placeholder">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
                                     {% endif %}
-                                </p>
-                            </div>
-                            <div class="event-body">
-                                <p class="event-excerpt">{{ event.excerpt }}</p>
-                                {% if event.venue %}
-                                    <p class="event-meta">
-                                        <span class="text-green">Tempat:</span> {{ event.venue }}
+                                </div>
+
+                                <!-- Event Content -->
+                                <div class="event-content">
+                                    <!-- Date -->
+                                    <div class="event-date">{{ event.date }}</div>
+
+                                    <!-- Badge -->
+                                    <span class="event-badge">Acara</span>
+
+                                    <!-- Title -->
+                                    <h3 class="event-title">{{ event.title }}</h3>
+
+                                    <!-- Location -->
+                                    {% if event.location %}
+                                    <p class="event-location">
+                                        <i class="fa fa-map-marker"></i> {{ event.location }}
                                     </p>
-                                {% endif %}
-                                {% if event.organizer %}
-                                    <p class="event-meta">
-                                        <span class="text-green">Diselenggarakan oleh:</span> {{ event.organizer }}
-                                    </p>
-                                {% endif %}
-                                <a href="{{ base_url }}/ID/acaradankonferensi/{{ year }}/{{ month }}/{{ day }}/{{ event.slug }}" class="btn btn-sm btn-outline-success">
-                                    Baca Selengkapnya <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <hr/>
+                                    {% endif %}
+
+                                    <!-- Organizer -->
+                                    {% if event.organizer %}
+                                    <div class="event-organizer-container">
+                                        <span class="event-organizer-label">Diselenggarakan oleh:</span>
+                                        <span class="event-organizer-name">{{ event.organizer }}</span>
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </article>
+                        </a>
                     </div>
                 {% endfor %}
+            </div>
+
+            <!-- No Results Message -->
+            <div class="row" id="no-results" style="display: none;">
+                <div class="col-12">
+                    <p class="text-center" style="color: #666; font-size: 16px; padding: 60px 0;">Tidak ada acara yang ditemukan untuk lokasi yang dipilih.</p>
+                </div>
             </div>
         {% else %}
             <div class="row">
                 <div class="col-md-12">
-                    <p class="text-muted">Tidak ada acara yang tersedia saat ini.</p>
+                    <p class="text-center" style="color: #666; font-size: 16px; padding: 60px 0;">Tidak ada acara yang tersedia saat ini.</p>
                 </div>
             </div>
         {% endif %}
     </div>
 
+    <!-- Custom Styles -->
     <style>
+        /* Page Title */
         .page-title {
-            color: #2c5530;
-            font-weight: 600;
-            margin-bottom: 1rem;
+            color: #1a1a1a;
+            font-weight: 700;
+            font-size: 42px;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
         }
 
-        .event-card {
-            padding: 1.5rem 0;
-        }
-
-        .event-header {
-            margin-bottom: 1rem;
-        }
-
-        .event-title {
-            margin-bottom: 0.5rem;
-        }
-
-        .event-title .event-link {
-            color: #2c5530;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .event-title .event-link:hover {
-            color: #4a8a4f;
-            text-decoration: underline;
-        }
-
-        .event-date {
+        .page-description {
             color: #666;
-            font-size: 0.95rem;
-            margin-bottom: 0;
-        }
-
-        .event-date i {
-            color: #2c5530;
-        }
-
-        .event-body {
-            margin-top: 1rem;
-        }
-
-        .event-excerpt {
-            color: #333;
+            font-size: 16px;
+            margin-bottom: 20px;
             line-height: 1.6;
-            margin-bottom: 0.75rem;
         }
 
-        .event-meta {
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-            color: #555;
-        }
-
-        .text-green {
-            color: #2c5530;
+        /* Filter Styling */
+        .filter-label {
             font-weight: 600;
+            color: #06832a;
+            font-size: 14px;
+            margin-bottom: 10px;
         }
 
-        .btn-outline-success {
-            color: #2c5530;
-            border-color: #2c5530;
-            margin-top: 0.5rem;
+        #location-filter {
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 12px 15px;
+            font-size: 14px;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            min-height: 50px;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2306832a' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 12px;
+            padding-right: 40px;
         }
 
-        .btn-outline-success:hover {
-            background-color: #2c5530;
-            border-color: #2c5530;
+        #location-filter:focus {
+            border-color: #06832a;
+            box-shadow: 0 0 0 0.2rem rgba(6, 131, 42, 0.1);
+            outline: none;
+        }
+
+        #location-filter option {
+            padding: 10px;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+        /* Event Item Container */
+        .event-item {
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+
+        /* Event Link - Remove default link styling */
+        .event-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+        }
+
+        .event-link:hover {
+            text-decoration: none;
+        }
+
+        /* Event Card */
+        .event-card {
+            background: white;
+            box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .event-card:hover {
+            box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+        }
+
+        /* Square Thumbnail Image */
+        .event-image {
+            width: 100%;
+            padding-top: 60%; /* 60% aspect ratio for wider rectangle */
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #06832a 0%, #045a1d 100%);
+        }
+
+        .image-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Event Content */
+        .event-content {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Date */
+        .event-date {
+            color: #999;
+            font-size: 13px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Badge */
+        .event-badge {
+            display: inline-block;
+            background: #06832a;
             color: white;
+            padding: 4px 12px;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+        }
+
+        /* Title */
+        .event-title {
+            color: #1a1a1a;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 15px 0 12px;
+            line-height: 1.4;
+            flex: 1;
+        }
+
+        .event-link:hover .event-title {
+            color: #06832a;
+        }
+
+        /* Location */
+        .event-location {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .event-location i {
+            color: #06832a;
+            margin-right: 5px;
+        }
+
+        /* Organizer */
+        .event-organizer-container {
+            margin-top: auto;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .event-organizer-label {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .event-organizer-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #06832a;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 991px) {
+            /* Tablet: 2 columns */
+            .event-item {
+                margin-bottom: 25px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            /* Mobile: 1 column */
+            .page-title {
+                font-size: 32px;
+                letter-spacing: 1px;
+            }
+
+            .event-item {
+                margin-bottom: 30px;
+                padding: 0;
+            }
+
+            .event-title {
+                font-size: 17px;
+            }
+
+            .event-content {
+                padding: 18px;
+            }
         }
     </style>
+
+    <!-- Filter JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterSelect = document.getElementById('location-filter');
+            const eventItems = document.querySelectorAll('.event-item');
+            const noResults = document.getElementById('no-results');
+
+            filterSelect.addEventListener('change', function() {
+                const selectedLocation = this.value;
+                let visibleCount = 0;
+
+                eventItems.forEach(function(item) {
+                    const itemLocation = item.getAttribute('data-location');
+
+                    if (selectedLocation === 'all' || itemLocation === selectedLocation) {
+                        item.style.display = '';
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Show/hide no results message
+                if (visibleCount === 0) {
+                    noResults.style.display = 'block';
+                } else {
+                    noResults.style.display = 'none';
+                }
+            });
+        });
+    </script>
 {% endblock %}

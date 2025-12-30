@@ -27,13 +27,16 @@
             </div>
         </div>
 
-        <div class="event-detail-content">
-            {% if page.event.image %}
-                <div class="event-image mb-4">
-                    <img src="{{ base_url() }}{{ page.event.image }}" alt="{{ page.event.title }}" class="img-fluid"/>
-                </div>
-            {% endif %}
+        <!-- Event Hero Image -->
+        {% if page.event.image %}
+        <div class="event-hero-image">
+            <img src="{{ base_url() }}/assets/img/events/{{ page.event.image }}"
+                 alt="{{ page.event.title }}"
+                 class="img-fluid">
+        </div>
+        {% endif %}
 
+        <div class="event-detail-content">
             <div class="event-description">
                 {{ page.event.description|nl2br }}
             </div>
@@ -111,7 +114,7 @@
         .event-detail-header {
             border-bottom: 2px solid #2c5530;
             padding-bottom: 0.75rem;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
             background-color: transparent !important;
         }
 
@@ -142,6 +145,48 @@
             margin-right: 0.5rem;
         }
 
+        /* Event Hero Image */
+        .event-hero-image {
+            width: 100%;
+            margin-bottom: 2rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, #06832a 0%, #045a1d 100%);
+        }
+
+        .event-hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .event-hero-image img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Aspect ratio container for consistent image display */
+        .event-hero-image::before {
+            content: '';
+            display: block;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            position: relative;
+        }
+
+        .event-hero-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .event-hero-image {
+            position: relative;
+        }
+
         .event-detail-content {
             font-size: 1rem;
             line-height: 1.7;
@@ -149,6 +194,7 @@
             background-color: transparent !important;
         }
 
+        /* Legacy support - keeping old class name */
         .event-image img {
             border-radius: 0.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -232,6 +278,15 @@
         @media (max-width: 768px) {
             .event-detail-title {
                 font-size: 1.5rem;
+            }
+
+            .event-hero-image {
+                margin-bottom: 1.5rem;
+                border-radius: 0.25rem;
+            }
+
+            .event-hero-image::before {
+                padding-top: 60%; /* Adjust aspect ratio for mobile */
             }
 
             .info-label {
