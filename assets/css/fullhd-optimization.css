@@ -1,0 +1,534 @@
+/**
+ * Full HD Optimization Stylesheet
+ * AJ Capital Advisory Website
+ * Target: 1920x1080 and higher resolutions
+ * Created: 2025-12-30
+ */
+
+/* ========================================
+   FULL HD OPTIMIZATION (1920px and above)
+   ======================================== */
+
+@media (min-width: 1920px) {
+
+  /* ============ HERO SLIDER ============ */
+
+  /* Increase slider minimum height for Full HD */
+  .slider-wrapper .items,
+  .slider-wrapper .carousel-item {
+    min-height: 850px;
+  }
+
+  /* Adjust slider item padding for better vertical centering */
+  .items {
+    padding-top: 15%;
+    padding-bottom: 8%;
+  }
+
+  /* Hero heading typography enhancement */
+  .hero-content h1 {
+    font-size: 52px !important;
+    letter-spacing: 4px !important;
+    margin-bottom: 20px !important;
+    line-height: 1.3;
+  }
+
+  /* Hero subheading (h7) enhancement */
+  .hero-content h7 {
+    font-size: 20px;
+    line-height: 1.6;
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Hero logo sizing */
+  .hero-content .img-center {
+    width: 60px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* Hero CTA button enhancement */
+  .hero-content .btn {
+    margin-top: 80px !important;
+    padding: 12px 35px !important;
+    font-size: 14px !important;
+    letter-spacing: 2px;
+  }
+
+  /* Slider navigation arrows positioning */
+  .slick-arrow.slick-prev {
+    left: 120px;
+  }
+
+  .slick-arrow.slick-next {
+    right: 120px;
+  }
+
+  /* Slider dots/indicators enhancement */
+  .slider .carousel-indicators li {
+    width: 14px;
+    height: 14px;
+    margin: 0 10px;
+  }
+
+  .slider .carousel-indicators li.active {
+    width: 16px;
+    height: 16px;
+  }
+
+  .slider .carousel-indicators {
+    bottom: 40px;
+  }
+
+
+  /* ============ SERVICES SECTION ============ */
+
+  /* Services section container optimization */
+  #services {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    margin-bottom: 300px;
+  }
+
+  /* Section heading enhancement */
+  h2.whatwedo,
+  h4.whatwedo {
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+  }
+
+  /* Services card deck with better spacing */
+  #services .card-deck {
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+  }
+
+  /* Individual service cards optimization */
+  #services .card {
+    width: 100%;
+    max-width: 380px;
+    min-height: 450px;
+    height: 450px;
+    margin: 0 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Card hover effect enhancement */
+  #services .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(6, 131, 42, 0.3);
+  }
+
+  /* Card content padding */
+  #services .card-block {
+    padding: 50px 20px 20px 20px;
+  }
+
+  /* Card title typography */
+  #services .card-title.services-head-sm {
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* Card description text */
+  #services .card-text.text-sm {
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    padding: 0 10px;
+  }
+
+  /* Card CTA button positioning */
+  #services .services-end {
+    bottom: 30px;
+    padding: 0 20px;
+  }
+
+  /* Card CTA button styling */
+  #services .services-end .btn {
+    padding: 10px 28px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+  }
+
+
+  /* ============ TAG-LINE SECTION ============ */
+
+  #tag-line {
+    margin-top: 300px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Tag-line content container */
+  #tag-line .container-fluid {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  /* Tag-line heading */
+  #tag-line h3 {
+    font-size: 28px;
+    letter-spacing: 5px !important;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+
+  /* Tag-line description text */
+  #tag-line p {
+    font-size: 17px;
+    line-height: 1.9;
+    letter-spacing: 0.5px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+  }
+
+  /* Tag-line logo */
+  #tag-line .img-small-logo-center {
+    width: 60px !important;
+  }
+
+
+  /* ============ NAVIGATION ============ */
+
+  /* Navbar brand logo sizing */
+  .navbar-brand > img {
+    width: 180px;
+    margin-left: 40px;
+  }
+
+  /* Navbar items spacing */
+  ul.navbar-nav {
+    font-size: 14px;
+    margin-right: 40px;
+  }
+
+  ul.navbar-nav li.nav-item {
+    margin-left: 25px;
+    padding: 0px 12px;
+  }
+
+  /* Language bar positioning */
+  .lang-bar {
+    margin-right: 40px;
+    font-size: 13px;
+  }
+
+
+  /* ============ MOBILE CARDS (Hidden on Full HD) ============ */
+
+  /* Enhanced mobile card section for tablets */
+  .container-fluid.d-sm-block.d-md-none .card {
+    max-width: 450px;
+    margin: 0 auto 20px auto;
+  }
+
+
+  /* ============ GENERAL ENHANCEMENTS ============ */
+
+  /* Body typography */
+  body {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  /* Container fluid max-width for better centering */
+  .container-fluid {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  /* Overlay enhancement */
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+
+  .overlay-tag {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  /* Card image filter adjustment */
+  .card-img {
+    filter: brightness(35%);
+    transition: filter 0.3s ease;
+  }
+
+  .card:hover .card-img {
+    filter: brightness(45%);
+  }
+
+  /* Overlay div opacity */
+  .overlay-div {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+
+  .card:hover .overlay-div {
+    opacity: 0.8;
+  }
+}
+
+
+/* ========================================
+   2K RESOLUTION OPTIMIZATION (2560px and above)
+   ======================================== */
+
+@media (min-width: 2560px) {
+
+  /* Hero slider for 2K */
+  .slider-wrapper .items,
+  .slider-wrapper .carousel-item {
+    min-height: 1000px;
+  }
+
+  .items {
+    padding-top: 18%;
+  }
+
+  /* Hero typography for 2K */
+  .hero-content h1 {
+    font-size: 64px !important;
+    letter-spacing: 5px !important;
+  }
+
+  .hero-content h7 {
+    font-size: 24px;
+    max-width: 1200px;
+  }
+
+  .hero-content .img-center {
+    width: 80px !important;
+  }
+
+  /* Services for 2K */
+  #services .card-deck {
+    max-width: 2200px;
+    gap: 40px;
+  }
+
+  #services .card {
+    max-width: 480px;
+    height: 520px;
+    min-height: 520px;
+  }
+
+  h2.whatwedo,
+  h4.whatwedo {
+    font-size: 38px;
+    letter-spacing: 6px;
+  }
+
+  /* Tag-line for 2K */
+  #tag-line .container-fluid {
+    max-width: 2200px;
+  }
+
+  #tag-line h3 {
+    font-size: 34px;
+  }
+
+  #tag-line p {
+    font-size: 19px;
+    max-width: 1600px;
+  }
+
+  /* Navigation for 2K */
+  .navbar-brand > img {
+    width: 200px;
+  }
+
+  ul.navbar-nav {
+    font-size: 15px;
+  }
+
+  /* Slider arrows for 2K */
+  .slick-arrow.slick-prev {
+    left: 160px;
+  }
+
+  .slick-arrow.slick-next {
+    right: 160px;
+  }
+}
+
+
+/* ========================================
+   4K RESOLUTION OPTIMIZATION (3840px and above)
+   ======================================== */
+
+@media (min-width: 3840px) {
+
+  /* Hero slider for 4K */
+  .slider-wrapper .items,
+  .slider-wrapper .carousel-item {
+    min-height: 1400px;
+  }
+
+  /* Hero typography for 4K */
+  .hero-content h1 {
+    font-size: 80px !important;
+    letter-spacing: 6px !important;
+  }
+
+  .hero-content h7 {
+    font-size: 28px;
+    max-width: 1600px;
+  }
+
+  .hero-content .img-center {
+    width: 100px !important;
+  }
+
+  .hero-content .btn {
+    padding: 16px 45px !important;
+    font-size: 16px !important;
+  }
+
+  /* Services for 4K */
+  #services .card-deck {
+    max-width: 3200px;
+    gap: 50px;
+  }
+
+  #services .card {
+    max-width: 680px;
+    height: 700px;
+    min-height: 700px;
+  }
+
+  #services .card-title.services-head-sm {
+    font-size: 34px;
+    margin-top: 60px;
+  }
+
+  #services .card-text.text-sm {
+    font-size: 20px;
+    padding: 0 30px;
+  }
+
+  h2.whatwedo,
+  h4.whatwedo {
+    font-size: 48px;
+    letter-spacing: 8px;
+  }
+
+  /* Tag-line for 4K */
+  #tag-line h3 {
+    font-size: 42px;
+  }
+
+  #tag-line p {
+    font-size: 24px;
+    max-width: 2200px;
+  }
+
+  /* Navigation for 4K */
+  .navbar-brand > img {
+    width: 240px;
+  }
+
+  ul.navbar-nav {
+    font-size: 17px;
+  }
+
+  ul.navbar-nav li.nav-item {
+    margin-left: 30px;
+    padding: 0px 16px;
+  }
+}
+
+
+/* ========================================
+   PERFORMANCE OPTIMIZATIONS
+   ======================================== */
+
+/* Hardware acceleration for smooth animations */
+.card,
+.slider,
+.carousel-item,
+.hero-content {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optimize font rendering for larger screens */
+@media (min-width: 1920px) {
+  body,
+  h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+
+/* ========================================
+   ACCESSIBILITY ENHANCEMENTS
+   ======================================== */
+
+/* Focus states for keyboard navigation */
+@media (min-width: 1920px) {
+  .btn:focus,
+  .nav-link:focus,
+  .card:focus {
+    outline: 3px solid #06832a;
+    outline-offset: 4px;
+  }
+
+  /* Skip to content link for accessibility */
+  .skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #06832a;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    z-index: 100;
+  }
+
+  .skip-to-content:focus {
+    top: 0;
+  }
+}
+
+
+/* ========================================
+   PRINT OPTIMIZATIONS
+   ======================================== */
+
+@media print {
+  .slider-wrapper,
+  .navbar,
+  .footer-bg,
+  .slick-arrow {
+    display: none !important;
+  }
+
+  #services,
+  #tag-line {
+    page-break-inside: avoid;
+  }
+
+  .card {
+    border: 1px solid #06832a;
+  }
+}
