@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Placeholder Image Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .canvas-container {
+            margin-bottom: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        canvas {
+            border: 1px solid #ddd;
+            max-width: 100%;
+            height: auto;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+        button {
+            background: #06832a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        button:hover {
+            background: #045a1d;
+        }
+        h2 {
+            color: #1a1a1a;
+            margin-top: 0;
+        }
+        .info {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Placeholder Image Generator</h1>
+    <p>Generate professional placeholder images for events. Right-click on any canvas to save as image.</p>
+
+    <!-- Conference Theme -->
+    <div class="canvas-container">
+        <h2>1. Conference Theme</h2>
+        <canvas id="canvas1" width="1200" height="720"></canvas>
+        <div class="controls">
+            <button onclick="downloadCanvas('canvas1', 'event-conference-placeholder.jpg')">Download</button>
+            <span class="info">Ideal for: Conferences, Seminars, Industry Events</span>
+        </div>
+    </div>
+
+    <!-- Networking Theme -->
+    <div class="canvas-container">
+        <h2>2. Networking Theme</h2>
+        <canvas id="canvas2" width="1200" height="720"></canvas>
+        <div class="controls">
+            <button onclick="downloadCanvas('canvas2', 'event-networking-placeholder.jpg')">Download</button>
+            <span class="info">Ideal for: Roundtable Discussions, Networking Events</span>
+        </div>
+    </div>
+
+    <!-- Workshop Theme -->
+    <div class="canvas-container">
+        <h2>3. Workshop/Training Theme</h2>
+        <canvas id="canvas3" width="1200" height="720"></canvas>
+        <div class="controls">
+            <button onclick="downloadCanvas('canvas3', 'event-workshop-placeholder.jpg')">Download</button>
+            <span class="info">Ideal for: Workshops, Training Sessions, Career Events</span>
+        </div>
+    </div>
+
+    <!-- International Theme -->
+    <div class="canvas-container">
+        <h2>4. International Forum Theme</h2>
+        <canvas id="canvas4" width="1200" height="720"></canvas>
+        <div class="controls">
+            <button onclick="downloadCanvas('canvas4', 'event-forum-placeholder.jpg')">Download</button>
+            <span class="info">Ideal for: International Forums, Regional Conferences</span>
+        </div>
+    </div>
+
+    <!-- Generic/Minimal Theme -->
+    <div class="canvas-container">
+        <h2>5. Minimal Theme</h2>
+        <canvas id="canvas5" width="1200" height="720"></canvas>
+        <div class="controls">
+            <button onclick="downloadCanvas('canvas5', 'event-minimal-placeholder.jpg')">Download</button>
+            <span class="info">Ideal for: Any Event Type (Generic)</span>
+        </div>
+    </div>
+
+    <script>
+        // Conference Theme
+        function drawCanvas1() {
+            const canvas = document.getElementById('canvas1');
+            const ctx = canvas.getContext('2d');
+
+            // Gradient background
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, '#06832a');
+            gradient.addColorStop(0.5, '#048024');
+            gradient.addColorStop(1, '#045a1d');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Geometric pattern
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.lineWidth = 2;
+            for (let i = 0; i < 20; i++) {
+                ctx.beginPath();
+                ctx.arc(canvas.width * 0.8, canvas.height * 0.3, 50 + (i * 30), 0, Math.PI * 2);
+                ctx.stroke();
+            }
+
+            // Icon - Podium/Speaker
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
+            ctx.fillRect(480, 450, 100, 150);
+            ctx.fillRect(520, 400, 20, 50);
+            ctx.fillRect(660, 450, 100, 150);
+            ctx.fillRect(700, 400, 20, 50);
+            ctx.fillRect(540, 470, 120, 130);
+
+            // Text
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+            ctx.font = 'bold 72px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('CONFERENCE', canvas.width / 2, 280);
+
+            ctx.font = '32px Arial';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+            ctx.fillText('Professional Event', canvas.width / 2, 330);
+        }
+
+        // Networking Theme
+        function drawCanvas2() {
+            const canvas = document.getElementById('canvas2');
+            const ctx = canvas.getContext('2d');
+
+            // Gradient background
+            const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+            gradient.addColorStop(0, '#045a1d');
+            gradient.addColorStop(1, '#06832a');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Network nodes and connections
+            const nodes = [
+                {x: 200, y: 200}, {x: 400, y: 150}, {x: 600, y: 250},
+                {x: 800, y: 180}, {x: 1000, y: 220}, {x: 300, y: 400},
+                {x: 500, y: 450}, {x: 700, y: 380}, {x: 900, y: 480}
+            ];
+
+            // Draw connections
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+            ctx.lineWidth = 2;
+            for (let i = 0; i < nodes.length; i++) {
+                for (let j = i + 1; j < nodes.length; j++) {
+                    if (Math.random() > 0.6) {
+                        ctx.beginPath();
+                        ctx.moveTo(nodes[i].x, nodes[i].y);
+                        ctx.lineTo(nodes[j].x, nodes[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+
+            // Draw nodes
+            nodes.forEach(node => {
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+                ctx.beginPath();
+                ctx.arc(node.x, node.y, 25, 0, Math.PI * 2);
+                ctx.fill();
+
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                ctx.beginPath();
+                ctx.arc(node.x, node.y, 15, 0, Math.PI * 2);
+                ctx.fill();
+            });
+
+            // Text
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+            ctx.font = 'bold 72px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('NETWORKING', canvas.width / 2, 600);
+
+            ctx.font = '32px Arial';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+            ctx.fillText('Connect & Collaborate', canvas.width / 2, 650);
+        }
+
+        // Workshop Theme
+        function drawCanvas3() {
+            const canvas = document.getElementById('canvas3');
+            const ctx = canvas.getContext('2d');
+
+            // Background
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+            gradient.addColorStop(0, '#06832a');
+            gradient.addColorStop(1, '#048024');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Board/Presentation icon
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
+            ctx.fillRect(250, 180, 700, 400);
+            ctx.fillRect(550, 580, 20, 100);
+            ctx.fillRect(630, 580, 20, 100);
+            ctx.fillRect(450, 670, 300, 30);
+
+            // Content on board
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.25)';
+            for (let i = 0; i < 5; i++) {
+                ctx.fillRect(300, 230 + (i * 70), 600, 40);
+            }
+
+            // Text
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+            ctx.font = 'bold 72px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('WORKSHOP', canvas.width / 2, 100);
+
+            ctx.font = '32px Arial';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+            ctx.fillText('Learn & Develop', canvas.width / 2, 150);
+        }
+
+        // International Forum Theme
+        function drawCanvas4() {
+            const canvas = document.getElementById('canvas4');
+            const ctx = canvas.getContext('2d');
+
+            // Gradient background
+            const gradient = ctx.createRadialGradient(canvas.width/2, canvas.height/2, 0, canvas.width/2, canvas.height/2, canvas.width * 0.7);
+            gradient.addColorStop(0, '#048024');
+            gradient.addColorStop(1, '#045a1d');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Globe representation
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.15)';
+            ctx.lineWidth = 2;
+
+            // Latitude lines
+            for (let i = 0; i < 7; i++) {
+                const y = 150 + (i * 70);
+                ctx.beginPath();
+                ctx.ellipse(canvas.width/2, y, 300 - Math.abs(i - 3) * 40, 20, 0, 0, Math.PI * 2);
+                ctx.stroke();
+            }
+
+            // Longitude lines
+            for (let i = 0; i < 7; i++) {
+                ctx.beginPath();
+                ctx.ellipse(canvas.width/2, 360, 40, 210, Math.PI * 2 * i / 7, 0, Math.PI * 2);
+                ctx.stroke();
+            }
+
+            // Center circle (globe)
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.arc(canvas.width/2, 360, 220, 0, Math.PI * 2);
+            ctx.stroke();
+
+            // Text
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+            ctx.font = 'bold 72px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('INTERNATIONAL', canvas.width / 2, 630);
+
+            ctx.font = '32px Arial';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+            ctx.fillText('Global Forum', canvas.width / 2, 680);
+        }
+
+        // Minimal Theme
+        function drawCanvas5() {
+            const canvas = document.getElementById('canvas5');
+            const ctx = canvas.getContext('2d');
+
+            // Solid background
+            ctx.fillStyle = '#06832a';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Simple calendar icon
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
+            ctx.fillRect(400, 180, 400, 360);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.25)';
+            ctx.fillRect(400, 180, 400, 80);
+
+            // Calendar holes
+            ctx.fillStyle = '#06832a';
+            ctx.fillRect(450, 200, 40, 40);
+            ctx.fillRect(580, 200, 40, 40);
+            ctx.fillRect(710, 200, 40, 40);
+
+            // Calendar dates (grid)
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+            for (let row = 0; row < 3; row++) {
+                for (let col = 0; col < 5; col++) {
+                    ctx.fillRect(420 + col * 72, 290 + row * 72, 60, 60);
+                }
+            }
+
+            // Text
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+            ctx.font = 'bold 96px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('EVENT', canvas.width / 2, 630);
+
+            ctx.font = '36px Arial';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+            ctx.fillText('AJCapital Advisory', canvas.width / 2, 680);
+        }
+
+        // Download function
+        function downloadCanvas(canvasId, filename) {
+            const canvas = document.getElementById(canvasId);
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/jpeg', 0.9);
+            link.click();
+        }
+
+        // Initialize all canvases
+        window.onload = function() {
+            drawCanvas1();
+            drawCanvas2();
+            drawCanvas3();
+            drawCanvas4();
+            drawCanvas5();
+        };
+    </script>
+</body>
+</html>

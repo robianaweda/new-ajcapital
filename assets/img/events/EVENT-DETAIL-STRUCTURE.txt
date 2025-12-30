@@ -1,0 +1,266 @@
+EVENT DETAIL PAGE STRUCTURE
+================================
+
+URL PATTERN:
+/EN/eventsandconferences/{year}/{month}/{day}/{slug}
+
+EXAMPLE:
+/EN/eventsandconferences/2019/04/02/insol-singapore-annual-regional-conference-2019
+
+
+PAGE LAYOUT (ASCII Diagram):
+════════════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  BREADCRUMB NAVIGATION                                                   ║
+║  ┌────────────────────────────────────────────────────────────────────┐  ║
+║  │  Home > Events & Conferences > INSOL Singapore Annual Regional...  │  ║
+║  └────────────────────────────────────────────────────────────────────┘  ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  EVENT HEADER SECTION                                                    ║
+║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ║
+║                                                                          ║
+║  INSOL Singapore Annual Regional Conference                             ║
+║  (H1, 32px, Bold, Green #2c5530)                                        ║
+║                                                                          ║
+║  📅 2-4 April 2019      📍 Singapore                                    ║
+║  (Icons in green, text in gray)                                         ║
+║  ────────────────────────────────────────────────────────────────────   ║
+║  (2px green bottom border)                                              ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  EVENT CONTENT SECTION                                                   ║
+║                                                                          ║
+║  ┌────────────────────────────────────────────────────────────────────┐ ║
+║  │  DESCRIPTION                                                        │ ║
+║  │                                                                     │ ║
+║  │  AJCapital was a corporate sponsor for the INSOL International    │ ║
+║  │  Annual Regional Conference held over 3 days in Singapore.         │ ║
+║  │  Singapore was a highly appropriate for this international         │ ║
+║  │  conference not only because of its status as a global financial   │ ║
+║  │  center and commercial hub...                                      │ ║
+║  │                                                                     │ ║
+║  │  [Multiple paragraphs with line breaks preserved]                  │ ║
+║  │  (Text: 16px, line-height 1.7, color #333)                         │ ║
+║  └────────────────────────────────────────────────────────────────────┘ ║
+║                                                                          ║
+║  ┌────────────────────────────────────────────────────────────────────┐ ║
+║  ┃  EVENT INFO BOX                                                     │ ║
+║  ┃  (Left border: 4px green, Background: #f8f9fa)                     │ ║
+║  ┃                                                                     │ ║
+║  ┃  Venue:           Marina Bay Sands Expo® and Convention Centre     │ ║
+║  ┃  (Label: green bold, Value: dark gray)                             │ ║
+║  ┃                                                                     │ ║
+║  ┃  Organized by:    INSOL International                              │ ║
+║  ┃  (Label: green bold, Value: dark gray)                             │ ║
+║  ┃                                                                     │ ║
+║  ┃  Reference:       https://www.insol.org/events/detail/76 🔗        │ ║
+║  ┃  (Clickable link, opens in new tab)                                │ ║
+║  └────────────────────────────────────────────────────────────────────┘ ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  FOOTER SECTION                                                          ║
+║  ────────────────────────────────────────────────────────────────────   ║
+║  (1px gray top border)                                                  ║
+║                                                                          ║
+║  ┌────────────────────────────────────────────┐                        ║
+║  │  ← Back to Events & Conferences            │                        ║
+║  └────────────────────────────────────────────┘                        ║
+║  (Green outline button, hover: filled green)                            ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+
+COMPONENT HIERARCHY:
+═══════════════════════════════════════════════════════════════════════════
+
+<nav> Breadcrumb
+├─ <ol> Breadcrumb List
+   ├─ <li> Home (link)
+   ├─ <li> Events & Conferences (link)
+   └─ <li> [Event Title] (active)
+
+<article> Event Detail
+├─ <div> Event Header
+│  ├─ <h1> Event Title
+│  └─ <div> Meta Information
+│     ├─ <span> Date with icon
+│     └─ <span> Location with icon
+│
+├─ <div> Event Content
+│  ├─ <div> Description
+│  │  └─ [Full text with nl2br]
+│  │
+│  └─ <div> Event Info Box
+│     ├─ <p> Venue (if exists)
+│     ├─ <p> Organizer (if exists)
+│     └─ <p> Reference Link (if exists)
+│
+└─ <div> Event Footer
+   └─ <a> Back Button
+
+
+DATA MAPPING (JSON → Template):
+═══════════════════════════════════════════════════════════════════════════
+
+JSON Field               →  Template Usage
+────────────────────────────────────────────────────────────────────────────
+title                    →  H1 heading, Breadcrumb
+date                     →  Meta section (display format)
+shortDate                →  URL generation (YYYY-MM-DD)
+location                 →  Meta section with map icon
+description              →  Main content (with nl2br)
+venue                    →  Info box (conditional)
+organizer                →  Info box (conditional)
+reference                →  Info box link (conditional)
+image                    →  NOT USED (could be added as hero image)
+slug                     →  URL parameter
+
+
+COLOR PALETTE:
+═══════════════════════════════════════════════════════════════════════════
+
+Primary Elements:
+• Title, Icons, Links        : #2c5530 (Dark Green)
+• Hover States              : #4a8a4f (Medium Green)
+• Info Box Border           : #2c5530 (4px left border)
+
+Text:
+• Main Content              : #333    (Dark Gray)
+• Meta Information          : #666    (Medium Gray)
+• Breadcrumb Active         : #6c757d (Bootstrap Gray)
+
+Backgrounds:
+• Info Box                  : #f8f9fa (Light Gray)
+• Breadcrumb                : #f8f9fa (Light Gray)
+
+Borders:
+• Header Bottom             : #2c5530 (2px solid)
+• Footer Top                : #dee2e6 (1px solid)
+
+
+RESPONSIVE BREAKPOINTS:
+═══════════════════════════════════════════════════════════════════════════
+
+Desktop (> 768px):
+• Title: 2rem (32px)
+• Info labels: Inline with values
+• Full spacing
+
+Mobile (≤ 768px):
+• Title: 1.5rem (24px)
+• Info labels: Block display (stacked)
+• Adjusted padding
+
+
+ROUTING LOGIC:
+═══════════════════════════════════════════════════════════════════════════
+
+1. User clicks event card on listing page
+   ↓
+2. URL generated: /EN/eventsandconferences/{year}/{month}/{day}/{slug}
+   ↓
+3. Route handler extracts parameters
+   ↓
+4. Load events.json
+   ↓
+5. Find event where:
+   - event.slug === {slug}
+   - event.shortDate year === {year}
+   - event.shortDate month === {month}
+   - event.shortDate day === {day}
+   ↓
+6. If found: Render detail page
+   If not: Return 404
+
+
+CONDITIONAL RENDERING:
+═══════════════════════════════════════════════════════════════════════════
+
+Elements that only show if data exists:
+
+✓ Location (if page.event.location exists)
+✓ Venue (if page.event.venue exists)
+✓ Organizer (if page.event.organizer exists)
+✓ Reference Link (if page.event.reference exists)
+
+Always shown:
+✓ Title (required)
+✓ Date (required)
+✓ Description (required)
+
+
+STYLING NOTES:
+═══════════════════════════════════════════════════════════════════════════
+
+Typography:
+• Base font size: 1rem (16px)
+• Line height: 1.7 (for readability)
+• Heading: 2rem with reduced line-height (1.25)
+
+Spacing:
+• Section margins: 1.25rem - 2rem
+• Padding: 0.75rem - 1.5rem
+• Info box: 1.25rem padding
+
+Visual Hierarchy:
+1. Title (largest, bold, green)
+2. Meta info (icons, medium size)
+3. Description (body text)
+4. Info box (highlighted, structured)
+5. Back button (action element)
+
+Accessibility:
+• High contrast ratios
+• Descriptive link text
+• Semantic HTML structure
+• Aria labels on breadcrumb
+
+
+FILES INVOLVED:
+═══════════════════════════════════════════════════════════════════════════
+
+Template:  app/resources/views/en/eventsandconferences-detail.twig
+Route:     app/routes.php (line 245-284)
+Data:      assets/db/events.json
+Images:    assets/img/events/ (not currently used in detail page)
+
+
+EXAMPLE DATA FLOW:
+═══════════════════════════════════════════════════════════════════════════
+
+Input URL:
+/EN/eventsandconferences/2019/04/02/insol-singapore-annual-regional-conference-2019
+
+Parameters Extracted:
+year  = "2019"
+month = "04"
+day   = "02"
+slug  = "insol-singapore-annual-regional-conference-2019"
+
+JSON Lookup:
+Find event where slug matches AND shortDate = "2019-04-02"
+
+Data Found:
+{
+    "title": "INSOL Singapore Annual Regional Conference",
+    "date": "2-4 April 2019",
+    "location": "Singapore",
+    "description": "AJCapital was a corporate sponsor...",
+    "venue": "Marina Bay Sands Expo® and Convention Centre",
+    "organizer": "INSOL International",
+    "reference": "https://www.insol.org/events/detail/76"
+}
+
+Template Renders:
+✓ Breadcrumb with title
+✓ H1 with "INSOL Singapore Annual Regional Conference"
+✓ Meta: "2-4 April 2019" and "Singapore"
+✓ Full description text
+✓ Info box with venue, organizer, and reference link
+✓ Back button
+
+═══════════════════════════════════════════════════════════════════════════
